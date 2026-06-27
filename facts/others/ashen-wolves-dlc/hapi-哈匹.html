@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hapi / 哈匹</title>
+<style>
+:root{--fg:#1c1e26;--muted:#6b7280;--bg:#fbfbfd;--card:#fff;--accent:#3b5bdb;--border:#e5e7eb;--code:#f3f4f6}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei",sans-serif}
+.wrap{max-width:920px;margin:0 auto;padding:0 20px 80px}
+nav.top{position:sticky;top:0;background:rgba(251,251,253,.92);backdrop-filter:blur(6px);padding:12px 0;border-bottom:1px solid var(--border);margin-bottom:28px;font-size:14px}
+nav.top a{color:var(--accent);text-decoration:none;margin-right:14px}
+article{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:28px 34px}
+h1{font-size:1.7rem;line-height:1.25;margin:.2em 0 .6em;border-bottom:2px solid var(--border);padding-bottom:.3em}
+h2{font-size:1.32rem;margin:1.6em 0 .5em;border-bottom:1px solid var(--border);padding-bottom:.2em}
+h3{font-size:1.1rem;margin:1.3em 0 .4em}
+a{color:var(--accent)}
+table{border-collapse:collapse;width:100%;margin:1em 0;font-size:.94rem;display:block;overflow-x:auto}
+th,td{border:1px solid var(--border);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:var(--code)}
+tr:nth-child(even) td{background:#fafafa}
+code{background:var(--code);padding:.12em .4em;border-radius:5px;font-size:.88em;font-family:"SF Mono",Menlo,Consolas,monospace}
+pre{background:var(--code);padding:14px 16px;border-radius:10px;overflow-x:auto}
+pre code{background:none;padding:0}
+blockquote{margin:1em 0;padding:.3em 1em;border-left:4px solid var(--accent);background:#f6f8ff;color:#374151}
+ul.index{list-style:none;padding:0}
+ul.index li{margin:0;border-bottom:1px solid var(--border)}
+ul.index li a{display:block;padding:11px 8px;text-decoration:none}
+ul.index li a:hover{background:var(--code)}
+.dir::before{content:"\1F4C1  "}
+.doc::before{content:"\1F4C4  "}
+.lead{color:var(--muted)}
+</style></head>
+<body><div class="wrap">
+<nav class="top"><a href="../../../index.html">⌂ Home</a> <a href="../../../facts/index.html">facts</a> <a href="../../../suggestions/index.html">suggestions</a></nav>
+<article><h1 id="hapi">Hapi / 哈匹</h1>
+<blockquote>
+<p><strong>DLC: Cindered Shadows / 烟雾缭绕的章节 (Ashen Wolves DLC)</strong>
+本角色为可下载内容 (DLC)「烟雾缭绕的章节」登场角色。
+This character is from the downloadable content (DLC) "Cindered Shadows."</p>
+</blockquote>
+<hr>
+<h2 id="overview">Overview / 概要</h2>
+<table>
+<thead>
+<tr>
+<th>Field / 项目</th>
+<th>English</th>
+<th>简体中文</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Name / 名称</td>
+<td>Hapi</td>
+<td>哈匹</td>
+</tr>
+<tr>
+<td>Affiliation / 所属</td>
+<td>Ashen Wolves</td>
+<td>灰色恶魔（深世界住民）</td>
+</tr>
+<tr>
+<td>Age / 年龄</td>
+<td>20</td>
+<td>20 岁</td>
+</tr>
+<tr>
+<td>Birthday / 生日</td>
+<td>Guardian Moon 15 (1/15)</td>
+<td>守护之月 15 日（1/15）</td>
+</tr>
+<tr>
+<td>Starting Class / 初始职业</td>
+<td>Commoner / 平民</td>
+<td>平民（Commoner）</td>
+</tr>
+</tbody>
+</table>
+<p>注：年龄/生日采用游戏内官方设定（剧情起始时点）。Age and birthday follow the official in-game profile.</p>
+<hr>
+<h2 id="crest">Crest / 纹章</h2>
+<table>
+<thead>
+<tr>
+<th>Field / 项目</th>
+<th>English</th>
+<th>简体中文</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Crest / 纹章</td>
+<td>Major Crest of Timotheos</td>
+<td>提莫修斯大纹章</td>
+</tr>
+<tr>
+<td>Effect / 效果</td>
+<td>Conserves uses of recovery magic. (Major: 20%)</td>
+<td>使用回复魔法时，有几率（大纹章 20%）不消耗使用次数。</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="base-stats-level-1-1">Base Stats (Level 1) / 基础数值（1 级）</h2>
+<table>
+<thead>
+<tr>
+<th>HP</th>
+<th>Str/力</th>
+<th>Mag/魔</th>
+<th>Dex/技</th>
+<th>Spd/速</th>
+<th>Lck/运</th>
+<th>Def/防</th>
+<th>Res/魔防</th>
+<th>Cha/魅力</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>26</td>
+<td>6</td>
+<td>11</td>
+<td>8</td>
+<td>6</td>
+<td>4</td>
+<td>4</td>
+<td>7</td>
+<td>4</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="growth-rates">Growth Rates / 成长率</h2>
+<table>
+<thead>
+<tr>
+<th>HP</th>
+<th>Str/力</th>
+<th>Mag/魔</th>
+<th>Dex/技</th>
+<th>Spd/速</th>
+<th>Lck/运</th>
+<th>Def/防</th>
+<th>Res/魔防</th>
+<th>Cha/魅力</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>35%</td>
+<td>35%</td>
+<td>45%</td>
+<td>45%</td>
+<td>40%</td>
+<td>20%</td>
+<td>15%</td>
+<td>45%</td>
+<td>25%</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>注：以上为角色本体成长率，实际成长需再叠加所处职业的成长率。
+Note: these are personal growth rates; class growth rates are added on top.</p>
+</blockquote>
+<hr>
+<h2 id="personal-skill">Personal Skill / 个人技能</h2>
+<table>
+<thead>
+<tr>
+<th>Field / 项目</th>
+<th>English</th>
+<th>简体中文</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Skill / 技能</td>
+<td>Monstrous Appeal</td>
+<td>魔兽的诱惑（Monstrous Appeal）</td>
+</tr>
+<tr>
+<td>Effect / 效果</td>
+<td>Makes all of the unit's attacks effective against monsters, and makes it easier for monsters to target the unit.</td>
+<td>自身所有攻击对魔兽具有特效；同时魔兽更容易将其设为攻击目标。</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="strengths-weaknesses-budding-talent">Strengths / Weaknesses / Budding Talent / 擅长・不擅长・隐藏天赋</h2>
+<table>
+<thead>
+<tr>
+<th>Field / 项目</th>
+<th>English</th>
+<th>简体中文</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Strengths / 擅长</td>
+<td>Reason, Riding, Flying</td>
+<td>理学（黑魔法）、骑乘、飞行</td>
+</tr>
+<tr>
+<td>Weaknesses / 不擅长</td>
+<td>Brawling, Authority, Heavy Armor</td>
+<td>格斗、指挥、重甲</td>
+</tr>
+<tr>
+<td>Budding Talent / 隐藏天赋</td>
+<td>Axe → unlocks Exhaustive Strike</td>
+<td>斧 → 开花后习得「精疲力竭之击」(Exhaustive Strike)</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="recruitment">Recruitment / 招募</h2>
+<table>
+<thead>
+<tr>
+<th>Field / 项目</th>
+<th>Details / 详情</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DLC requirement / DLC 条件</td>
+<td>Recruitable into the main story after clearing Cindered Shadows up to <strong>Chapter 5</strong>. / 通关「烟雾缭绕的章节」第 <strong>5</strong> 章后，可在主线中招募。</td>
+</tr>
+<tr>
+<td>Main story window / 主线时机</td>
+<td>Part 1 only (pre-time skip). Cannot be recruited after Part 2 / post-time skip. / 仅限第一部（时间跳跃之前），第二部之后无法招募。</td>
+</tr>
+<tr>
+<td>Conditions / 招募条件</td>
+<td>No stat or support prerequisites; talk to her in the Abyss (深世界). / 无属性或支援等级要求，于深世界（Abyss）对话即可招募。</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="sources">Sources / 资料来源</h3>
+<ul>
+<li>Serenes Forest (英语 / English) — base stats, growth rates, Crest effects</li>
+<li>fe3h.com / Triangle Attack (英语 / English) — profile, birthday, age</li>
+<li>Game8 (英语 / English) — personal skill, strengths/weaknesses, budding talent, recruitment</li>
+</ul></article>
+</div></body></html>

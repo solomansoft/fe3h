@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Blue Lions / Azure Moon — Day-by-Day Walkthrough</title>
+<style>
+:root{--fg:#1c1e26;--muted:#6b7280;--bg:#fbfbfd;--card:#fff;--accent:#3b5bdb;--border:#e5e7eb;--code:#f3f4f6}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei",sans-serif}
+.wrap{max-width:920px;margin:0 auto;padding:0 20px 80px}
+nav.top{position:sticky;top:0;background:rgba(251,251,253,.92);backdrop-filter:blur(6px);padding:12px 0;border-bottom:1px solid var(--border);margin-bottom:28px;font-size:14px}
+nav.top a{color:var(--accent);text-decoration:none;margin-right:14px}
+article{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:28px 34px}
+h1{font-size:1.7rem;line-height:1.25;margin:.2em 0 .6em;border-bottom:2px solid var(--border);padding-bottom:.3em}
+h2{font-size:1.32rem;margin:1.6em 0 .5em;border-bottom:1px solid var(--border);padding-bottom:.2em}
+h3{font-size:1.1rem;margin:1.3em 0 .4em}
+a{color:var(--accent)}
+table{border-collapse:collapse;width:100%;margin:1em 0;font-size:.94rem;display:block;overflow-x:auto}
+th,td{border:1px solid var(--border);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:var(--code)}
+tr:nth-child(even) td{background:#fafafa}
+code{background:var(--code);padding:.12em .4em;border-radius:5px;font-size:.88em;font-family:"SF Mono",Menlo,Consolas,monospace}
+pre{background:var(--code);padding:14px 16px;border-radius:10px;overflow-x:auto}
+pre code{background:none;padding:0}
+blockquote{margin:1em 0;padding:.3em 1em;border-left:4px solid var(--accent);background:#f6f8ff;color:#374151}
+ul.index{list-style:none;padding:0}
+ul.index li{margin:0;border-bottom:1px solid var(--border)}
+ul.index li a{display:block;padding:11px 8px;text-decoration:none}
+ul.index li a:hover{background:var(--code)}
+.dir::before{content:"\1F4C1  "}
+.doc::before{content:"\1F4C4  "}
+.lead{color:var(--muted)}
+</style></head>
+<body><div class="wrap">
+<nav class="top"><a href="../../index.html">⌂ Home</a> <a href="../../facts/index.html">facts</a> <a href="../../suggestions/index.html">suggestions</a></nav>
+<article><h1 id="blue-lions-azure-moon-day-by-day-walkthrough">Blue Lions / Azure Moon — Day-by-Day Walkthrough</h1>
+<h3 id="fire-emblem-three-houses-switch-run-1-of-the-4-playthrough-plan-normal">Fire Emblem: Three Houses (Switch) — Run 1 of the 4-playthrough plan (Normal)</h3>
+<blockquote>
+<p>Scope: a calendar-based "what to do each teaching day / each weekend" guide for the <strong>Blue Lions</strong> house and its route <strong>Azure Moon (苍月之章)</strong>.
+This is the <strong>Run 1 = Normal</strong> "learn the systems" playthrough from <code>/suggestions/team.md</code>.
+<strong>Facts policy:</strong> dates, deadlines and recruitment thresholds below are cross-checked across Serenes Forest, fe3h.com (Triangle Attack), Game8, GameWith, fedatamine.com and Fire Emblem Wiki. Anything not fully verified is tagged <strong>[UNVERIFIED]</strong>.
+Sources cached in <code>/sources/fe3h-com/</code>, <code>/sources/serenes-forest/</code>, <code>/sources/game8/</code>. Recruitment thresholds grounded in <code>/character/blue-lions/</code>.</p>
+</blockquote>
+<hr>
+<h2 id="0-how-the-monthly-weekly-system-works-mechanics-primer">0. How the monthly / weekly system works (mechanics primer)</h2>
+<h3 id="01-the-calendar">0.1 The calendar</h3>
+<ul>
+<li>Part 1 (academy, "White Clouds") runs ~12 in-game months (Great Tree Moon → Lone Moon). Each month is ~4 weeks.</li>
+<li>Most weekdays are fixed: one <strong>Instruction (lecture) day</strong> each week, plus story/quest days.</li>
+<li>Each week ends in a <strong>weekend free day</strong> where you pick <strong>exactly one</strong> of four activities:</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Choice</th>
+<th>What it does</th>
+<th>Pick it when…</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Explore</strong></td>
+<td>Walk the monastery, spend <strong>Activity Points (AP)</strong> on meals, choir, fishing, gardening, faculty training, tea, tournaments, the merchant/forge, returning lost items, and <strong>talking to recruit targets</strong>. Gives the most professor exp, support, motivation and items.</td>
+<td><strong>Your default.</strong> Especially the <strong>first weekend of a new month</strong> (the monastery refreshes with new quests/items/dialogue).</td>
+</tr>
+<tr>
+<td><strong>Battle</strong></td>
+<td>Fight an <strong>Auxiliary battle</strong> (one free per week; extra ones cost Battle Points) and/or an available <strong>Paralogue</strong> / Rare Monster Sighting. <strong>Gives no motivation.</strong></td>
+<td>When a <strong>paralogue</strong> is up, when units are underleveled, or you need gold/skill XP. Best on the <strong>last weekend</strong> of the month (after instruction is done).</td>
+</tr>
+<tr>
+<td><strong>Seminar</strong></td>
+<td>Byleth + up to ~5 students whose goals match the focus gain a <strong>big block of skill XP</strong> (and ~+50 motivation).</td>
+<td>When you want to rush several students toward a <strong>certification/master class</strong> and don't want to micromanage an explore day.</td>
+</tr>
+<tr>
+<td><strong>Rest</strong></td>
+<td>Restores bulk <strong>motivation</strong> (~+50 to everyone) and <strong>+5 durability to the Sword of the Creator</strong> (the only way to repair it). There is <strong>no</strong> free meal or "rested buff."</td>
+<td>When motivation is low across the board and you don't want to spend AP, or to repair the Sword of the Creator. Lowest priority.</td>
+</tr>
+</tbody>
+</table>
+<p>Default priority: <strong>Explore &gt; Battle &gt; Seminar &gt; Rest.</strong></p>
+<h3 id="02-professor-level-e-a-why-it-matters">0.2 Professor Level (E → A+) — why it matters</h3>
+<p>Your professor level controls almost everything per week. Confirmed table (fe3h.com + Game8):</p>
+<table>
+<thead>
+<tr>
+<th>Level</th>
+<th>Activity Pts</th>
+<th>Battle Pts</th>
+<th>Instruct Pts</th>
+<th>Funds/mo</th>
+<th>Adjutants</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>E</td>
+<td>1</td>
+<td>1</td>
+<td>3</td>
+<td>1,000</td>
+<td>0</td>
+</tr>
+<tr>
+<td>E+</td>
+<td>2</td>
+<td>1</td>
+<td>3</td>
+<td>2,000</td>
+<td>0</td>
+</tr>
+<tr>
+<td>D</td>
+<td>3</td>
+<td>1</td>
+<td>4</td>
+<td>3,000</td>
+<td>0</td>
+</tr>
+<tr>
+<td>D+</td>
+<td>4</td>
+<td>1</td>
+<td>4</td>
+<td>4,000</td>
+<td>0</td>
+</tr>
+<tr>
+<td>C</td>
+<td>5</td>
+<td>1*</td>
+<td>5</td>
+<td>5,000</td>
+<td>1</td>
+</tr>
+<tr>
+<td>C+</td>
+<td>6</td>
+<td>2</td>
+<td>5</td>
+<td>5,000</td>
+<td>1</td>
+</tr>
+<tr>
+<td>B</td>
+<td>7</td>
+<td>2</td>
+<td>6</td>
+<td>5,000</td>
+<td>2</td>
+</tr>
+<tr>
+<td>B+</td>
+<td>8</td>
+<td>2</td>
+<td>6</td>
+<td>5,000</td>
+<td>2</td>
+</tr>
+<tr>
+<td>A</td>
+<td>9</td>
+<td>2</td>
+<td>7</td>
+<td>5,000</td>
+<td>3</td>
+</tr>
+<tr>
+<td>A+</td>
+<td>10</td>
+<td>3</td>
+<td>7</td>
+<td>5,000</td>
+<td>3</td>
+</tr>
+</tbody>
+</table>
+<p>* Battle Points at rank C: fe3h lists 1, Game8 lists 2; both agree <strong>2 from C+, 3 at A+</strong>. <strong>[UNVERIFIED at exactly C]</strong></p>
+<p><strong>Raise professor level fast</strong> (professor exp sources, biggest first):
+- <strong>Tournaments</strong>: 300 exp on a win (100 on loss) — the best single action.
+- <strong>Like+Like meals / choir</strong>: up to 200 each.
+- <strong>Fishing</strong> (0 AP): 10–100 per fish — best AP-free grind.
+- <strong>Gardening</strong> (0 AP): 100 × lowest seed star.
+- Answering <strong>lecture questions</strong> correctly, completing <strong>quests</strong>, <strong>certification exams</strong>, picking the <strong>preferred response</strong> when giving advice, <strong>faculty training</strong>, returning <strong>lost items</strong>, winning <strong>battles</strong>.
+- <strong>Bottom line:</strong> every explore day, do the free 0-AP actions (fish, garden, lost items, talk) plus one tournament/choir, and you climb steadily. Higher level = more AP, more battles, more students tutored, more adjutants, more gold.</p>
+<h3 id="03-instruction-weekday-tutoring">0.3 Instruction (weekday tutoring)</h3>
+<ul>
+<li>You can individually tutor a number of students = your <strong>Instruct Points</strong> (3 at E → 7 at A).</li>
+<li>Each student has a <strong>motivation</strong> bar (max 100, in 25-point steps = 4 bars). <strong>Each instruction costs 25 motivation</strong>, so a fully-motivated student can be drilled <strong>up to 4 times</strong> in one lecture day.</li>
+<li>A <strong>Great/Perfect</strong> result lets you <strong>Praise</strong> (refills 25 motivation); a poor one lets you Console/Critique (chance to recover). Higher support with Byleth → better odds and bigger gains.</li>
+<li><strong>Goals:</strong> assign each student <strong>1 skill</strong> (large boost) or <strong>2 skills</strong> (moderate each). Aim Goals at the skills each unit needs for their target class (see roster below).</li>
+<li><strong>Group Tasks</strong> (Riding / Heavy Armor / Flying paired lessons): free skill XP + support + funds + items — accept them whenever offered.</li>
+<li><strong>Refill motivation before lecture day</strong> via meals/choir/tea/Rest so you can tutor 4×.</li>
+</ul>
+<h3 id="04-exploration-priority-order-for-a-typical-explore-day">0.4 Exploration — priority order for a typical explore day</h3>
+<ol>
+<li><strong>Free (0 AP), do every time:</strong> Gardening (Plant → <strong>Cultivate</strong> → Harvest), Fishing, Return lost items, Talk to/greet students (recruitment + support).</li>
+<li><strong>Cook a Meal</strong> (1 AP) <strong>once early each month</strong> — gives a party-wide combat buff for all battles that month.</li>
+<li><strong>Choir Practice</strong> (1 AP) — motivation + Faith (students) + Authority (Byleth) + bonds; top value.</li>
+<li><strong>Share a Meal</strong> (1 AP) — +support and motivation on two students (set up max tutoring).</li>
+<li><strong>Faculty Training</strong> (1 AP, unlocks Ch3) — raise <strong>Byleth's own</strong> skill ranks.</li>
+<li><strong>Tea Party</strong> (1 AP) — big support push for a key character/recruit.</li>
+<li><strong>Tournament</strong> (1 AP) — gold/items + the biggest professor-exp spike.</li>
+<li>Browse the <strong>Merchant/Blacksmith</strong>, then accept all new <strong>quests</strong> before leaving.</li>
+</ol>
+<h3 id="05-gardening-seed-stat-booster-always-cultivate">0.5 Gardening seed → stat booster (always Cultivate)</h3>
+<p>HP+1: Western Fódlan/Blue Flower · Str+1: Mixed Herb/Angelica/Purple · Mag+1: Southern Fódlan/Yellow · Dex+1: Morfis-Plum/Green · Spd+1: Nordsalat/Pale-Blue · Lck+1: Boa-Fruit/Mixed Fruit. Plant 5, spend gold to Cultivate (guarantees the drop), harvest next visit.</p>
+<h3 id="06-renown-saint-statues-unlock-month-8-chapter-8">0.6 Renown / Saint Statues (unlock Month 8 / Chapter 8)</h3>
+<p>Spend <strong>Renown</strong> (earned from battles/paralogues/quests) at the 4 Cathedral statues. Priority tiers: the <strong>EXP +5% / +10%</strong> tiers (faster leveling for the whole army) and the <strong>10,000-Renown stat-cap +5</strong> tiers. Statue skill mapping: Cichol = Axe/Authority/Flying/Str&amp;Spd cap · Cethleann = Lance/Faith/Class-Mastery/Lck&amp;Cha cap · Macuil = Sword/Reason/Riding/Mag&amp;Dex cap · Indech = Bow/Fighting/HeavyArmor/Def&amp;Res cap.</p>
+<h3 id="07-recruiting-blue-lions-specifics">0.7 Recruiting (Blue Lions specifics)</h3>
+<ul>
+<li><strong>Good news:</strong> all 8 Blue Lions members (Dimitri, Dedue, Felix, Sylvain, Ingrid, Annette, Mercedes, Ashe) <strong>auto-join</strong> when you pick the house — no recruitment needed. Your recruiting effort goes only into <strong>cross-house</strong> units.</li>
+<li><strong>How cross-house recruiting works:</strong> meet the student's <strong>stat + skill threshold</strong> (shown on their recruit screen), then invite them on an explore day. <strong>Raising support with Byleth lowers the requirement (~20% per support level).</strong> Build support outside battle via <strong>lost items, gifts (loved/liked), tea parties, shared meals</strong>.</li>
+<li><strong>Run-1 recruit target (from team.md): Dorothea</strong> — patches the Blue Lions' weak magic AND becomes your <strong>Dancer</strong> (win the White Heron Cup in Month 9 with her). Threshold: <strong>Charm 25 + Authority B.</strong> Optional second magic recruit: <strong>Lysithea</strong> (Magic 15 + Faith B) if you want a nuker, but team.md reserves her for Run 3 — skip for diversity unless you really want her.</li>
+</ul>
+<hr>
+<h2 id="part-1-white-clouds-academy-phase-month-by-month">PART 1 — White Clouds (academy phase), month by month</h2>
+<blockquote>
+<p>Numbering: walkthrough/calendar style, <strong>Chapter 1 = Great Tree Moon</strong>. Months map to real months (Great Tree=Apr … Lone=Mar). Mission deadline = the month's last weekend ("Mission" day).</p>
+</blockquote>
+<h3 id="month-0-prologue-late-great-tree-moon-an-inevitable-encounter">Month 0 — Prologue (late Great Tree Moon): "An Inevitable Encounter"</h3>
+<ul>
+<li>Battle <strong>A Skirmish at Dawn</strong> (defeat Kostas). Tutorial; no calendar/deadline. <strong>Choose Blue Lions</strong> when prompted.</li>
+</ul>
+<h3 id="chapter-1-great-tree-moon-april-three-houses">Chapter 1 — Great Tree Moon (April): "Three Houses"</h3>
+<ul>
+<li><strong>Mission:</strong> <em>Rivalry of the Houses</em> (the 3-house mock battle, rout). <strong>Deadline 4/30.</strong></li>
+<li><strong>Weekends:</strong> only <strong>1 free day (4/27)</strong> → <strong>Explore.</strong> Do all free 0-AP actions, cook a meal, talk to everyone.</li>
+<li><strong>Instruction focus:</strong> start everyone's Goals toward their target class (see roster). Dimitri → Lance/Authority; Felix → Sword; Mercedes/Annette → Reason+Faith; Ashe → Bow; Ingrid → Lance/Flying; Sylvain → Lance/Riding; Dedue → Axe/Heavy Armor.</li>
+<li><strong>Recruitment:</strong> begin chatting up <strong>Dorothea</strong> every explore day from now on; start gifting her liked items to build support.</li>
+<li><strong>Paralogues:</strong> none yet.</li>
+<li><strong>Shopping:</strong> buy a few <strong>Iron</strong> weapons and <strong>Vulneraries</strong>; unlock the greenhouse seed quest (Dedue's) so gardening starts paying off.</li>
+</ul>
+<h3 id="chapter-2-harpstring-moon-may-familiar-scenery">Chapter 2 — Harpstring Moon (May): "Familiar Scenery"</h3>
+<ul>
+<li><strong>Mission:</strong> <em>Red Canyon Dominance</em> (defeat Kostas). <strong>Deadline 5/31.</strong></li>
+<li><strong>Weekends (3): 5/11, 5/18, 5/25.</strong> Plan: <strong>Explore → Explore → Battle</strong> (do one auxiliary battle to level the team before the mission, or Explore again if levels are fine).</li>
+<li><strong>Instruction focus:</strong> push Dimitri toward <strong>Soldier</strong> certification (it wants no specific rank — available early; it boosts him before Cavalier). Get Mercedes/Annette toward <strong>Monk → Mage/Priest</strong>. Begin Felix's Sword grind.</li>
+<li><strong>Recruitment:</strong> keep feeding Dorothea support (lost items + gifts + a tea party). Track her Authority (needs B) — assign Authority as a 2nd Goal if you recruit her into class early; otherwise just build support.</li>
+<li><strong>Paralogues:</strong> none yet.</li>
+<li><strong>Note:</strong> first real battle vs. the prologue bandits.</li>
+</ul>
+<h3 id="chapter-3-garland-moon-june-mutiny-in-the-mist">Chapter 3 — Garland Moon (June): "Mutiny in the Mist"</h3>
+<ul>
+<li><strong>Mission:</strong> <em>The Magdred Ambush</em> (defeat Lonato; foggy map with Catherine). <strong>Deadline 6/30.</strong></li>
+<li><strong>Weekends (4): 6/8, 6/15, 6/22, 6/29.</strong> Plan: <strong>Explore → Explore → Battle → Explore.</strong></li>
+<li><strong>Faculty Training unlocks</strong> this month (quest "Learning from the Best"). Start raising <strong>Byleth's</strong> Authority/Sword/Reason ranks so Byleth can tutor those skills better and certify into Mercenary later.</li>
+<li><strong>Instruction focus:</strong> first <strong>certification window</strong> opens for many units. Certify into <strong>intermediate goals</strong> as ranks allow: Mercedes/Annette → keep Reason/Faith climbing; Felix → Sword C for Mercenary path; Ashe → Bow D→C for Archer.</li>
+<li><strong>Recruitment:</strong> Dorothea support should be climbing; keep gifting. If her Charm/Authority are close, you can already invite her.</li>
+<li><strong>Paralogues:</strong> none yet.</li>
+</ul>
+<h3 id="chapter-4-blue-sea-moon-july-the-goddesss-rite-of-rebirth">Chapter 4 — Blue Sea Moon (July): "The Goddess's Rite of Rebirth"</h3>
+<ul>
+<li><strong>Mission:</strong> <em>Assault at the Rite of Rebirth</em>. <strong>Deadline 7/26.</strong></li>
+<li><strong>Weekends (3): 7/6, 7/13, 7/20.</strong> Plan: <strong>Explore → Battle → Explore.</strong></li>
+<li><strong>Story:</strong> the <strong>Death Knight first appears</strong> at the end — do <strong>not</strong> try to kill him this month; just survive/finish the objective.</li>
+<li><strong>Instruction focus:</strong> push <strong>certification exams</strong> as ranks hit C: Felix → <strong>Mercenary</strong> (Sword C); Ashe → <strong>Archer</strong> (Bow D); Dimitri → <strong>Cavalier</strong> (Lance C / Riding C); Mercedes → <strong>Priest/Mage</strong>; Annette → <strong>Mage</strong>.</li>
+<li><strong>Recruitment:</strong> finalize <strong>Dorothea</strong> if not already in. Keep her in class so she gets instruction/EXP before the Cup.</li>
+</ul>
+<h3 id="chapter-5-verdant-rain-moon-august-tower-of-black-winds">Chapter 5 — Verdant Rain Moon (August): "Tower of Black Winds"</h3>
+<ul>
+<li><strong>Mission:</strong> <em>The Gautier Inheritance</em> (defeat <strong>Miklan</strong>, who transforms into a Black Beast). <strong>Deadline 8/31.</strong></li>
+<li><strong>Weekends (3): 8/10, 8/17, 8/24.</strong> Plan: <strong>Explore → Explore → Battle.</strong></li>
+<li><strong>Instruction focus:</strong> continue intermediate classes. Sylvain → <strong>Cavalier</strong>; Ingrid → <strong>Pegasus Knight</strong> (Lance C / Flying C, female-only — start the Flying Group Tasks now); Dedue → <strong>Armored/Brigand</strong> toward Fortress Knight.</li>
+<li><strong>Shopping:</strong> all gardening seed types become buyable around now — start farming <strong>stat boosters</strong> (prioritize Str seeds for Felix/Dimitri, Mag for Mercedes/Annette/Dorothea, Spd for Ingrid).</li>
+<li><strong>Paralogues:</strong> none <strong>on Azure Moon</strong> are open yet for your core units.</li>
+</ul>
+<h3 id="chapter-6-horsebow-moon-september-rumors-of-a-reaper">Chapter 6 — Horsebow Moon (September): "Rumors of a Reaper"</h3>
+<ul>
+<li><strong>Mission:</strong> <em>The Underground Chamber</em> — the <strong>fightable Death Knight</strong> battle (rescue Flayn). <strong>Deadline 9/30.</strong></li>
+<li><strong>Weekends (4): 9/7, 9/14, 9/21, 9/28.</strong> Plan: <strong>Explore → Battle → Explore → Battle.</strong></li>
+<li><strong>Death Knight tip:</strong> on Normal you <em>can</em> try to kill him for EXP/loot, but it's optional and risky early — focus the objective.</li>
+<li><strong>Paralogue window OPENS:</strong> <strong>War for the Weak (Dedue)</strong> becomes available (Ch6 → Ch11). <strong>You can start it now</strong>; it's safe to clear early. <strong>This is the most important paralogue of the run</strong> (see Chapter 11). If you want, clear it now on a Battle weekend and stop worrying about it.</li>
+<li><strong>Instruction focus:</strong> keep certifying; start aiming Byleth toward <strong>Mercenary</strong> (Sword C) on the way to the unique Enlightened One.</li>
+</ul>
+<h3 id="chapter-7-wyvern-moon-october-field-of-the-eagle-and-lion">Chapter 7 — Wyvern Moon (October): "Field of the Eagle and Lion"</h3>
+<ul>
+<li><strong>Mission:</strong> <em>Battle of the Eagle and Lion</em> — the big <strong>Gronder Field</strong> mock war (rout). <strong>Deadline 10/27.</strong></li>
+<li><strong>Weekends (4): 10/5, 10/12, 10/19, 10/26.</strong> Plan: <strong>Explore → Battle → Explore → Explore</strong> (this is a winnable showcase battle; come in a level or two ahead).</li>
+<li><strong>Paralogue windows OPEN:</strong> <strong>The Forgotten (Sylvain → Lance of Ruin)</strong> Ch7→Ch11; <strong>Rumored Nuptials (Dorothea OR Ingrid → Lúin)</strong> Ch7→Ch11; (Land of the Golden Deer Ch7→Ch11 only if you recruited Lorenz — skip). <strong>You may clear The Forgotten now</strong> for the Lance of Ruin (great on Sylvain), or wait to batch in Ch11.</li>
+<li><strong>Instruction focus:</strong> push advanced-rank skills. Felix Sword toward A (Swordmaster); Mercedes/Annette Reason+Faith toward Warlock/Bishop; Ingrid Lance/Flying toward Falcon Knight.</li>
+</ul>
+<h3 id="chapter-8-red-wolf-moon-november-the-flame-in-the-darkness">Chapter 8 — Red Wolf Moon (November): "The Flame in the Darkness"</h3>
+<ul>
+<li><strong>Mission:</strong> <em>The Remire Calamity</em> (defeat <strong>Solon</strong>). <strong>Deadline 11/25.</strong></li>
+<li><strong>Weekends (4): 11/2, 11/9, 11/16, 11/23.</strong> Plan: <strong>Explore → Battle → Explore → Battle.</strong></li>
+<li><strong>Saint Statues UNLOCK</strong> this month. Spend Renown: grab <strong>EXP +5%</strong> on a couple of statues first, then keep banking for <strong>EXP +10%</strong> and stat-cap tiers.</li>
+<li><strong>Paralogue window OPENS:</strong> <strong>True Chivalry (Felix → Aegis Shield)</strong> Ch8→Ch11. Clear when convenient.</li>
+<li><strong>Instruction focus:</strong> keep advancing; start certifying anyone ready into <strong>advanced classes</strong> (Sniper, Warlock, Priest, Paladin).</li>
+</ul>
+<h3 id="chapter-9-ethereal-moon-december-the-cause-of-sorrow">Chapter 9 — Ethereal Moon (December): "The Cause of Sorrow"</h3>
+<ul>
+<li><strong>Mission:</strong> <em>Salvation at the Chapel</em> (rout). <strong>Deadline 12/26.</strong></li>
+<li><strong>Weekends (3): 12/7, 12/14, 12/21.</strong> Plan: <strong>Explore (prep for Cup) → Battle → Explore (Ball).</strong></li>
+<li><strong>★ White Heron Cup (12/16):</strong> a <strong>dance contest</strong> — <strong>enter Dorothea</strong> (highest Charm) and win to certify her as <strong>Dancer</strong> for free (a major support unit — extra turn for an ally). Build her Charm with meals/tea beforehand.</li>
+<li><strong>★ Establishment Day Ball (12/25):</strong> story event; raises support with whoever you dance/spend time with (set up your S-support partner — <strong>Dimitri</strong> for Run 1).</li>
+<li><strong>Story:</strong> <strong>Jeralt is killed</strong> near the end of the chapter — unavoidable.</li>
+<li><strong>Paralogue windows OPEN:</strong> <strong>An Ocean View (Seteth &amp; Flayn → Spear of Assal)</strong> Ch9→Ch11 (only if you recruited both — likely skip on a Blue Lions diversity run); <strong>Falling Short of Heaven (Ashe OR Catherine → Critical Ring, Shoes of the Wind)</strong> Ch9→Ch11 — <strong>worth doing</strong> (Critical Ring is great on Felix). Clear it now or in Ch11.</li>
+</ul>
+<h3 id="chapter-10-guardian-moon-january-where-the-goddess-dwells">Chapter 10 — Guardian Moon (January): "Where the Goddess Dwells"</h3>
+<ul>
+<li><strong>Mission:</strong> <em>The Sealed Forest Snare</em> (defeat <strong>Solon</strong>; avenge Jeralt). <strong>Deadline 1/31.</strong></li>
+<li><strong>Weekends (4): 1/4, 1/11, 1/18, 1/25.</strong> Plan: <strong>Explore → Battle → Explore → Explore.</strong></li>
+<li><strong>Story:</strong> Byleth gains <strong>Sothis's power</strong> (Sword of the Creator / Divine Pulse boost). Use Rest if the Sword of the Creator needs repair.</li>
+<li><strong>Instruction focus:</strong> final push of advanced ranks — you want everyone in a strong advanced class by the timeskip. Byleth toward the <strong>Enlightened One</strong> track.</li>
+<li><strong>Paralogues:</strong> finish off any of the Ch6–Ch11 windows you haven't cleared (see Chapter 11 — <strong>last chance is next month</strong>).</li>
+</ul>
+<h3 id="chapter-11-pegasus-moon-february-throne-of-knowledge-last-pre-timeskip-exploration">Chapter 11 — Pegasus Moon (February): "Throne of Knowledge"  ★ LAST PRE-TIMESKIP EXPLORATION ★</h3>
+<ul>
+<li><strong>Mission:</strong> <em>Conflict in the Holy Tomb</em> (defeat the <strong>Flame Emperor</strong>). <strong>Deadline 2/29.</strong></li>
+<li><strong>Weekends (3): 2/8, 2/15, 2/22.</strong> Plan: <strong>clear ALL remaining Part 1 paralogues on Battle weekends, Explore the rest.</strong></li>
+<li><strong>★★ CRITICAL — clear all these paralogues NOW (they vanish at the timeskip):</strong></li>
+<li><strong>War for the Weak (Dedue)</strong> — <strong>if you do nothing else, do this.</strong> Required so <strong>Dedue survives and returns in Chapter 16.</strong> Miss it → Dedue is gone forever.</li>
+<li><strong>The Forgotten (Sylvain)</strong> → <strong>Lance of Ruin</strong> (Hero's Relic).</li>
+<li><strong>Falling Short of Heaven (Ashe/Catherine)</strong> → <strong>Critical Ring</strong>, Shoes of the Wind.</li>
+<li><strong>True Chivalry (Felix)</strong> → <strong>Aegis Shield.</strong></li>
+<li><strong>Rumored Nuptials (Dorothea/Ingrid)</strong> → <strong>Lúin.</strong></li>
+<li>(Optional, only if recruited those units: An Ocean View / Land of the Golden Deer.)</li>
+<li><strong>Story:</strong> the <strong>Holy Tomb</strong> — the <strong>Flame Emperor is revealed as Edelgard.</strong> The route locks to <strong>Azure Moon</strong> as a Blue Lions student.</li>
+<li><strong>Last call:</strong> finish all support/S-support groundwork (Dimitri), all shopping/forging, all certifications you want before the 5-year gap.</li>
+</ul>
+<h3 id="chapter-12-lone-moon-march-to-war-route-finale">Chapter 12 — Lone Moon (March): "To War" (route finale)</h3>
+<ul>
+<li><strong>Mission:</strong> the <strong>Battle of Garreg Mach</strong> (route-specific). <strong>Battle-only — no exploration.</strong> <strong>[UNVERIFIED exact deadline/free-day count — route-dependent.]</strong></li>
+<li>War begins; the <strong>5-year timeskip</strong> follows and you enter <strong>Azure Moon (Part 2).</strong></li>
+<li><strong>Dedue leaves</strong> at the end of this chapter (returns Ch16 only if War for the Weak was done).</li>
+</ul>
+<hr>
+<h2 id="part-2-azure-moon-post-timeskip-condensed-chapter-by-chapter-checklist">PART 2 — Azure Moon (post-timeskip), condensed chapter-by-chapter checklist</h2>
+<blockquote>
+<p>Total Azure Moon = <strong>22 chapters</strong> (Ch1–12 Part 1 + Ch13–22 Part 2). Final boss = <strong>Edelgard</strong> (transformed form). The Immaculate One / Rhea is <strong>not</strong> the AM final boss.
+<strong>Standard student recruitment is CLOSED in Part 2</strong> — your roster is locked except story joins (Gilbert, Dedue). Several chapters still have <strong>full monastery exploration</strong> (train, shop, do paralogues, build S-support).</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Ch</th>
+<th>Title / Month</th>
+<th>Boss &amp; objective</th>
+<th>Explore?</th>
+<th>Do this chapter</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>13</strong></td>
+<td>Reunion at Dawn / Ethereal Moon 1185</td>
+<td>Defeat <strong>Pallardó</strong></td>
+<td><strong>No</strong> (battle-only)</td>
+<td>Reunite with Dimitri. <strong>Gilbert auto-joins.</strong> Just win.</td>
+</tr>
+<tr>
+<td><strong>14</strong></td>
+<td>The Delusional Prince / Guardian Moon</td>
+<td>Rout, then defeat <strong>Randolph</strong></td>
+<td><strong>Yes</strong> (1/4,1/11,1/18,1/25)</td>
+<td>First big Part-2 training month — rebuild the army. <strong>Weathervanes of Fódlan OPENS</strong> (Annette+Gilbert; needs their C-support).</td>
+</tr>
+<tr>
+<td><strong>15</strong></td>
+<td>Valley of Torment / Pegasus Moon</td>
+<td>Defeat <strong>Gwendal</strong> (lava map)</td>
+<td><strong>Yes</strong> (2/8,2/15,2/22)</td>
+<td><strong>The Face Beneath OPENS</strong> (Mercedes+Caspar — only if Caspar was recruited pre-timeskip). <strong>Forgotten Hero OPENS</strong> (Marianne, if recruited).</td>
+</tr>
+<tr>
+<td><strong>16</strong></td>
+<td>The Rose-Colored River / Lone Moon</td>
+<td>Defeat all commanders (Great Bridge)</td>
+<td><strong>Yes</strong> (3/8,3/15,3/22,3/29)</td>
+<td><strong>DEDUE RETURNS</strong> mid-battle — only if <em>War for the Weak</em> was cleared in Part 1.</td>
+</tr>
+<tr>
+<td><strong>17</strong></td>
+<td>Blood of the Eagle and Lion / Great Tree Moon</td>
+<td>Defeat all commanders (<strong>Gronder</strong> rd 2)</td>
+<td><strong>Yes</strong> (4/5,4/12,4/19,4/26)</td>
+<td>Three-army battle; you may face old classmates. Rodrigue dies after.</td>
+</tr>
+<tr>
+<td><strong>18</strong></td>
+<td>The King's Triumphant Return / Harpstring Moon</td>
+<td>Defeat <strong>Cornelia</strong> (Fhirdiad)</td>
+<td><strong>Yes</strong> (from 5/24)</td>
+<td>Dimitri recovers. <strong>★ Weathervanes of Fódlan CLOSES after this — last chance for Crusher.</strong></td>
+</tr>
+<tr>
+<td><strong>19</strong></td>
+<td>The Golden Deer's Plea / Garland Moon</td>
+<td>Defeat <strong>Lord Arundel/Thales</strong>; keep <strong>Claude</strong> alive</td>
+<td><strong>Yes</strong> (6/14,6/21,6/28)</td>
+<td><strong>★ The Face Beneath CLOSES after this — last chance for Scythe of Sariel / Rafail Gem.</strong></td>
+</tr>
+<tr>
+<td><strong>20</strong></td>
+<td>The Impregnable Fortress / Blue Sea Moon</td>
+<td>Defeat the <strong>Death Knight</strong> (Fort Merceus)</td>
+<td><strong>Yes</strong> (7/5,7/12,7/19,7/26)</td>
+<td>Death Knight can drop good loot.</td>
+</tr>
+<tr>
+<td><strong>21</strong></td>
+<td>Our Chosen Paths / Verdant Rain Moon</td>
+<td>Defeat <strong>Hubert</strong> (Enbarr)</td>
+<td><strong>Yes</strong> (8/2,8/9,8/16,8/23)</td>
+<td><strong>★ LAST EXPLORATION MONTH.</strong> Finish <strong>Forgotten Hero</strong> (closes after this), all shopping/forging, final supports &amp; <strong>S-support (Dimitri)</strong>.</td>
+</tr>
+<tr>
+<td><strong>22</strong></td>
+<td>Oath of the Dagger (FINAL) / Verdant Rain Moon</td>
+<td>Defeat <strong>Edelgard</strong> (final boss)</td>
+<td><strong>No</strong> (battle-only)</td>
+<td>Bring your best team + consumables. Dimitri + Byleth vs. Edelgard.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Part 2 paralogue deadlines (Azure Moon):</strong>
+- <strong>Weathervanes of Fódlan</strong> (Annette+Gilbert → <strong>Crusher</strong>): <strong>Ch14–18.</strong> Needs Annette↔Gilbert C-support — build it on the Ch14–16 explore days.
+- <strong>The Face Beneath</strong> (Mercedes+Caspar → <strong>Scythe of Sariel</strong> / Rafail Gem): <strong>Ch15–19.</strong> Requires Caspar recruited <strong>before</strong> the timeskip — for a Blue Lions diversity run you likely don't have him, so this may be N/A.
+- <strong>Forgotten Hero</strong> (Marianne → <strong>Blutgang</strong>): <strong>Ch15–21.</strong> Only if Marianne was recruited — likely N/A on this run.</p>
+<p><strong>Part-2 general routine (explore chapters 14, 15, 16, 17, 18, 19, 20, 21):</strong>
+1. Same 0-AP free actions first (fish, garden, lost items, talk).
+2. Cook a monthly buff meal early.
+3. Keep tutoring toward <strong>master classes</strong> (you have the ranks now): Felix → <strong>Swordmaster</strong>; Dimitri → <strong>Great Lord</strong> (unique, automatic via story); Dedue → <strong>Great Knight/Fortress</strong>; Ingrid → <strong>Falcon Knight</strong>; Mercedes → <strong>Bishop</strong>; Annette → <strong>Gremory</strong> (Reason A / Faith A); Ashe → <strong>Bow Knight</strong>; Sylvain → <strong>Paladin/Wyvern Lord</strong>; Byleth → <strong>Enlightened One</strong>.
+4. Spend Renown at Saint Statues (EXP% + stat-cap tiers).
+5. Forge your relics (Lance of Ruin on Sylvain, etc.) with Wootz Steel from battles.
+6. Build the <strong>Dimitri S-support</strong> by Chapter 21 (last explore month).</p>
+<hr>
+<h2 id="golden-rules-quick-reference-do-these-every-week">Golden rules — quick reference (do these EVERY week)</h2>
+<ol>
+<li><strong>Default to Explore.</strong> Battle only for paralogues / underleveled units / gold; Seminar to rush certifications; Rest only when motivation is dead.</li>
+<li><strong>First weekend of every month = Explore</strong> (the monastery refreshes).</li>
+<li><strong>Every explore day, do the free 0-AP actions first:</strong> garden (Plant→Cultivate→Harvest), fish, return lost items, talk to/greet students.</li>
+<li><strong>Cook one buff meal early each month</strong> (party-wide combat bonus for that month's battles).</li>
+<li><strong>Keep motivation topped up before each lecture day</strong> (meals/choir/tea) so you can tutor each student 4×.</li>
+<li><strong>Climb professor level relentlessly</strong> — tournaments + choir + fishing. More level = more AP, battles, instruction, adjutants, gold.</li>
+<li><strong>Set Goals at each unit's class skills</strong>; accept every <strong>Group Task</strong> (free skill XP + support).</li>
+<li><strong>Clear time-limited paralogues before they expire.</strong> Part 1 ones all die at the timeskip (do them by <strong>Chapter 11</strong>).</li>
+<li><strong>★ Never skip "War for the Weak" (Dedue) — clear it by Chapter 11 or lose Dedue forever.</strong></li>
+<li><strong>Chapter 9: win the White Heron Cup with Dorothea</strong> → free Dancer. <strong>Chapter 11 and Chapter 21</strong> are your "last exploration" deadlines (pre- and post-timeskip) — finish all shopping/supports/paralogues then.</li>
+<li><strong>Recruit Dorothea early</strong> (Charm 25 / Authority B; lower the bar with support via gifts + lost items + tea) — she fixes the Blue Lions' weak magic and becomes your Dancer.</li>
+<li><strong>Spend Renown at the Saint Statues from Month 8</strong> — EXP% tiers first, then stat-cap tiers.</li>
+</ol>
+<hr>
+<h3 id="verified-fact-notes-flags">Verified-fact notes &amp; flags</h3>
+<ul>
+<li>All <strong>mission names, in-game months and last-weekend deadlines</strong> for Part 1 (Ch1–11) and Part 2 (Ch13–22) are cross-checked (fe3h.com + Game8/GameWith + fedatamine + Fire Emblem Wiki).</li>
+<li><strong>[UNVERIFIED]:</strong> Chapter 12 "Lone Moon" exact deadline / free-day count (route-dependent; data-mine page 404). Battle Points at exactly rank <strong>C</strong> (1 vs 2 between sources; agreed 2 from C+, 3 at A+). Ch16/Ch17 use "defeat all commanders" rather than a single named boss. Edelgard's "Hegemon" final-form label is community terminology. The "Rested buff/free meal" and "Advanced Wootz Steel" do <strong>not</strong> appear to exist in the base game.</li>
+<li><strong>War for the Weak deadline:</strong> sources agree the window is Ch6→Ch11; Game8 loosely lists 2/22, but Chapter 12 has no exploration, so the safe hard deadline is <strong>during Chapter 11.</strong></li>
+</ul>
+<p><em>Sources: Serenes Forest, fe3h.com (Triangle Attack), Game8, GameWith, fedatamine.com, Fire Emblem Wiki/Fandom, RPG Site. Roster &amp; recruitment thresholds from /character/blue-lions/ and /suggestions/team.md. Cached extracts in /sources/.</em></p></article>
+</div></body></html>

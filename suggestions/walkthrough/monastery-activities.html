@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Monastery Daily Activities — General Mechanics Reference (route-agnostic)</title>
+<style>
+:root{--fg:#1c1e26;--muted:#6b7280;--bg:#fbfbfd;--card:#fff;--accent:#3b5bdb;--border:#e5e7eb;--code:#f3f4f6}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei",sans-serif}
+.wrap{max-width:920px;margin:0 auto;padding:0 20px 80px}
+nav.top{position:sticky;top:0;background:rgba(251,251,253,.92);backdrop-filter:blur(6px);padding:12px 0;border-bottom:1px solid var(--border);margin-bottom:28px;font-size:14px}
+nav.top a{color:var(--accent);text-decoration:none;margin-right:14px}
+article{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:28px 34px}
+h1{font-size:1.7rem;line-height:1.25;margin:.2em 0 .6em;border-bottom:2px solid var(--border);padding-bottom:.3em}
+h2{font-size:1.32rem;margin:1.6em 0 .5em;border-bottom:1px solid var(--border);padding-bottom:.2em}
+h3{font-size:1.1rem;margin:1.3em 0 .4em}
+a{color:var(--accent)}
+table{border-collapse:collapse;width:100%;margin:1em 0;font-size:.94rem;display:block;overflow-x:auto}
+th,td{border:1px solid var(--border);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:var(--code)}
+tr:nth-child(even) td{background:#fafafa}
+code{background:var(--code);padding:.12em .4em;border-radius:5px;font-size:.88em;font-family:"SF Mono",Menlo,Consolas,monospace}
+pre{background:var(--code);padding:14px 16px;border-radius:10px;overflow-x:auto}
+pre code{background:none;padding:0}
+blockquote{margin:1em 0;padding:.3em 1em;border-left:4px solid var(--accent);background:#f6f8ff;color:#374151}
+ul.index{list-style:none;padding:0}
+ul.index li{margin:0;border-bottom:1px solid var(--border)}
+ul.index li a{display:block;padding:11px 8px;text-decoration:none}
+ul.index li a:hover{background:var(--code)}
+.dir::before{content:"\1F4C1  "}
+.doc::before{content:"\1F4C4  "}
+.lead{color:var(--muted)}
+</style></head>
+<body><div class="wrap">
+<nav class="top"><a href="../../index.html">⌂ Home</a> <a href="../../facts/index.html">facts</a> <a href="../../suggestions/index.html">suggestions</a></nav>
+<article><h1 id="monastery-daily-activities-general-mechanics-reference-route-agnostic">Monastery Daily Activities — General Mechanics Reference (route-agnostic)</h1>
+<blockquote>
+<p><strong>Scope.</strong> This is the <strong>general, route-agnostic</strong> reference for the Garreg Mach monastery daily/weekly systems:
+what each activity does, when to pick it, and how to spend Activity Points well. It is built from the <strong>GamerSky
+(游民星空) Simplified-Chinese walkthrough</strong> (translated to English) cross-checked against this project's existing notes.</p>
+<p><strong>It deliberately does NOT repeat the route-specific plans.</strong> For a concrete week-by-week plan use the Blue Lions files:
+- <a href="blue-lions-day-by-day.html"><code>blue-lions-day-by-day.md</code></a> — calendar, mission/paralogue deadlines, the Professor-Level table, and the Explore/Battle/Seminar/Rest budget for Run 1.
+- <a href="blue-lions-activity-schedule.html"><code>blue-lions-activity-schedule.md</code></a> — who to tutor in which skill each week and which weekend activity hits that roster's certifications/recruits.</p>
+<p>Those stay route-specific. <strong>This file is the mechanics layer they sit on top of.</strong></p>
+<p><strong>Facts policy.</strong> Confirmed mechanics only. GamerSky-sourced numbers are tagged where they originate; anything not fully
+confirmed is marked ⚠️/<strong>verify</strong>. Sources cached in <code>/sources/gamersky/monastery-daily-activities.md</code>.</p>
+</blockquote>
+<hr>
+<h2 id="1-the-weekly-day-type-choice-explore-battle-seminar-rest">1. The weekly day-type choice: Explore / Battle / Seminar / Rest</h2>
+<p>Each free day (typically the weekend; the rest of the week is mostly fixed Instruction/story days) you pick <strong>exactly one</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Day-type</th>
+<th>What it does</th>
+<th>Pick it when…</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Exploration (散步)</strong></td>
+<td>Roam the monastery and spend <strong>Activity Points</strong> on meals, choir, tea, fishing, gardening, faculty training, the tournament, sparring, shop/forge, returning lost items, quests, talking to people. Highest support / Professor-EXP / motivation / item yield.</td>
+<td><strong>Default.</strong> Especially the <strong>first free day of a new month</strong> — the monastery refreshes with new quests, glowing items, and dialogue.</td>
+</tr>
+<tr>
+<td><strong>Battle (出击)</strong></td>
+<td>Fight an auxiliary skirmish and/or an available <strong>Paralogue</strong>. Gives XP, gold, skill XP, items. <strong>Gives no motivation.</strong></td>
+<td>A paralogue is open, units are underleveled, or you need gold/skill XP. Often best on the <strong>last free day</strong> of the month after instruction is done.</td>
+</tr>
+<tr>
+<td><strong>Seminar (讲习/研讨)</strong></td>
+<td>Byleth + several students whose goals match the focus gain a big block of <strong>skill XP</strong> and motivation, with little micromanagement.</td>
+<td>Rushing several units toward a <strong>certification / master class</strong> without spending an explore day.</td>
+</tr>
+<tr>
+<td><strong>Rest (修养)</strong></td>
+<td>Restores <strong>Motivation</strong> broadly to your students (and repairs the Sword of the Creator). No meals/items.</td>
+<td>Motivation is dead across the board and you have nothing urgent. Lowest priority.</td>
+</tr>
+</tbody>
+</table>
+<p>Default priority: <strong>Explore &gt; Battle &gt; Seminar &gt; Rest.</strong></p>
+<hr>
+<h2 id="2-activity-points">2. Activity Points (行动点数)</h2>
+<ul>
+<li>You get a fixed number of points per <strong>Exploration</strong> day, scaling with <strong>Professor Level</strong> (see §3). They are spent only on the "hourglass-icon" activities (meals, choir, tea, tournament, sparring, some quests).</li>
+<li><strong>Free actions</strong> (no points): walking, talking, picking up glowing items, <strong>returning lost items</strong>, <strong>fishing</strong>, <strong>gardening</strong>, shopping/forging, the Advice Box.</li>
+<li>Running out of points doesn't end the stroll — you just can't do more point-cost activities. <strong>Spend every point each Explore day</strong>; never end a day with points unused.</li>
+</ul>
+<hr>
+<h2 id="3-professor-instruction-level-the-master-multiplier">3. Professor / Instruction Level (指导等级) — the master multiplier</h2>
+<p>Raising Professor Level is the single highest-leverage thing you do, because it controls:
+- <strong>Activity Points</strong> per Explore day,
+- the number of <strong>Adjutants (副官)</strong> you can assign, and
+- <strong>Shop inventory</strong> (better goods unlock at higher levels).</p>
+<p>Ranks run <strong>E → A+</strong>. Per GamerSky, <strong>A+ requires 44,500 total EXP</strong>. (For the exact per-level AP/Battle-Pt/Instruct-Pt/Funds/Adjutant table this project uses, see day-by-day §0.2 — not repeated here.)</p>
+<h3 id="what-raises-professor-level-fastest-gamersky-exp-figures">What raises Professor Level fastest (GamerSky EXP figures)</h3>
+<table>
+<thead>
+<tr>
+<th>Activity</th>
+<th>Professor EXP</th>
+<th>Cost</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Combat Tournament (武斗大会)</strong></td>
+<td><strong>300</strong> win / <strong>100</strong> loss-or-withdraw</td>
+<td>1 AP</td>
+<td>Best EXP-per-point; needs no motivation.</td>
+</tr>
+<tr>
+<td><strong>Lecture monthly question (授课提问)</strong></td>
+<td><strong>300–1200</strong> by answer quality</td>
+<td>free (1×/month)</td>
+<td>Also boosts the asking student's motivation (see §5).</td>
+</tr>
+<tr>
+<td><strong>Dining / shared meal (用餐)</strong></td>
+<td>up to <strong>200</strong></td>
+<td>1 AP</td>
+<td>Also support + motivation.</td>
+</tr>
+<tr>
+<td><strong>Choir practice (合唱)</strong></td>
+<td><strong>50–200</strong></td>
+<td>1 AP</td>
+<td>Also support + faith EXP.</td>
+</tr>
+<tr>
+<td><strong>Cooking (烹饪)</strong></td>
+<td><strong>25–100</strong></td>
+<td>1 AP</td>
+<td>Chance of a temporary day-of-battle stat buff.</td>
+</tr>
+<tr>
+<td><strong>Fishing (钓鱼)</strong></td>
+<td><strong>10–30 per catch</strong>, scales with fish star rating</td>
+<td><strong>0 AP</strong></td>
+<td>Effectively unlimited while you have bait — free passive EXP.</td>
+</tr>
+<tr>
+<td><strong>Gardening (园艺)</strong></td>
+<td><strong>100–500 on harvest</strong>, scales with seed quality</td>
+<td><strong>0 AP</strong></td>
+<td>Free passive EXP every visit.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Fast-leveling rule of thumb:</strong> answer the monthly question well, do the <strong>tournament</strong> when AP is scarce, and treat <strong>fishing + gardening</strong> as free EXP you collect on every single Explore day.</p>
+<hr>
+<h2 id="4-instruction-tutoring">4. Instruction / tutoring (讲习)</h2>
+<ul>
+<li>Spend <strong>Instruct Points</strong> to drill individual students' weapon/magic skills. A <strong>Great/Perfect</strong> result lets you Praise (refunds motivation), so chase those on priority units.</li>
+<li><strong>Motivation (干劲):</strong> each tutoring session costs the student motivation; higher motivation = more sessions allowed. Refill via meals, choir, tea, gifts, good lecture answers, and Rest days.</li>
+<li><strong>Group Tasks (团队任务):</strong> weekly co-op assignment pairing two students → resources + skill XP + <strong>mutual support</strong> between the pair. Always accept them (free support/XP).</li>
+<li><strong>Goals / self-study:</strong> set each student's goal at their target-class skills; they self-study toward it. Change goals as plans change.</li>
+<li><strong>Adjutants (副官):</strong> unlocked by Professor Level; a back-row unit attached to a front-line unit for extra attacks/support and steady support growth.</li>
+</ul>
+<hr>
+<h2 id="5-lecture-question-system">5. Lecture question system (授课提问)</h2>
+<p>The <strong>first class of each month</strong>, one student asks a 3-option question.
+- <strong>Best answer:</strong> +50 Motivation (~2 bars) and up to <strong>1200</strong> Professor EXP.
+- <strong>Neutral:</strong> +25 Motivation (1 bar), up to <strong>1000</strong> EXP.
+- <strong>Poor:</strong> +0 Motivation, up to ~1000 EXP (occasionally still nudges motivation).</p>
+<p>Per-character correct answers differ between Part 1 and Part 2. (Answer tables are out of scope here — see the per-character question guides.)</p>
+<hr>
+<h2 id="6-faculty-training-raising-byleths-own-skills">6. Faculty Training (教官训练) — raising <strong>Byleth's own</strong> skills</h2>
+<ul>
+<li>A point-cost Explore activity (unlocks around Ch.3 ⚠️ verify per route): Byleth trains a chosen skill, including <strong>off-type</strong> skills (e.g. pushing Reason for a Mortal Savant build). This is the main way to grow <strong>Byleth's</strong> ranks, since Byleth doesn't take lectures. The route schedules lean on this for off-type rank gates.</li>
+</ul>
+<h2 id="7-seminars">7. Seminars (讲习/研讨)</h2>
+<ul>
+<li>A <strong>weekend day-type</strong> (§1) where Byleth + several matching students gain a large block of skill XP. Use it to rush multiple units toward a certification at once.</li>
+</ul>
+<hr>
+<h2 id="8-meals-shared-dining">8. Meals / shared dining (食堂)</h2>
+<ul>
+<li>Invite <strong>2 characters</strong> → raises <strong>support</strong> among diners + <strong>Motivation</strong>; serving a <strong>liked dish</strong> gives a bigger boost. 1 AP; also gives Professor EXP.</li>
+<li>Best practice: invite two characters who already share a support chain to push it forward, and pick a dish both like.</li>
+</ul>
+<h2 id="9-choir-practice">9. Choir practice (大教堂)</h2>
+<ul>
+<li>Pick 2 participants → <strong>support + Motivation</strong> for both, <strong>faith EXP</strong>, and Professor EXP. 1 AP. Great for faith-track units.</li>
+</ul>
+<h2 id="10-tea-party-mechanics">10. Tea Party (茶会) — mechanics</h2>
+<ul>
+<li>1 AP; <strong>free and always-accepted on the guest's birthday</strong> (non-birthday guests may decline). Eligible: own-house students, or other-house students at <strong>C-support+</strong>.</li>
+<li>Pick a tea first. Any tea works, but a <strong>favored tea</strong> smooths it. Universal teas (liked by everyone): <strong>Hresvelg Blend</strong> and <strong>Leicester Cortania</strong>.</li>
+<li>3 topic rounds (15s, 3 options each; ≥1 is liked). Correct → support up; wrong → <strong>no penalty</strong>.</li>
+<li>Standard tea: need <strong>3</strong> correct to unlock the final round. <strong>Favored tea: only 2 needed.</strong></li>
+<li>Final round → <strong>Free Time</strong>: observe the guest (look at head/body for a reaction) or give a gift. Completing it = big support gain <strong>+1 Charm to both</strong> participants. (For per-character topics see <a href="../../facts/conversation.html"><code>../../conversation.md</code></a> §4.)</li>
+</ul>
+<hr>
+<h2 id="11-fishing">11. Fishing (钓鱼)</h2>
+<ul>
+<li>Needs <strong>bait</strong>; <strong>0 AP</strong>, unlimited casts. Yields gold, food ingredients, and Professor EXP scaling with fish star rating. <strong>Event/"magic-fluctuation" days</strong> spawn much better fish/gold — fish hard on those days. The fishing-pond Saint-statue upgrade improves catches.</li>
+</ul>
+<h2 id="12-gardening-cultivation">12. Gardening / cultivation (园艺)</h2>
+<ul>
+<li>Plant seeds in the greenhouse; <strong>0 AP</strong>, harvest gives Professor EXP (100–500 by seed quality). Cultivation produces <strong>stat-booster items, flowers (gifts), and rare seeds</strong>. Better seeds + good combos → better yields (including stat boosters). Harvest every visit.</li>
+</ul>
+<h2 id="13-returning-lost-items">13. Returning Lost Items (失物)</h2>
+<ul>
+<li>Glowing items found while exploring; <strong>0 AP</strong>. Return each to its <strong>correct owner</strong> → <strong>support up</strong>. Each character has 3 lost items (Byleth has 1 tutorial item; one character has none). Wrong owner = no effect. (Owner table: GamerSky lost-items guide, cached.)</li>
+</ul>
+<h2 id="14-gifts">14. Gifts (送礼)</h2>
+<ul>
+<li>Give a <strong>liked gift</strong> (or a special gift like feathers) → larger support/affection than a generic one. For non-house students this raises <strong>recruitment favor</strong>; for your own it raises <strong>support</strong>. Sources: glowing explore items, 2 marketplace merchants, bulletin-board rewards, and gardening flowers.</li>
+</ul>
+<h2 id="15-advice-box-counseling">15. Advice Box / counseling (信件 / 建议箱)</h2>
+<ul>
+<li>Read students' letters/worries with the advisor and pick the helpful reply → <strong>support up</strong> and resolves the concern. Free.</li>
+</ul>
+<h2 id="16-quests-requests">16. Quests / Requests (任务 / 布告栏)</h2>
+<ul>
+<li><strong>Bulletin boards</strong> in each monastery area list weekly quests/announcements and fast-travel to quest NPCs. Rewards: gold, <strong>Renown</strong>, gifts, items, recipes. Clear them every Explore day. (Completing the <strong>three starter tasks</strong> in Month 4 grants a full <strong>+1 Professor Level</strong>.)</li>
+</ul>
+<h2 id="17-sauna-dlc-expansion-pass">17. Sauna (DLC — Expansion Pass)</h2>
+<ul>
+<li>⚠️ <strong>Not documented in the GamerSky pages crawled for this file.</strong> The Abyss sauna (Cindered Shadows / Expansion Pass) lets you bathe with a guest for a support boost and a temporary stat/Charm-style buff. Treat specifics as <strong>verify</strong> against a DLC-specific source.</li>
+</ul>
+<hr>
+<h2 id="18-renown-saint-statues">18. Renown / Saint Statues (名声 / 圣人像)</h2>
+<ul>
+<li><strong>Renown</strong> is earned from battles, quests, and exploration. Spend it at the cathedral's <strong>Saint Statues</strong> to unlock <strong>permanent buffs</strong> (more EXP/support/gold, better fishing/gardening, extra adjutant slots, etc.) and to recover lost units/stats.</li>
+<li><strong>Priority:</strong> invest early — the EXP/support/gold multipliers compound over the whole run.</li>
+</ul>
+<h2 id="19-shop-forge-smithing">19. Shop / Forge / Smithing (商店 / 锻造)</h2>
+<ul>
+<li>Marketplace merchants' stock grows with <strong>Professor Level</strong>. The <strong>Smithy/Forge</strong> upgrades weapons and repairs durability using <strong>Smithing Stones (锻造石)</strong>. Saint-statue upgrades improve shop/forge offerings — another reason to bank Renown early.</li>
+</ul>
+<h2 id="20-stat-booster-priorities-general">20. Stat-booster priorities (general)</h2>
+<ul>
+<li>Stat boosters come from <strong>gardening combos</strong>, certain quests/bulletin rewards, and chests. Pour them into your <strong>carry units</strong> and into stats their class can't grow well (e.g. boosters that fix a unit's worst stat for its intended class). ⚠️ Exact best-recipe/best-target lists are route- and roster-specific — see the route activity schedule rather than this general file.</li>
+</ul>
+<hr>
+<h2 id="21-daily-weekly-optimal-routine-priority-order">21. Daily / weekly optimal routine (priority order)</h2>
+<p>A general loop for any house (the route files specialize it):</p>
+<p><strong>Each Exploration day:</strong>
+1. <strong>Pick up everything</strong> (glowing items) and <strong>return all lost items</strong> you can match (free support).
+2. <strong>Fish</strong> through your bait and <strong>harvest/replant the greenhouse</strong> (free Professor EXP + ingredients + stat boosters/gifts).
+3. <strong>Clear bulletin-board quests</strong> (gold, Renown, items).
+4. Spend AP, highest value first: <strong>Tournament</strong> (Professor EXP) → <strong>Meal</strong> with a support pair → <strong>Choir</strong> with a faith pair → <strong>Tea Party</strong> with a priority/birthday character.
+5. <strong>Read the Advice Box</strong> and <strong>give a liked gift</strong> to a recruit target / S-support target (free).
+6. Bank <strong>Renown → Saint Statue</strong> upgrades early; visit <strong>Forge</strong> to repair/upgrade key weapons.</p>
+<p><strong>Each week / month:</strong>
+- Answer the <strong>monthly lecture question</strong> well (big motivation + Professor EXP).
+- Spend <strong>Instruct Points</strong> on priority units; accept <strong>every Group Task</strong>.
+- Use <strong>Faculty Training</strong> to push <strong>Byleth's</strong> off-type skills toward a class gate.
+- Switch the weekend to <strong>Battle</strong> when a <strong>paralogue</strong> is open or units are underleveled; <strong>Seminar</strong> to rush a certification; <strong>Rest</strong> only when motivation is broadly dead.</p>
+<blockquote>
+<p>For the concrete who/when version of this loop on Azure Moon, follow <a href="blue-lions-activity-schedule.html"><code>blue-lions-activity-schedule.md</code></a> and <a href="blue-lions-day-by-day.html"><code>blue-lions-day-by-day.md</code></a>.</p>
+</blockquote></article>
+</div></body></html>
