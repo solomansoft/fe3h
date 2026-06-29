@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Anna / 安娜 — Build Menu (V2)</title>
+<style>
+:root{--fg:#1c1e26;--muted:#6b7280;--bg:#fbfbfd;--card:#fff;--accent:#3b5bdb;--border:#e5e7eb;--code:#f3f4f6;--good:#067647;--bad:#b42318}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei",sans-serif}
+.wrap{max-width:920px;margin:0 auto;padding:0 20px 80px}
+nav.top{position:sticky;top:0;background:rgba(251,251,253,.92);backdrop-filter:blur(6px);padding:12px 0;border-bottom:1px solid var(--border);margin-bottom:28px;font-size:14px}
+nav.top a{color:var(--accent);text-decoration:none;margin-right:14px}
+article{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:28px 34px}
+h1{font-size:1.7rem;line-height:1.25;margin:.2em 0 .6em;border-bottom:2px solid var(--border);padding-bottom:.3em}
+h2{font-size:1.32rem;margin:1.6em 0 .5em;border-bottom:1px solid var(--border);padding-bottom:.2em}
+h3{font-size:1.1rem;margin:1.3em 0 .4em}
+a{color:var(--accent)}
+table{border-collapse:collapse;width:100%;margin:1em 0;font-size:.94rem;display:block;overflow-x:auto}
+th,td{border:1px solid var(--border);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:var(--code)}
+tr:nth-child(even) td{background:#fafafa}
+code{background:var(--code);padding:.12em .4em;border-radius:5px;font-size:.88em;font-family:"SF Mono",Menlo,Consolas,monospace}
+blockquote{margin:1em 0;padding:.3em 1em;border-left:4px solid var(--accent);background:#f6f8ff;color:#374151}
+.build{border:1px solid var(--border);border-radius:10px;padding:4px 18px 14px;margin:1.1em 0;background:#fff}
+.build h2{border:none;margin-top:.7em}
+.pros li{color:var(--good)} .cons li{color:var(--bad)}
+.pros,.pros *{list-style:none} .tag{display:inline-block;font-size:.74rem;font-weight:600;padding:1px 8px;border-radius:20px;background:var(--code);color:var(--muted);margin-left:6px;vertical-align:middle}
+.boon{color:var(--good);font-weight:600}.bane{color:var(--bad);font-weight:600}.neutral{color:var(--muted)}
+.lead{color:var(--muted)}
+</style></head>
+<body><div class="wrap">
+<nav class="top"><a href="../../../index.html">⌂ Home</a> <a href="../../../suggestions/index.html">suggestions</a> <a href="../../routesV2/index.html">routesV2</a></nav>
+<article>
+<h1 id="anna">Anna / 安娜 — Build Menu <span class="tag">V2</span> <span class="tag">🧩 DLC</span></h1>
+<blockquote><p><strong>Special recruit (Wave 3 DLC / Expansion Pass).</strong> Recruitable into any house/route as early as Ch.3, no requirements. High Luck (personal <strong>Business Prosperity</strong> = +5 Lck) and high Speed (55%), but mediocre Str (35%). <strong>Anna CANNOT build supports with anyone</strong> — plan her as a self-sufficient combat unit, not a pair-up / Linked-Attack piece.<br>
+<strong>Proficiencies:</strong> <span class="boon">Sword (boon)</span>, <span class="boon">Axe (boon)</span>, <span class="boon">Bow (boon)</span>, <span class="boon">Faith (boon)</span>; <span class="bane">Reason (bane)</span>, <span class="bane">Authority (bane)</span>; budding <span class="neutral">Riding</span>. Lance/Brawl/Flying/HeavyArmor neutral.<br>
+<strong>Intended class:</strong> <strong>Trickster</strong> (Luck/Sword theme — Lucky Seven). We build her <strong>Wyvern Lord</strong> instead: it fixes her only weakness (Str) and harvests her Axe + Bow boons. Avoid Reason/Authority builds (both banes).<br>
+Sources: Game8 / GameFAQs / fe3h.com (EN), GameWith / note.com (JP), GamerSky (CN).</p></blockquote>
+<p class="rating-line"><strong>Strength</strong> ⭐⭐⭐☆☆ (3/5) &nbsp;·&nbsp; <strong>Build difficulty</strong> 🔧🔧🔧○○ (3/5)</p>
+
+<h2 id="builds-at-a-glance">Builds at a glance</h2>
+<table>
+<tr><th>Build</th><th>One-line</th><th>Tutoring cost</th><th>Best on</th></tr>
+<tr><td><a href="#wyvern-lord">Wyvern Lord</a></td><td>8-move flier; the +4 Str bonus fixes her one weakness</td><td><span class="boon">Light</span> (Axe boon + Flying neutral A)</td><td>Crimson Flower (her only featured route)</td></tr>
+</table>
+
+<div class="build">
+<h2 id="wyvern-lord">Build — Wyvern Lord (飞龙领主)</h2>
+<p><strong>Path:</strong> Myrmidon → <strong>Brigand</strong> → Wyvern Rider → <strong>Wyvern Lord</strong>. <strong>Cert:</strong> Lance C / <strong>Axe A</strong> (<span class="boon">boon — cheap</span>) / <strong>Flying A</strong> (<span class="neutral">neutral</span>). Only Flying is a real grind; Axe is a boon.</p>
+<p><strong>Mastery detours (boon-harvest):</strong> <code>Death Blow [⛏ Brigand, Axe C — boon]</code> sits on the path already — free harvest, and the +6 Str on initiate compensates her mediocre Str. <code>Hit+20 [⛏ Archer, Bow C — boon]</code> her Bow is a boon too, so accuracy insurance is cheap. <span class="bane">SKIP Darting Blow</span> — Pegasus Knight is female-only (Anna is female, so it's <em>available</em>, but Lance is only neutral and the Brigand/Archer harvests come first); grab it only if you over-train Flying.</p>
+<p><strong>5 skills:</strong> Axefaire · Death Blow · Hit+20 · Defiant Crit · Alert Stance+.</p>
+<ul class="pros"><li>✔ <strong>8 move + flight + Canto</strong> — solves her foot-class mobility ceiling on Maddening-tier maps.</li>
+<li>✔ <strong>+4 Str class bonus + Death Blow</strong> patches her only stat weakness; her 55% Spd + high Luck make her dodge-y and double-happy.</li>
+<li>✔ Self-sufficient — Canto + high Avo + a Faith dip for self-Heal means she needs no support partner (she has none).</li></ul>
+<ul class="cons"><li>✘ Flying A from nothing is the one real tutoring cost.</li>
+<li>✘ Sword Might &lt; axe; she abandons the "intended" Trickster Luck gimmick.</li></ul>
+<p class="lead">Intended class Trickster (Lucky Seven + Foul Play) is thematic but lower-output; Wyvern Lord is the meta stat-fix. No supports possible regardless of class.</p>
+</div>
+
+<h2 id="route-usage">Route usage this playthrough (team-driven · R12 difficulty)</h2>
+<table>
+<tr><th>Route (difficulty)</th><th>Build</th><th>Why — for the whole team</th></tr>
+<tr><td><strong>Crimson Flower</strong> (Hard)</td><td><a href="#wyvern-lord">Wyvern Lord</a></td><td>CF's Black Eagles core is flier-light; Anna rides in as a <strong>self-reliant flying KO unit</strong> who needs no support slot (she can't build any). Death Blow + the +4 Str bonus turn her Spd/Luck frame into a real carry. <span class="neutral">(R12: Hard = fuller kit.)</span></td></tr>
+<tr><td><strong>Azure Moon / Silver Snow / Verdant Wind</strong></td><td>—</td><td>Not featured — recruitable everywhere, but our roster is full on those routes.</td></tr>
+</table>
+<p class="lead">Each route file links straight to the chosen build anchor above, e.g. <code>…/character_recommendationV2/others/anna-安娜.html#wyvern-lord</code>.</p>
+</article>
+</div></body></html>

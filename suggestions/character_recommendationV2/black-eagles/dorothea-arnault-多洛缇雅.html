@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dorothea Arnault / 多洛缇雅 — Build Menu (V2)</title>
+<style>
+:root{--fg:#1c1e26;--muted:#6b7280;--bg:#fbfbfd;--card:#fff;--accent:#3b5bdb;--border:#e5e7eb;--code:#f3f4f6;--good:#067647;--bad:#b42318}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei",sans-serif}
+.wrap{max-width:920px;margin:0 auto;padding:0 20px 80px}
+nav.top{position:sticky;top:0;background:rgba(251,251,253,.92);backdrop-filter:blur(6px);padding:12px 0;border-bottom:1px solid var(--border);margin-bottom:28px;font-size:14px}
+nav.top a{color:var(--accent);text-decoration:none;margin-right:14px}
+article{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:28px 34px}
+h1{font-size:1.7rem;line-height:1.25;margin:.2em 0 .6em;border-bottom:2px solid var(--border);padding-bottom:.3em}
+h2{font-size:1.32rem;margin:1.6em 0 .5em;border-bottom:1px solid var(--border);padding-bottom:.2em}
+h3{font-size:1.1rem;margin:1.3em 0 .4em}
+a{color:var(--accent)}
+table{border-collapse:collapse;width:100%;margin:1em 0;font-size:.94rem;display:block;overflow-x:auto}
+th,td{border:1px solid var(--border);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:var(--code)}
+tr:nth-child(even) td{background:#fafafa}
+code{background:var(--code);padding:.12em .4em;border-radius:5px;font-size:.88em;font-family:"SF Mono",Menlo,Consolas,monospace}
+blockquote{margin:1em 0;padding:.3em 1em;border-left:4px solid var(--accent);background:#f6f8ff;color:#374151}
+.build{border:1px solid var(--border);border-radius:10px;padding:4px 18px 14px;margin:1.1em 0;background:#fff}
+.build h2{border:none;margin-top:.7em}
+.pros li{color:var(--good)} .cons li{color:var(--bad)}
+.pros,.pros *{list-style:none} .tag{display:inline-block;font-size:.74rem;font-weight:600;padding:1px 8px;border-radius:20px;background:var(--code);color:var(--muted);margin-left:6px;vertical-align:middle}
+.boon{color:var(--good);font-weight:600}.bane{color:var(--bad);font-weight:600}.neutral{color:var(--muted)}
+.lead{color:var(--muted)}
+</style></head>
+<body><div class="wrap">
+<nav class="top"><a href="../../../index.html">⌂ Home</a> <a href="../../../suggestions/index.html">suggestions</a> <a href="../../routesV2/index.html">routesV2</a></nav>
+<article>
+<h1 id="dorothea">Dorothea Arnault / 多洛缇雅 — Build Menu <span class="tag">V2</span></h1>
+<blockquote><p><strong>Black Eagles student.</strong> Stays on <strong>Crimson Flower</strong>; auto-joins <strong>Silver Snow</strong>; recruitable to other houses (Charm 25 + Authority B). No Crest, Mag 40% / Cha 40% / Dex 45% / Spd 40% growths, personal <strong>Songstress</strong> (adjacent allies heal 10% each turn).<br>
+<strong>Proficiencies:</strong> <span class="boon">Sword (boon)</span>, <span class="boon">Reason (boon)</span>; <span class="bane">Faith (BANE)</span>, <span class="bane">Riding (BANE)</span>, <span class="bane">Flying (BANE)</span>; budding talent <strong>Faith</strong> (White Magic Avo +20).<br>
+<span class="bane">Faith bane note:</span> Faith is a <strong>BANE</strong> for her — but it is also her <strong>budding talent</strong>, so once it awakens the cost drops and the payoff (Physic + White Magic Avo +20 + Gremory's double uses) justifies the Gremory grind. <span class="boon">HARVEST Fiendish Blow</span> (Reason boon) for her offense.<br>
+Sources: Game8 / GameFAQs / fe3h.com (EN), GameWith (JP), GamerSky (CN).</p></blockquote>
+<p class="rating-line"><strong>Strength</strong> ⭐⭐⭐⭐☆ (4/5) &nbsp;·&nbsp; <strong>Build difficulty</strong> 🔧🔧○○○ (2/5)</p>
+
+<h2 id="builds-at-a-glance">Builds at a glance</h2>
+<table>
+<tr><th>Build</th><th>One-line</th><th>Tutoring cost</th><th>Best on</th></tr>
+<tr><td><a href="#dancer">Dancer</a></td><td>Extra ally turn + Songstress heal aura; "strongest BE support"</td><td><span class="boon">Light</span> (White Heron Cup)</td><td>Azure Moon (team enabler)</td></tr>
+<tr><td><a href="#gremory">Gremory</a></td><td>Double spell uses; Meteor nuke + Physic + Avo +20</td><td><span class="neutral">Medium</span> (Reason boon; Faith budding→awaken)</td><td>her strongest CF option (menu alt)</td></tr>
+<tr><td><a href="#mortal-savant">Mortal Savant</a> <span class="tag">experience pick</span></td><td>Sword + black-magic hybrid, 1–2 range (Master)</td><td><span class="boon">Light</span> (Sword + Reason both boons)</td><td>Crimson Flower (experience pick)</td></tr>
+</table>
+
+<div class="build">
+<h2 id="dancer">Build 1 — Dancer (舞者)</h2>
+<p><strong>Path:</strong> base caster → win the <strong>White Heron Cup</strong> → <strong>Dancer</strong>. <strong>Cert:</strong> <span class="boon">light</span> — just the dance contest; her weak offense stops mattering since Dancers don't need to fight.</p>
+<p><strong>Mastery detours:</strong> <code>Fiendish Blow [⛏ HARVEST — Mage, Reason C boon]</code> so she can still throw Meteor/gambits. <code>Magic +2 [⛏ Monk]</code> cheap.</p>
+<p><strong>5 skills:</strong> Sword Avo +20 (Dancer) · Fiendish Blow · Songstress (personal) · Magic +2 · Authority/Battalion skill.</p>
+<ul class="pros"><li>✔ <strong>Grants an extra ally turn</strong> — lets your ace act twice; GamerSky calls her "the strongest support in Black Eagles."</li>
+<li>✔ Keeps the Songstress 10% heal aura; can chip with Meteor/gambits.</li></ul>
+<ul class="cons"><li>✘ Personal combat is negligible — purely a support body.</li>
+<li>✘ One-per-army slot; competes with other Dancer candidates.</li></ul>
+</div>
+
+<div class="build">
+<h2 id="gremory">Build 2 — Gremory (女祭司) <span class="tag">female-only</span></h2>
+<p><strong>Path:</strong> Noble → Monk → Mage → Warlock → <strong>Gremory</strong>. <strong>Cert:</strong> Reason A (<span class="boon">boon</span>) + Faith A (<span class="bane">BANE, but her budding talent → awaken to cut the cost</span>). Gremory <strong>doubles all spell uses</strong> (offense AND Physic) and boosts Mag.</p>
+<p><strong>Mastery detours:</strong> <code>Fiendish Blow [⛏ HARVEST — Mage, Reason C boon]</code> on her path. <code>Magic +2 [⛏ Monk]</code>. <code>White Magic Heal +5 [Priest]</code> if dipping the white track.</p>
+<p><strong>5 skills:</strong> Black Tomefaire · Fiendish Blow · White Magic Avo +20 (budding) · Songstress (personal) · Black Magic Range +1.</p>
+<ul class="pros"><li>✔ <strong>Double Meteor + double Physic</strong> + Mag boost; her budding White Magic Avo +20 makes her an evasive hybrid.</li>
+<li>✔ Songstress heal aura on top of a real damage mage.</li></ul>
+<ul class="cons"><li>✘ Faith A is a <strong>bane grind</strong> — only worth it because Faith is her budding talent (awaken first).</li>
+<li>✘ Move 4–5, no Canto; modest Mag growth (40%).</li></ul>
+</div>
+
+<div class="build">
+<h2 id="mortal-savant">Build 3 — Mortal Savant (魔剑士) <span class="tag">experience pick</span></h2>
+<p><strong>Path:</strong> Monk → Mage → (Myrmidon/Mercenary for Sword) → <strong>Mortal Savant</strong>. <strong>Cert:</strong> <strong>Sword A</strong> + <strong>Reason B+</strong> — <span class="boon">both her boons</span>, so the class that is a trap on most units is genuinely cheap for Dorothea. Master tier.</p>
+<p><strong>Mastery detours:</strong> <code>Fiendish Blow [⛏ HARVEST — Mage, Reason C boon]</code> on her path; <code>Magic +2 [⛏ Monk]</code>.</p>
+<p><strong>5 skills:</strong> Black Tomefaire · Fiendish Blow · Sword Avo +20 · White Magic Avo +20 (budding) · Hit +20.</p>
+<ul class="pros"><li>✔ <strong>Sword + black magic in one body</strong> at 1–2 range, built entirely on her two boons — the rare unit Mortal Savant actually fits.</li>
+<li>✔ Fun melee-mage hybrid that still chips with Thoron / Meteor.</li></ul>
+<ul class="cons"><li>✘ Low Spd — rarely doubles (Mortal Savant's signature flaw); no Canto.</li>
+<li>✘ Fewer casts and less raw power than Gremory — chosen to <strong>experience the class</strong> on a unit who can run it well.</li></ul>
+</div>
+
+<h2 id="route-usage">Route usage this playthrough (team-driven · R3 distinct · R12 difficulty)</h2>
+<table>
+<tr><th>Route (difficulty)</th><th>Build</th><th>Why — for the whole team</th></tr>
+<tr><td><strong>Azure Moon</strong> (Normal)</td><td><a href="#dancer">Dancer</a></td><td>AM already has magic damage (Annette Warlock, Mercedes Gremory); Dorothea's best <strong>team</strong> role is the Dancer — an extra turn for Dimitri/a flier, plus the Songstress aura. On Normal her weak offense never matters. <span class="neutral">(R12: lean support kit.)</span></td></tr>
+<tr><td><strong>Crimson Flower</strong> (Hard)</td><td><a href="#mortal-savant">Mortal Savant</a> <span class="tag">experience pick</span></td><td><strong>Experience pick</strong> — built on her Sword+Reason boons so it's cheap, and CF (Hard, not Maddening) tolerates a non-max build (R3 sacrifice-ordering). She still throws black magic at 1–2 range while meleeing; Hubert (Dark Knight) + Hanneman cover the heavier nuking. <em>Gremory remains her stronger option (see menu).</em></td></tr>
+<tr><td><strong>SS / VW</strong></td><td>—</td><td>Recruit-only / not featured; her two routes above cover AM (Dancer) and CF (Gremory).</td></tr>
+</table>
+<p class="lead">Route files link straight to the chosen anchor, e.g. <code>…/character_recommendationV2/black-eagles/dorothea-arnault-多洛缇雅.html#gremory</code>.</p>
+</article>
+</div></body></html>

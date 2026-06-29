@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Seteth / 西提司 — Build Menu (V2)</title>
+<style>
+:root{--fg:#1c1e26;--muted:#6b7280;--bg:#fbfbfd;--card:#fff;--accent:#3b5bdb;--border:#e5e7eb;--code:#f3f4f6;--good:#067647;--bad:#b42318}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei",sans-serif}
+.wrap{max-width:920px;margin:0 auto;padding:0 20px 80px}
+nav.top{position:sticky;top:0;background:rgba(251,251,253,.92);backdrop-filter:blur(6px);padding:12px 0;border-bottom:1px solid var(--border);margin-bottom:28px;font-size:14px}
+nav.top a{color:var(--accent);text-decoration:none;margin-right:14px}
+article{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:28px 34px}
+h1{font-size:1.7rem;line-height:1.25;margin:.2em 0 .6em;border-bottom:2px solid var(--border);padding-bottom:.3em}
+h2{font-size:1.32rem;margin:1.6em 0 .5em;border-bottom:1px solid var(--border);padding-bottom:.2em}
+h3{font-size:1.1rem;margin:1.3em 0 .4em}
+a{color:var(--accent)}
+table{border-collapse:collapse;width:100%;margin:1em 0;font-size:.94rem;display:block;overflow-x:auto}
+th,td{border:1px solid var(--border);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:var(--code)}
+tr:nth-child(even) td{background:#fafafa}
+code{background:var(--code);padding:.12em .4em;border-radius:5px;font-size:.88em;font-family:"SF Mono",Menlo,Consolas,monospace}
+blockquote{margin:1em 0;padding:.3em 1em;border-left:4px solid var(--accent);background:#f6f8ff;color:#374151}
+.build{border:1px solid var(--border);border-radius:10px;padding:4px 18px 14px;margin:1.1em 0;background:#fff}
+.build h2{border:none;margin-top:.7em}
+.pros li{color:var(--good)} .cons li{color:var(--bad)}
+.pros,.pros *{list-style:none} .tag{display:inline-block;font-size:.74rem;font-weight:600;padding:1px 8px;border-radius:20px;background:var(--code);color:var(--muted);margin-left:6px;vertical-align:middle}
+.boon{color:var(--good);font-weight:600}.bane{color:var(--bad);font-weight:600}.neutral{color:var(--muted)}
+.lead{color:var(--muted)}
+</style></head>
+<body><div class="wrap">
+<nav class="top"><a href="../../../index.html">⌂ Home</a> <a href="../../../suggestions/index.html">suggestions</a> <a href="../../routesV2/index.html">routesV2</a></nav>
+<article>
+<h1 id="seteth">Seteth / 西提司 — Build Menu <span class="tag">V2</span></h1>
+<blockquote><p><strong>Church of Seiros auto-recruit.</strong> Auto-joins <strong>Silver Snow / Azure Moon / Verdant Wind</strong> (~Ch.12, no conditions); <strong>enemy on Crimson Flower</strong> (never playable). Joins <strong>Lv 23 Wyvern Rider</strong> (B Axe, B Lance, C Flying), Major Crest of Cichol, personal <strong>Guardian</strong> (+3 dmg to adjacent female allies).<br>
+<strong>Proficiencies:</strong> <span class="boon">Sword / Lance / Axe / Authority / Riding (boons)</span>; <span class="bane">HeavyArmor (bane)</span>; Bow/Brawl/Flying neutral. No gender-lock issues.<br>
+Sources: fe3h.com / Game8 / GameFAQs / Reddit (EN), note.com / pegasusknight (JP), GamerSky (CN).</p></blockquote>
+<p class="rating-line"><strong>Strength</strong> ⭐⭐⭐⭐☆ (4/5) &nbsp;·&nbsp; <strong>Build difficulty</strong> 🔧🔧○○○ (2/5)</p>
+
+<h2 id="builds-at-a-glance">Builds at a glance</h2>
+<table>
+<tr><th>Build</th><th>One-line</th><th>Tutoring cost</th><th>Best on</th></tr>
+<tr><td><a href="#wyvern-lord">Wyvern Lord</a></td><td>Joins in the line; Swift Strikes flier carry</td><td><span class="neutral">Light</span> (Flying A; Axe/Lance are boons)</td><td>Silver Snow (his core route)</td></tr>
+</table>
+
+<div class="build">
+<h2 id="wyvern-lord">Build 1 — Wyvern Lord (飞龙领主)</h2>
+<p><strong>Path:</strong> joins Wyvern Rider → <strong>Wyvern Lord</strong>. <strong>Cert:</strong> Lance C (<span class="boon">boon</span>) / Axe A (<span class="boon">boon</span>) / Flying A (<span class="neutral">neutral</span>) — he is already B Axe / B Lance / C Flying on join, so only Flying needs topping up. Near-zero tutoring.</p>
+<p><strong>Mastery detours (boon-harvest):</strong> <code>Death Blow [⛏ Brigand, Axe C — boon]</code> harvest cheap off his Axe boon; +6 Str on Swift Strikes is enormous. <code>Hit+20 [⛏ Archer, Bow C — neutral]</code> accuracy insurance for his mediocre Dex. (No HeavyArmor detours — <span class="bane">HeavyArmor is his bane</span>; skip Armored Blow/Weight−.)</p>
+<p><strong>5 skills:</strong> Lancefaire · Death Blow · Hit+20 · Defiant Crit · Lance Prowess 5. (Swift Strikes is the combat art he leads with.)</p>
+<ul class="pros"><li>✔ <strong>Joins in the wyvern line</strong> — staying the course wastes none of the Part-1 skill-building he missed; combat-ready immediately.</li>
+<li>✔ <strong>Swift Strikes</strong> (Lance A) 1–2 player-phase double off his high Str; Major Crest of Cichol gives 75% no-counter. 8 move + flight + Canto = best physical class.</li>
+<li>✔ <strong>Flayn as attack adjutant</strong> adds up to +6 dmg to Swift Strikes — equip her on him.</li></ul>
+<ul class="cons"><li>✘ Mediocre Spd — Darting Blow / Death Blow patch it but he won't naturally double everything.</li>
+<li>✘ Don't bother with his ~35% Mag / Holy Knight flex — strictly worse for him.</li></ul>
+</div>
+
+<h2 id="route-usage">Route usage this playthrough (team-driven · R3 distinct · R12 difficulty)</h2>
+<table>
+<tr><th>Route (difficulty)</th><th>Build</th><th>Why — for the whole team</th></tr>
+<tr><td><strong>Silver Snow</strong> (Maddening)</td><td><a href="#wyvern-lord">Wyvern Lord</a></td><td>🔒 core flier. Late auto-recruit who arrives in the wyvern line ready to carry; on full Maddening his 8-move + Swift Strikes + Death Blow harvest make him a fearless KO flier, and <strong>Flayn slots onto him as adjutant</strong> for the +6 Swift Strikes bonus. <span class="neutral">(R12: full kit.)</span></td></tr>
+<tr><td><strong>Crimson Flower</strong></td><td>—</td><td>Not playable (enemy).</td></tr>
+</table>
+<p class="lead">Route file links to the build anchor, e.g. <code>…/character_recommendationV2/others/seteth-西提司.html#wyvern-lord</code>.</p>
+</article>
+</div></body></html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ferdinand von Aegir / 菲尔迪南特 — Build Menu (V2)</title>
+<style>
+:root{--fg:#1c1e26;--muted:#6b7280;--bg:#fbfbfd;--card:#fff;--accent:#3b5bdb;--border:#e5e7eb;--code:#f3f4f6;--good:#067647;--bad:#b42318}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei",sans-serif}
+.wrap{max-width:920px;margin:0 auto;padding:0 20px 80px}
+nav.top{position:sticky;top:0;background:rgba(251,251,253,.92);backdrop-filter:blur(6px);padding:12px 0;border-bottom:1px solid var(--border);margin-bottom:28px;font-size:14px}
+nav.top a{color:var(--accent);text-decoration:none;margin-right:14px}
+article{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:28px 34px}
+h1{font-size:1.7rem;line-height:1.25;margin:.2em 0 .6em;border-bottom:2px solid var(--border);padding-bottom:.3em}
+h2{font-size:1.32rem;margin:1.6em 0 .5em;border-bottom:1px solid var(--border);padding-bottom:.2em}
+h3{font-size:1.1rem;margin:1.3em 0 .4em}
+a{color:var(--accent)}
+table{border-collapse:collapse;width:100%;margin:1em 0;font-size:.94rem;display:block;overflow-x:auto}
+th,td{border:1px solid var(--border);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:var(--code)}
+tr:nth-child(even) td{background:#fafafa}
+code{background:var(--code);padding:.12em .4em;border-radius:5px;font-size:.88em;font-family:"SF Mono",Menlo,Consolas,monospace}
+blockquote{margin:1em 0;padding:.3em 1em;border-left:4px solid var(--accent);background:#f6f8ff;color:#374151}
+.build{border:1px solid var(--border);border-radius:10px;padding:4px 18px 14px;margin:1.1em 0;background:#fff}
+.build h2{border:none;margin-top:.7em}
+.pros li{color:var(--good)} .cons li{color:var(--bad)}
+.pros,.pros *{list-style:none} .tag{display:inline-block;font-size:.74rem;font-weight:600;padding:1px 8px;border-radius:20px;background:var(--code);color:var(--muted);margin-left:6px;vertical-align:middle}
+.boon{color:var(--good);font-weight:600}.bane{color:var(--bad);font-weight:600}.neutral{color:var(--muted)}
+.lead{color:var(--muted)}
+</style></head>
+<body><div class="wrap">
+<nav class="top"><a href="../../../index.html">⌂ Home</a> <a href="../../../suggestions/index.html">suggestions</a> <a href="../../routesV2/index.html">routesV2</a></nav>
+<article>
+<h1 id="ferdinand">Ferdinand von Aegir / 菲尔迪南特 — Build Menu <span class="tag">V2</span></h1>
+<blockquote><p><strong>Black Eagles student.</strong> Stays on <strong>Crimson Flower</strong>; auto-joins <strong>Silver Snow</strong>; recruitable to other houses (Heavy Armor or Dexterity stat). Minor Crest of Cichol, balanced growths (HP 50% / Str 45% / Spd 50% / Cha 40%), personal <strong>Confidence</strong> (Hit/Avo +15 at full HP).<br>
+<strong>Proficiencies:</strong> <span class="boon">Sword (boon)</span>, <span class="boon">Lance (boon)</span>, <span class="boon">Axe (boon)</span>, <span class="boon">Riding (boon)</span>; <strong>no bane</strong>; budding talent <strong>Heavy Armor</strong> (Seal Speed). Authority/Bow/Brawl/Reason/Faith/Flying neutral.<br>
+<span class="bane">Gender note:</span> Darting Blow comes only from <strong>Pegasus Knight (female-only)</strong> — Ferdinand is male, so that detour is unavailable; raise Speed via boosters/Cavalier instead.<br>
+Sources: Game8 / GameFAQs / fe3h.com (EN), note.com / Pegasusknight (JP), GamerSky (CN).</p></blockquote>
+<p class="rating-line"><strong>Strength</strong> ⭐⭐⭐⭐☆ (4/5) &nbsp;·&nbsp; <strong>Build difficulty</strong> 🔧🔧○○○ (2/5)</p>
+
+<h2 id="builds-at-a-glance">Builds at a glance</h2>
+<table>
+<tr><th>Build</th><th>One-line</th><th>Tutoring cost</th><th>Best on</th></tr>
+<tr><td><a href="#paladin">Paladin</a></td><td>Swift Strikes + Lancefaire + Death Blow ≈ +22 dmg</td><td><span class="boon">Light</span> (Lance/Riding boons)</td><td>Crimson Flower (signature)</td></tr>
+<tr><td><a href="#wyvern-lord">Wyvern Lord</a></td><td>Move-8 dodge-flier; Confidence + Alert Stance+</td><td><span class="neutral">Medium</span> (Axe boon, Flying A tutor)</td><td>Silver Snow (Maddening mobility)</td></tr>
+</table>
+
+<div class="build">
+<h2 id="paladin">Build 1 — Paladin (圣骑士)</h2>
+<p><strong>Path:</strong> Noble → Soldier → Cavalier → <strong>Paladin</strong>. <strong>Cert:</strong> Lance B + Riding B — both <span class="boon">boons</span>, so a <span class="boon">light</span> path to his signature class. Move 8 + Canto.</p>
+<p><strong>Mastery detours:</strong> <code>Death Blow [⛏ HARVEST — Brigand, Axe C boon]</code> pushes Swift Strikes to ~+22 dmg — Axe is a boon for him, cheap harvest. <code>Desperation [⛏ Cavalier, on path]</code>. <span class="bane">SKIP Darting Blow</span> — Pegasus Knight is female-only.</p>
+<p><strong>5 skills:</strong> Lancefaire · Death Blow · Swift Strikes (combat art) · Hit +20 · Confidence (personal).</p>
+<ul class="pros"><li>✔ <strong>Swift Strikes + Lancefaire + Death Blow</strong> = one of the best player-phase tools in the game.</li>
+<li>✔ Move 8 + Canto; Lance/Riding boons mean near-zero friction to reach.</li></ul>
+<ul class="cons"><li>✘ No flight; Confidence drops if he takes chip damage (avoid hazard tiles).</li>
+<li>✘ Ground-bound on flier-gated Maddening maps.</li></ul>
+</div>
+
+<div class="build">
+<h2 id="wyvern-lord">Build 2 — Wyvern Lord (飞龙领主)</h2>
+<p><strong>Path:</strong> Noble → Fighter → Brigand → Wyvern Rider → <strong>Wyvern Lord</strong>. <strong>Cert:</strong> <strong>Axe A</strong> (<span class="boon">boon</span>) + <strong>Flying A</strong> (<span class="neutral">neutral — tutor</span>). Trades Lancefaire for Move 8 flight, better growths, and Defiant Crit.</p>
+<p><strong>Mastery detours:</strong> <code>Death Blow [⛏ HARVEST — Brigand, Axe C boon]</code> already on the path — free. Pair <code>Alert Stance+</code> with his Confidence for a premier dodge-tank.</p>
+<p><strong>5 skills:</strong> Axefaire · Death Blow · Alert Stance+ · Defiant Crit · Confidence (personal).</p>
+<ul class="pros"><li>✔ <strong>Move 8 + flight + Canto</strong>; Confidence (Hit/Avo +15) + Alert Stance+ = elite dodge-flier.</li>
+<li>✔ Best raw min-max ceiling per note.com.</li></ul>
+<ul class="cons"><li>✘ Tutoring Flying A from neutral; loses Swift Strikes/Lancefaire.</li>
+<li>✘ Dodge reliance is risky on bad RNG turns.</li></ul>
+</div>
+
+<h2 id="route-usage">Route usage this playthrough (team-driven · R3 distinct · R12 difficulty)</h2>
+<table>
+<tr><th>Route (difficulty)</th><th>Build</th><th>Why — for the whole team</th></tr>
+<tr><td><strong>Crimson Flower</strong> (Hard)</td><td><a href="#paladin">Paladin</a></td><td>The CF team already fields fliers (Petra Wyvern, Edelgard); Ferdinand fills the <strong>cavalry player-phase nuke</strong> slot — Swift Strikes deletes priority targets, and his Lance/Riding boons cost almost no tutoring. <span class="neutral">(R12: Hard = fuller kit, harvest Death Blow.)</span></td></tr>
+<tr><td><strong>Silver Snow</strong> (Maddening)</td><td><a href="#wyvern-lord">Wyvern Lord</a></td><td>SS is flier-light on Maddening; he rides a wyvern to add <strong>the air mobility the team lacks</strong>, doubling as a Confidence dodge-tank. (R3: distinct from his CF Paladin.)</td></tr>
+<tr><td><strong>AM / VW</strong></td><td>—</td><td>Recruit-only (off-route); featured here on his two native routes.</td></tr>
+</table>
+<p class="lead">Route files link straight to the chosen anchor, e.g. <code>…/character_recommendationV2/black-eagles/ferdinand-von-aegir-菲尔迪南特.html#paladin</code>.</p>
+</article>
+</div></body></html>

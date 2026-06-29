@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Claude von Riegan / 克劳德 — Build Menu (V2)</title>
+<style>
+:root{--fg:#1c1e26;--muted:#6b7280;--bg:#fbfbfd;--card:#fff;--accent:#3b5bdb;--border:#e5e7eb;--code:#f3f4f6;--good:#067647;--bad:#b42318}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei",sans-serif}
+.wrap{max-width:920px;margin:0 auto;padding:0 20px 80px}
+nav.top{position:sticky;top:0;background:rgba(251,251,253,.92);backdrop-filter:blur(6px);padding:12px 0;border-bottom:1px solid var(--border);margin-bottom:28px;font-size:14px}
+nav.top a{color:var(--accent);text-decoration:none;margin-right:14px}
+article{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:28px 34px}
+h1{font-size:1.7rem;line-height:1.25;margin:.2em 0 .6em;border-bottom:2px solid var(--border);padding-bottom:.3em}
+h2{font-size:1.32rem;margin:1.6em 0 .5em;border-bottom:1px solid var(--border);padding-bottom:.2em}
+h3{font-size:1.1rem;margin:1.3em 0 .4em}
+a{color:var(--accent)}
+table{border-collapse:collapse;width:100%;margin:1em 0;font-size:.94rem;display:block;overflow-x:auto}
+th,td{border:1px solid var(--border);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:var(--code)}
+tr:nth-child(even) td{background:#fafafa}
+code{background:var(--code);padding:.12em .4em;border-radius:5px;font-size:.88em;font-family:"SF Mono",Menlo,Consolas,monospace}
+blockquote{margin:1em 0;padding:.3em 1em;border-left:4px solid var(--accent);background:#f6f8ff;color:#374151}
+.build{border:1px solid var(--border);border-radius:10px;padding:4px 18px 14px;margin:1.1em 0;background:#fff}
+.build h2{border:none;margin-top:.7em}
+.pros li{color:var(--good)} .cons li{color:var(--bad)}
+.pros,.pros *{list-style:none} .tag{display:inline-block;font-size:.74rem;font-weight:600;padding:1px 8px;border-radius:20px;background:var(--code);color:var(--muted);margin-left:6px;vertical-align:middle}
+.boon{color:var(--good);font-weight:600}.bane{color:var(--bad);font-weight:600}.neutral{color:var(--muted)}
+.lead{color:var(--muted)}
+</style></head>
+<body><div class="wrap">
+<nav class="top"><a href="../../../index.html">⌂ Home</a> <a href="../../../suggestions/index.html">suggestions</a> <a href="../../routesV2/index.html">routesV2</a></nav>
+<article>
+<h1 id="claude">Claude von Riegan / 克劳德 — Build Menu <span class="tag">V2</span></h1>
+<blockquote><p><strong>Golden Deer house leader — locked lord, Verdant Wind only.</strong> Cannot be recruited away; the route's protagonist. Minor Crest of Riegan (combat-art HP drain); growths skew Dex 60 / Spd 55 / Cha 55 / Str 40, +20% personal EXP (Leicester Lineage).<br>
+<strong>Proficiencies:</strong> <span class="boon">Sword (boon)</span>, <span class="boon">Bow (boon)</span>, <span class="boon">Authority (boon)</span>, <span class="boon">Flying (boon)</span>; <span class="bane">Lance (bane)</span>, <span class="bane">Faith (bane)</span>; Axe neutral. <strong>Budding talent:</strong> Axe → Diamond Axe (turns Axe into an effective boon once popped).<br>
+<strong>Harvest:</strong> <code>Hit+20 [⛏ Archer, Bow C — boon]</code> on-boon, free; <code>Death Blow [⛏ Brigand, Axe C]</code> via his Axe budding (pop Axe first, then the cert is on-strength). <strong>Skip Darting Blow</strong> — Pegasus Knight is female-only, so Claude cannot get it.<br>
+Sources: Game8 / GameFAQs / Fire Emblem Wiki (EN), GameWith / note.com (JP), GamerSky (CN).</p></blockquote>
+<p class="rating-line"><strong>Strength</strong> ⭐⭐⭐⭐☆ (4/5) &nbsp;·&nbsp; <strong>Build difficulty</strong> 🔧🔧○○○ (2/5)</p>
+
+<h2 id="builds-at-a-glance">Builds at a glance</h2>
+<table>
+<tr><th>Build</th><th>One-line</th><th>Tutoring cost</th><th>Best on</th></tr>
+<tr><td><a href="#barbarossa">Barbarossa</a></td><td>His unique flying-bow lord class — Mov 8, bow + axe</td><td><span class="boon">Light</span> (Bow/Flying boons; pop Axe budding, dip Lance bane)</td><td>Verdant Wind (his only route)</td></tr>
+<tr><td><a href="#wyvern-lord">Wyvern Lord</a></td><td>Flying axe/bow bruiser, Avo+10 + Axefaire</td><td><span class="neutral">Medium</span> (Axe A via budding, Flying A boon, Lance C bane)</td><td>VW alt — pick for raw axe combat</td></tr>
+<tr><td><a href="#sniper">Sniper</a></td><td>Foot bow ace with Hunter's Volley</td><td><span class="boon">Light</span> (Bow A boon only)</td><td>VW alt — pure bow / no flying gate</td></tr>
+</table>
+
+<div class="build">
+<h2 id="barbarossa">Build 1 — Barbarossa (大盗) <span class="tag">recommended</span></h2>
+<p><strong>Path:</strong> Noble → Archer → Wyvern Rider → <strong>Barbarossa</strong> (his unique Part 2 master class). <strong>Cert:</strong> Bow A (<span class="boon">boon</span>) + Flying A (<span class="boon">boon</span>) + Lance C (<span class="bane">bane</span> — small dip). A flying bow class tailor-made for him [Game8].</p>
+<p><strong>Mastery detours:</strong> <code>Hit+20 [⛏ Archer, Bow C — boon]</code> on-boon, already on the path — free harvest, keeps his bow landing on Maddening. <code>Death Blow [⛏ Brigand, Axe C]</code> — <strong>pop his Axe budding first</strong>, then the Brigand cert is on-strength; gives +6 Str on every initiation. <span class="bane">Skip Darting Blow</span> — Pegasus Knight is female-only.</p>
+<p><strong>5 skills:</strong> Bowfaire · Hit+20 · Death Blow · Defiant Crit · Alert Stance+.</p>
+<ul class="pros"><li>✔ <strong>Mov 8 + flight + Canto</strong> on a bow platform — fires 1–2 range and repositions; his best mobility-to-damage package.</li>
+<li>✔ Keeps bow range AND wields axe (Diamond Axe) — leverages two of his boons plus the budding.</li>
+<li>✔ Cheapest flying build: Bow/Flying are both boons, only the Lance C gate touches a bane.</li></ul>
+<ul class="cons"><li>✘ Slightly lower raw axe Mt than Wyvern Lord; no Axefaire.</li>
+<li>✘ Requires popping the Axe budding to get Death Blow on-strength.</li></ul>
+</div>
+
+<div class="build">
+<h2 id="wyvern-lord">Build 2 — Wyvern Lord (飞龙领主)</h2>
+<p><strong>Path:</strong> Noble → Archer → Wyvern Rider → <strong>Wyvern Lord</strong>. <strong>Cert:</strong> Lance C (<span class="bane">bane</span> — dip) / Axe A (neutral → <span class="boon">boon once Axe budding popped</span>) / Flying A (<span class="boon">boon</span>).</p>
+<p><strong>Mastery detours:</strong> <code>Death Blow [⛏ Brigand, Axe C]</code> sits on the path once Axe is budded — free harvest. <code>Hit+20 [⛏ Archer, Bow C — boon]</code> on-boon, keep his bow accurate for the 1–2 range option.</p>
+<p><strong>5 skills:</strong> Axefaire · Death Blow · Hit+20 · Avo+10 · Defiant Crit.</p>
+<ul class="pros"><li>✔ Best physical class in the game — Axefaire + Avo+10 + Mov 8 + Canto; highest raw KO ceiling.</li>
+<li>✔ His Crest of Riegan HP-drain rewards diving with combat arts.</li></ul>
+<ul class="cons"><li>✘ Leans on the Axe budding (must pop it) and a bigger Axe A grind than Barbarossa.</li>
+<li>✘ Slightly less bow focus — you're committing to axe melee over kiting.</li></ul>
+</div>
+
+<div class="build">
+<h2 id="sniper">Build 3 — Sniper (狙击手)</h2>
+<p><strong>Path:</strong> Noble → Archer → <strong>Sniper</strong> (optionally → Bow Knight for Mov 8). <strong>Cert:</strong> Bow A (<span class="boon">boon</span>) only — no flying or Lance gate. GamerSky CN calls him "the best archer in the game."</p>
+<p><strong>Mastery detours:</strong> <code>Hit+20 [⛏ Archer, Bow C — boon]</code> mastered on the way through — free, on-boon. <code>Death Blow [⛏ Brigand, Axe C]</code> optional after popping Axe budding for extra burst.</p>
+<p><strong>5 skills:</strong> Bowfaire · Hit+20 · Death Blow · Bowrange+1 · Battalion Vantage.</p>
+<ul class="pros"><li>✔ Bowrange+1 + the broken <strong>Hunter's Volley</strong> (two hits, +Crit) — zero flying investment.</li>
+<li>✔ Pure on-boon build; certifies fastest.</li></ul>
+<ul class="cons"><li>✘ Foot Mov 5 — falls behind on big Maddening maps (Bow Knight fixes it but has weak growths).</li>
+<li>✘ Drops the flight + Canto that make him a premier diver.</li></ul>
+</div>
+
+<h2 id="route-usage">Route usage this playthrough (team-driven · R12 difficulty)</h2>
+<table>
+<tr><th>Route (difficulty)</th><th>Build</th><th>Why — for the whole team</th></tr>
+<tr><td><strong>Verdant Wind</strong> (Maddening)</td><td><a href="#barbarossa">Barbarossa</a></td><td>🔒 lord, mandatory deploy. On full Maddening Golden Deer is <strong>flier-light</strong>, so his unique flying-bow class adds the air mobility + 1–2 range carry the team needs, while leveraging all his boons. (Wyvern Lord if you want max axe burst; Sniper only if you'd rather skip flying.)</td></tr>
+<tr><td><strong>Azure Moon / Crimson Flower / Silver Snow</strong></td><td>—</td><td>Not playable — Claude is exclusive to Verdant Wind and cannot be recruited to other houses.</td></tr>
+</table>
+<p class="lead">Each route file links straight to the chosen build anchor above, e.g. <code>…/character_recommendationV2/golden-deer/claude-von-riegan-克劳德.html#barbarossa</code>.</p>
+</article>
+</div></body></html>

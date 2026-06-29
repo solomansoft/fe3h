@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jeritza von Hrym / 耶利查 — Build Menu (V2)</title>
+<style>
+:root{--fg:#1c1e26;--muted:#6b7280;--bg:#fbfbfd;--card:#fff;--accent:#3b5bdb;--border:#e5e7eb;--code:#f3f4f6;--good:#067647;--bad:#b42318}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei",sans-serif}
+.wrap{max-width:920px;margin:0 auto;padding:0 20px 80px}
+nav.top{position:sticky;top:0;background:rgba(251,251,253,.92);backdrop-filter:blur(6px);padding:12px 0;border-bottom:1px solid var(--border);margin-bottom:28px;font-size:14px}
+nav.top a{color:var(--accent);text-decoration:none;margin-right:14px}
+article{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:28px 34px}
+h1{font-size:1.7rem;line-height:1.25;margin:.2em 0 .6em;border-bottom:2px solid var(--border);padding-bottom:.3em}
+h2{font-size:1.32rem;margin:1.6em 0 .5em;border-bottom:1px solid var(--border);padding-bottom:.2em}
+h3{font-size:1.1rem;margin:1.3em 0 .4em}
+a{color:var(--accent)}
+table{border-collapse:collapse;width:100%;margin:1em 0;font-size:.94rem;display:block;overflow-x:auto}
+th,td{border:1px solid var(--border);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:var(--code)}
+tr:nth-child(even) td{background:#fafafa}
+code{background:var(--code);padding:.12em .4em;border-radius:5px;font-size:.88em;font-family:"SF Mono",Menlo,Consolas,monospace}
+blockquote{margin:1em 0;padding:.3em 1em;border-left:4px solid var(--accent);background:#f6f8ff;color:#374151}
+.build{border:1px solid var(--border);border-radius:10px;padding:4px 18px 14px;margin:1.1em 0;background:#fff}
+.build h2{border:none;margin-top:.7em}
+.pros li{color:var(--good)} .cons li{color:var(--bad)}
+.pros,.pros *{list-style:none} .tag{display:inline-block;font-size:.74rem;font-weight:600;padding:1px 8px;border-radius:20px;background:var(--code);color:var(--muted);margin-left:6px;vertical-align:middle}
+.boon{color:var(--good);font-weight:600}.bane{color:var(--bad);font-weight:600}.neutral{color:var(--muted)}
+.lead{color:var(--muted)}
+</style></head>
+<body><div class="wrap">
+<nav class="top"><a href="../../../index.html">⌂ Home</a> <a href="../../../suggestions/index.html">suggestions</a> <a href="../../routesV2/index.html">routesV2</a></nav>
+<article>
+<h1 id="jeritza">Jeritza von Hrym / 耶利查 — Build Menu <span class="tag">V2</span> <span class="tag">🧩 DLC</span></h1>
+<blockquote><p>⚠️ <strong>PLAYABLE ONLY ON CRIMSON FLOWER (红花线).</strong> On every other route he is the enemy boss "Death Knight (死亡骑士)" and cannot be recruited. Requires Expansion Pass (Wave 3 DLC). Joins automatically ~Ch.13 at high level in his unique <strong>Death Knight</strong> class, with monstrous Str and the game's near-highest Spd growth (60%).<br>
+<strong>Proficiencies:</strong> <span class="boon">Sword (boon)</span>, <span class="boon">Lance (boon)</span>, <span class="boon">Brawl (boon)</span>, <span class="boon">Riding (boon)</span>; <span class="bane">Faith (bane)</span>, <span class="bane">Authority (bane)</span>; budding <span class="neutral">Flying</span>. Axe/Bow/Reason/HeavyArmor neutral.<br>
+<span class="bane">Gender note:</span> Jeritza is <strong>male</strong>, so Pegasus/Falcon Knight (and their <strong>Darting Blow</strong> mastery) are <strong>impossible</strong> — do not chase Darting Blow. <strong>Mastermind</strong> (his class skill) grants <strong>2× class EXP</strong>, so masteries fill fast despite the late join.<br>
+Sources: Game8 / GameFAQs / fe3h.com (EN), GameWith / note.com (JP), GamerSky (CN).</p></blockquote>
+<p class="rating-line"><strong>Strength</strong> ⭐⭐⭐⭐⭐ (5/5) &nbsp;·&nbsp; <strong>Build difficulty</strong> 🔧🔧○○○ (2/5)</p>
+
+<h2 id="builds-at-a-glance">Builds at a glance</h2>
+<table>
+<tr><th>Build</th><th>One-line</th><th>Tutoring cost</th><th>Best on</th></tr>
+<tr><td><a href="#wyvern-lord">Wyvern Lord</a></td><td>Flying one-man-army; matches his Flying budding talent</td><td><span class="neutral">Light</span> (Axe-neutral A + Flying budding A)</td><td>Crimson Flower (his only route)</td></tr>
+<tr><td><a href="#war-master">War Master</a></td><td>Top raw crit on foot; pure Brawl-boon damage</td><td><span class="boon">Light</span> (Brawl boon A + Axe-neutral A)</td><td>CF alt if you skip Flying</td></tr>
+</table>
+
+<div class="build">
+<h2 id="wyvern-lord">Build 1 — Wyvern Lord (飞龙领主)</h2>
+<p><strong>Path:</strong> unlock <strong>Flying budding talent</strong> → Wyvern Rider → <strong>Wyvern Lord</strong>. <strong>Cert:</strong> Lance C (<span class="boon">boon</span>) / <strong>Axe A</strong> (<span class="neutral">neutral</span>) / <strong>Flying A</strong> (budding → trainable). Axe is his one missing physical skill; Mastermind 2× EXP makes the grind fast.</p>
+<p><strong>Mastery detours:</strong> <code>Death Blow [⛏ Brigand, Axe C — neutral]</code> — Axe is only neutral for him, but Death Blow stacks onto his monstrous Str for one-round kills, so it's worth the dip. <span class="bane">SKIP Darting Blow</span> — Pegasus Knight is <strong>female-only</strong> and Jeritza is male; he <strong>cannot</strong> get it. Lean on his native 60% Spd instead. <code>Hit+20 [⛏ Archer, Bow C — neutral]</code> optional accuracy.</p>
+<p><strong>5 skills:</strong> Lancefaire · Death Blow · Hit+20 · Defiant Crit · Alert Stance+.</p>
+<ul class="pros"><li>✔ <strong>8 move + flight + Canto + Avo+10</strong> turns his Str/Spd frame into a flying deleter; <strong>matches his Flying budding talent</strong>.</li>
+<li>✔ Carries the <strong>Scythe of Sariel</strong> (lance relic) on his Lance boon; Killer weapons exploit his crit ceiling.</li>
+<li>✔ Mastermind 2× EXP solves the late-join mastery problem; even plain Wyvern Rider is a fine low-effort CF endgame.</li></ul>
+<ul class="cons"><li>✘ Axe A is neutral (not a boon) — the one investment.</li>
+<li>✘ No Darting Blow available (male) — relies on natural Spd for doubles.</li></ul>
+</div>
+
+<div class="build">
+<h2 id="war-master">Build 2 — War Master (战神)</h2>
+<p><strong>Path:</strong> Brawler → Grappler → <strong>War Master</strong> (Master Seal). <strong>Cert:</strong> <strong>Brawl A</strong> (<span class="boon">boon — free</span>) + <strong>Axe A</strong> (<span class="neutral">neutral</span>). Male-only class — fine for Jeritza.</p>
+<p><strong>Mastery detours:</strong> <code>Death Blow [⛏ Brigand, Axe C]</code> as above; <code>Quick Riposte [⛏ War Master]</code> is the class's own mastery (always follow up on enemy phase at high HP).</p>
+<p><strong>5 skills:</strong> Axefaire · Fistfaire · Crit+20 · Death Blow · Quick Riposte.</p>
+<ul class="pros"><li>✔ <strong>Crit+20 + dual faire</strong> + his Spd = he crits and doubles everything; plays straight to his Brawl boon.</li>
+<li>✔ No Flying grind needed — cheapest path to a finished build.</li></ul>
+<ul class="cons"><li>✘ Foot (6 move) — loses Wyvern's mobility, Canto, and Avoid on Maddening-style maps.</li>
+<li>✘ More exposed front-liner; no air access to back-line targets.</li></ul>
+</div>
+
+<h2 id="route-usage">Route usage this playthrough (team-driven · R12 difficulty)</h2>
+<table>
+<tr><th>Route (difficulty)</th><th>Build</th><th>Why — for the whole team</th></tr>
+<tr><td><strong>Crimson Flower</strong> (Hard)</td><td><a href="#wyvern-lord">Wyvern Lord</a></td><td>🔒 his only playable route. Black Eagles is flier-light on CF, so his Flying-budding Wyvern adds <strong>air mobility + a top-tier deleter</strong>; pair near Mercedes (his sister/healer) to offset his Faith bane. <span class="neutral">(R12: Hard = fuller kit; take War Master only if you'd rather skip the Flying grind.)</span></td></tr>
+<tr><td><strong>AM / SS / VW</strong></td><td>—</td><td>Not playable — enemy "Death Knight" on all non-CF routes.</td></tr>
+</table>
+<p class="lead">Each route file links straight to the chosen build anchor above, e.g. <code>…/character_recommendationV2/others/jeritza-von-hrym-耶利查.html#wyvern-lord</code>.</p>
+</article>
+</div></body></html>

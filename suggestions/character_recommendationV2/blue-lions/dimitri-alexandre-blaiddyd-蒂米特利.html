@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dimitri Alexandre Blaiddyd / 蒂米特利 — Build Menu (V2)</title>
+<style>
+:root{--fg:#1c1e26;--muted:#6b7280;--bg:#fbfbfd;--card:#fff;--accent:#3b5bdb;--border:#e5e7eb;--code:#f3f4f6;--good:#067647;--bad:#b42318}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei",sans-serif}
+.wrap{max-width:920px;margin:0 auto;padding:0 20px 80px}
+nav.top{position:sticky;top:0;background:rgba(251,251,253,.92);backdrop-filter:blur(6px);padding:12px 0;border-bottom:1px solid var(--border);margin-bottom:28px;font-size:14px}
+nav.top a{color:var(--accent);text-decoration:none;margin-right:14px}
+article{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:28px 34px}
+h1{font-size:1.7rem;line-height:1.25;margin:.2em 0 .6em;border-bottom:2px solid var(--border);padding-bottom:.3em}
+h2{font-size:1.32rem;margin:1.6em 0 .5em;border-bottom:1px solid var(--border);padding-bottom:.2em}
+h3{font-size:1.1rem;margin:1.3em 0 .4em}
+a{color:var(--accent)}
+table{border-collapse:collapse;width:100%;margin:1em 0;font-size:.94rem;display:block;overflow-x:auto}
+th,td{border:1px solid var(--border);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:var(--code)}
+tr:nth-child(even) td{background:#fafafa}
+code{background:var(--code);padding:.12em .4em;border-radius:5px;font-size:.88em;font-family:"SF Mono",Menlo,Consolas,monospace}
+blockquote{margin:1em 0;padding:.3em 1em;border-left:4px solid var(--accent);background:#f6f8ff;color:#374151}
+.build{border:1px solid var(--border);border-radius:10px;padding:4px 18px 14px;margin:1.1em 0;background:#fff}
+.build h2{border:none;margin-top:.7em}
+.pros li{color:var(--good)} .cons li{color:var(--bad)}
+.pros,.pros *{list-style:none} .tag{display:inline-block;font-size:.74rem;font-weight:600;padding:1px 8px;border-radius:20px;background:var(--code);color:var(--muted);margin-left:6px;vertical-align:middle}
+.boon{color:var(--good);font-weight:600}.bane{color:var(--bad);font-weight:600}.neutral{color:var(--muted)}
+.lead{color:var(--muted)}
+</style></head>
+<body><div class="wrap">
+<nav class="top"><a href="../../../index.html">⌂ Home</a> <a href="../../../suggestions/index.html">suggestions</a> <a href="../../routesV2/index.html">routesV2</a></nav>
+<article>
+<h1 id="dimitri">Dimitri Alexandre Blaiddyd / 蒂米特利 — Build Menu <span class="tag">V2</span></h1>
+<blockquote><p><strong>Blue Lions house leader.</strong> Locked unit on <strong>Azure Moon</strong> — you keep him the whole game, worth heavy investment. Major Crest of Blaiddyd (Combat Art crit-double). Personal: <strong>Royal Lineage</strong> (+20% EXP; +20 Avoid at full HP in Part 2). 60% Str / 50% Spd / 55% HP growth — widely rated the single strongest unit in the game.<br>
+<strong>Proficiencies:</strong> <span class="boon">Lance (boon)</span>, <span class="boon">Sword (boon)</span>, <span class="boon">Authority (boon)</span>; <span class="bane">Axe (bane)</span>, <span class="bane">Reason (bane)</span>; budding <strong>Riding</strong> → Seal Movement; Brawl/Bow/Faith/HeavyArmor/Flying neutral.<br>
+<span class="bane">Bane note:</span> Axe bane means <strong>NO Death Blow harvest</strong> and no cheap Wyvern Lord / War Master (both need Axe A). Stay on the Lance/Riding path.<br>
+Sources: Game8 / fe3h.com / GameFAQs (EN), note.com / GameWith JP, GamerSky CN.</p></blockquote>
+<p class="rating-line"><strong>Strength</strong> ⭐⭐⭐⭐⭐ (5/5) &nbsp;·&nbsp; <strong>Build difficulty</strong> 🔧○○○○ (1/5)</p>
+
+<h2 id="builds-at-a-glance">Builds at a glance</h2>
+<table>
+<tr><th>Build</th><th>One-line</th><th>Tutoring cost</th><th>Best on</th></tr>
+<tr><td><a href="#great-lord">Great Lord</a></td><td>Signature lance carry, plays to all boons</td><td><span class="boon">Light</span> (Lance/Authority boons + Riding budding)</td><td>Azure Moon (his locked route)</td></tr>
+<tr><td><a href="#paladin">Paladin</a></td><td>8-move + Canto lance cavalry, no banes</td><td><span class="boon">Light</span> (Lance + Riding budding)</td><td>Azure Moon if you want mobility/Canto</td></tr>
+<tr><td><a href="#wyvern-lord">Wyvern Lord</a></td><td>Flier ceiling — but gated behind his Axe bane</td><td><span class="bane">Heavy</span> (Axe A + Flying A from bane)</td><td>Only if you commit to bane tutoring</td></tr>
+</table>
+
+<div class="build">
+<h2 id="great-lord">Build 1 — Great Lord (大領主)</h2>
+<p><strong>Path:</strong> Soldier → Cavalier → Paladin → <strong>Great Lord (unique)</strong>. <strong>Cert:</strong> Lance C/<strong>Lance A</strong> (<span class="boon">boon</span>) + Riding C+ (budding) + <strong>Authority B</strong> (<span class="boon">boon</span>) — all on-strength, <span class="boon">light tutoring</span>. Push <strong>Lance S+</strong> for Lancefaire.</p>
+<p><strong>Mastery detours:</strong> <code>Defense+2 [⛏ Soldier, Lance — boon, his opening class]</code>; <code>Vantage [⛏ Mercenary, Sword C — boon]</code> for the Battalion Wrath/Vantage enemy-phase loop. <span class="bane">SKIP Death Blow</span> — Brigand needs Axe C and Axe is his <strong>bane</strong>; do not grind it.</p>
+<p><strong>5 skills:</strong> Lancefaire · Battalion Wrath · Battalion Vantage · Vantage · Crit Avo+10.</p>
+<ul class="pros"><li>✔ <strong>Top stat bonuses</strong> on his signature class; uses Lance + Authority boons, zero bane grind.</li>
+<li>✔ Areadbhar + the <strong>Battalion Wrath + Battalion Vantage + Retribution</strong> enemy-phase combo is the game's strongest loop.</li></ul>
+<ul class="cons"><li>✘ Great Lord has <strong>no Canto</strong>; 6 move — slightly stiff repositioning.</li>
+<li>✘ Wants Authority + Retribution online (~Ch.8) to fully come alive.</li></ul>
+</div>
+
+<div class="build">
+<h2 id="paladin">Build 2 — Paladin (圣骑士)</h2>
+<p><strong>Path:</strong> Soldier → Cavalier → <strong>Paladin (terminal)</strong>. <strong>Cert:</strong> <strong>Lance A</strong> (<span class="boon">boon</span>) + Riding B+ (budding) — <span class="boon">cheap, on-boon</span>.</p>
+<p><strong>Mastery detours:</strong> <code>Defense+2 [⛏ Soldier, Lance — boon]</code>; <code>Vantage [⛏ Mercenary, Sword C — boon]</code>. <span class="bane">SKIP Death Blow</span> (Axe bane).</p>
+<p><strong>5 skills:</strong> Lancefaire · Battalion Wrath · Battalion Vantage · Vantage · Movement (Seal Movement / Canto).</p>
+<ul class="pros"><li>✔ <strong>8 move + Canto</strong> fixes Great Lord's mobility on the rare big map; same lance-boon kit.</li>
+<li>✔ Lowest-effort strong build; Seal Movement from his Riding budding adds control.</li></ul>
+<ul class="cons"><li>✘ Slightly lower stat bonuses than Great Lord; gives up the unique class.</li>
+<li>✘ Same Vantage/Wrath dependency to peak.</li></ul>
+</div>
+
+<div class="build">
+<h2 id="wyvern-lord">Build 3 — Wyvern Lord (飞龙领主) — community ceiling, bane-gated</h2>
+<p><strong>Path:</strong> Brigand → Wyvern Rider → <strong>Wyvern Lord</strong>. <strong>Cert:</strong> Lance C / <strong>Axe A</strong> (<span class="bane">BANE</span>) / <strong>Flying A</strong> (neutral) — Axe A from a bane is a heavy, slow grind.</p>
+<p><strong>Mastery detours:</strong> <span class="bane">SKIP Death Blow</span> — even though Brigand sits on this path, Axe is his bane; the mastery is bane-gated, so don't treat it as a free harvest. Take <code>Defiant Crit</code> from the wyvern line instead.</p>
+<p><strong>5 skills:</strong> Axefaire · Defiant Crit · Battalion Wrath · Battalion Vantage · Alert Stance+.</p>
+<ul class="pros"><li>✔ <strong>8 move + flight + Canto</strong> — the community's highest-mobility pick; his huge Str makes a fearless KO flier.</li></ul>
+<ul class="cons"><li>✘ <strong>Axe A is his bane</strong> (plus Flying A) — heavy tutoring vs the free Lance route.</li>
+<li>✘ Drops Areadbhar/Lancefaire synergy. Not worth it on Normal where the Great Lord already over-performs.</li></ul>
+</div>
+
+<h2 id="route-usage">Route usage this playthrough (team-driven · R12 difficulty)</h2>
+<table>
+<tr><th>Route (difficulty)</th><th>Build</th><th>Why — for the whole team</th></tr>
+<tr><td><strong>Azure Moon</strong> (Normal)</td><td><a href="#great-lord">Great Lord</a></td><td>🔒 locked house leader and the team's marquee carry. On Normal the lean kit is fine: Lance + Authority boons need no bane fixing, and his Wrath/Vantage loop anchors the front line while Dedue walls. <span class="neutral">(R12: lean kit — skip the Wyvern bane grind.)</span></td></tr>
+<tr><td colspan="2"><strong>Crimson Flower / Silver Snow / Verdant Wind</strong></td><td>Not playable — Dimitri is exclusive to Azure Moon.</td></tr>
+</table>
+<p class="lead">Route file links straight to the chosen anchor, e.g. <code>…/character_recommendationV2/blue-lions/dimitri-alexandre-blaiddyd-蒂米特利.html#great-lord</code>.</p>
+</article>
+</div></body></html>

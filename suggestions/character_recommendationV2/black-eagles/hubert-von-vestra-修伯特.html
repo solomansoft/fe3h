@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hubert von Vestra / 修伯特 — Build Menu (V2)</title>
+<style>
+:root{--fg:#1c1e26;--muted:#6b7280;--bg:#fbfbfd;--card:#fff;--accent:#3b5bdb;--border:#e5e7eb;--code:#f3f4f6;--good:#067647;--bad:#b42318}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei",sans-serif}
+.wrap{max-width:920px;margin:0 auto;padding:0 20px 80px}
+nav.top{position:sticky;top:0;background:rgba(251,251,253,.92);backdrop-filter:blur(6px);padding:12px 0;border-bottom:1px solid var(--border);margin-bottom:28px;font-size:14px}
+nav.top a{color:var(--accent);text-decoration:none;margin-right:14px}
+article{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:28px 34px}
+h1{font-size:1.7rem;line-height:1.25;margin:.2em 0 .6em;border-bottom:2px solid var(--border);padding-bottom:.3em}
+h2{font-size:1.32rem;margin:1.6em 0 .5em;border-bottom:1px solid var(--border);padding-bottom:.2em}
+h3{font-size:1.1rem;margin:1.3em 0 .4em}
+a{color:var(--accent)}
+table{border-collapse:collapse;width:100%;margin:1em 0;font-size:.94rem;display:block;overflow-x:auto}
+th,td{border:1px solid var(--border);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:var(--code)}
+tr:nth-child(even) td{background:#fafafa}
+code{background:var(--code);padding:.12em .4em;border-radius:5px;font-size:.88em;font-family:"SF Mono",Menlo,Consolas,monospace}
+blockquote{margin:1em 0;padding:.3em 1em;border-left:4px solid var(--accent);background:#f6f8ff;color:#374151}
+.build{border:1px solid var(--border);border-radius:10px;padding:4px 18px 14px;margin:1.1em 0;background:#fff}
+.build h2{border:none;margin-top:.7em}
+.pros li{color:var(--good)} .cons li{color:var(--bad)}
+.pros,.pros *{list-style:none} .tag{display:inline-block;font-size:.74rem;font-weight:600;padding:1px 8px;border-radius:20px;background:var(--code);color:var(--muted);margin-left:6px;vertical-align:middle}
+.boon{color:var(--good);font-weight:600}.bane{color:var(--bad);font-weight:600}.neutral{color:var(--muted)}
+.lead{color:var(--muted)}
+</style></head>
+<body><div class="wrap">
+<nav class="top"><a href="../../../index.html">⌂ Home</a> <a href="../../../suggestions/index.html">suggestions</a> <a href="../../routesV2/index.html">routesV2</a></nav>
+<article>
+<h1 id="hubert">Hubert von Vestra / 修伯特 — Build Menu <span class="tag">V2</span></h1>
+<blockquote><p><strong>Black Eagles retainer — locked to the house, never recruitable.</strong> Auto-stays on <strong>Crimson Flower</strong>; enemy elsewhere. No Crest, Mag 55% growth (highest in Black Eagles), Spd 45%, personal <strong>Officer Duty</strong> (gambit Might +5). His spell list is mostly <em>dark</em> magic (Mire, Banshee, Death Γ).<br>
+<strong>Proficiencies:</strong> <span class="boon">Bow (boon)</span>, <span class="boon">Reason (boon)</span>, <span class="boon">Authority (boon)</span>; <span class="bane">Axe (BANE)</span>, <span class="bane">Faith (BANE)</span>, <span class="bane">Flying (BANE)</span>; budding talent <strong>Lance</strong> (Frozen Lance).<br>
+<span class="bane">Class correction:</span> the old guide floated <strong>Warlock</strong> — but <strong>Warlock's Black Tomefaire does NOT boost his dark spells</strong>, so it is a downgrade. <strong>Never Warlock.</strong> Build <strong>Dark Knight</strong> (only class with Dark Tomefaire). <span class="boon">HARVEST Fiendish Blow</span> (Reason boon) and <span class="boon">Hit +20</span> (Bow boon — both his strengths, cheap).<br>
+Sources: Game8 / GameFAQs / fe3h.com (EN), GameWith / Pegasusknight (JP), GamerSky (CN).</p></blockquote>
+<p class="rating-line"><strong>Strength</strong> ⭐⭐⭐⭐☆ (4/5) &nbsp;·&nbsp; <strong>Build difficulty</strong> 🔧🔧🔧○○ (3/5)</p>
+
+<h2 id="builds-at-a-glance">Builds at a glance</h2>
+<table>
+<tr><th>Build</th><th>One-line</th><th>Tutoring cost</th><th>Best on</th></tr>
+<tr><td><a href="#dark-knight">Dark Knight</a></td><td>Only Dark Tomefaire class; Move 7 + Frozen Lance</td><td><span class="neutral">Medium</span> (Reason boon, Riding A tutor)</td><td>Crimson Flower (consensus best)</td></tr>
+<tr><td><a href="#dark-bishop">Dark Bishop</a></td><td>Terminal caster; extra dark-spell uses, no Riding grind</td><td><span class="boon">Light</span> (Reason boon)</td><td>CF if you skip Riding</td></tr>
+</table>
+
+<div class="build">
+<h2 id="dark-knight">Build 1 — Dark Knight (暗黑骑士)</h2>
+<p><strong>Path:</strong> Noble → Monk → Mage → Dark Bishop → <strong>Dark Knight</strong>. <strong>Cert:</strong> Reason A (<span class="boon">boon</span>) + <strong>Riding A</strong> (<span class="neutral">neutral — his bottleneck, tutor it</span>) + Lance C (budding). Dark Knight is the <strong>only</strong> class with <strong>Dark Tomefaire</strong>, which matches his dark spell list.</p>
+<p><strong>Mastery detours:</strong> <code>Fiendish Blow [⛏ HARVEST — Mage, Reason C boon]</code> +6 Mag on initiate, on his path anyway. <code>Hit +20 [⛏ HARVEST — Archer, Bow C boon]</code> — Bow is a boon, so this is cheap and fixes long-range accuracy on Mire. <code>Poison Strike [⛏ Dark Mage]</code> chip; <code>Lifetaker [Dark Bishop, on path]</code>.</p>
+<p><strong>5 skills:</strong> Dark Tomefaire · Fiendish Blow · Hit +20 · Lifetaker · Poison Strike.</p>
+<ul class="pros"><li>✔ <strong>Only class that buffs his dark spells</strong>; Move 7 + Canto + Frozen Lance melee option.</li>
+<li>✔ Highest BE Mag growth + Officer Duty makes him a top gambit-debuffer.</li></ul>
+<ul class="cons"><li>✘ <strong>Riding A grind</strong> is his one friction point (neutral weapon, must tutor).</li>
+<li>✘ No flight (Flying is a BANE anyway); fragile if caught in melee.</li></ul>
+</div>
+
+<div class="build">
+<h2 id="dark-bishop">Build 2 — Dark Bishop (暗黑主教, terminal)</h2>
+<p><strong>Path:</strong> Noble → Monk → Mage → <strong>Dark Bishop</strong> (stay). <strong>Cert:</strong> Reason — his <span class="boon">boon</span>, so a <span class="boon">light</span> pure-caster line with no Riding grind.</p>
+<p><strong>Mastery detours:</strong> <code>Fiendish Blow [⛏ HARVEST — Mage, Reason C boon]</code> on path. <code>Hit +20 [⛏ HARVEST — Archer, Bow C boon]</code> cheap accuracy. <code>Poison Strike [⛏ Dark Mage]</code>.</p>
+<p><strong>5 skills:</strong> Fiendish Blow · Hit +20 · Poison Strike · Lifetaker · Battalion Vantage.</p>
+<ul class="pros"><li>✔ Extra dark-spell uses; <strong>no Riding tutoring</strong> required.</li>
+<li>✔ Keeps his whole dark kit working with cheap boon detours.</li></ul>
+<ul class="cons"><li>✘ Move 5, no Canto — loses Dark Knight's mobility and Frozen Lance.</li>
+<li>✘ Strictly a fallback if you refuse the Riding grind.</li></ul>
+</div>
+
+<h2 id="route-usage">Route usage this playthrough (team-driven · R12 difficulty)</h2>
+<table>
+<tr><th>Route (difficulty)</th><th>Build</th><th>Why — for the whole team</th></tr>
+<tr><td><strong>Crimson Flower</strong> (Hard)</td><td><a href="#dark-knight">Dark Knight</a></td><td>🔒 auto-roster retainer. The CF team needs a mobile magic nuke + debuffer; his Mire range and Officer Duty gambits soften enemies for Edelgard's Raging Storm. The Riding grind pays off in Move 7 + Canto. <span class="neutral">(R12: Hard = fuller kit, harvest Fiendish Blow + Hit +20.)</span></td></tr>
+<tr><td><strong>CF (skip Riding)</strong></td><td><a href="#dark-bishop">Dark Bishop</a></td><td>If you won't tutor Riding A, the terminal Dark Bishop keeps his dark-magic identity without losing Dark Tomefaire to a Warlock mistake.</td></tr>
+<tr><td><strong>AM / SS / VW</strong></td><td>—</td><td>Not playable (enemy on every non-CF route).</td></tr>
+</table>
+<p class="lead">Route files link straight to the chosen anchor, e.g. <code>…/character_recommendationV2/black-eagles/hubert-von-vestra-修伯特.html#dark-knight</code>.</p>
+</article>
+</div></body></html>

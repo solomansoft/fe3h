@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Felix Hugo Fraldarius / 菲力克斯 — Build Menu (V2)</title>
+<style>
+:root{--fg:#1c1e26;--muted:#6b7280;--bg:#fbfbfd;--card:#fff;--accent:#3b5bdb;--border:#e5e7eb;--code:#f3f4f6;--good:#067647;--bad:#b42318}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei",sans-serif}
+.wrap{max-width:920px;margin:0 auto;padding:0 20px 80px}
+nav.top{position:sticky;top:0;background:rgba(251,251,253,.92);backdrop-filter:blur(6px);padding:12px 0;border-bottom:1px solid var(--border);margin-bottom:28px;font-size:14px}
+nav.top a{color:var(--accent);text-decoration:none;margin-right:14px}
+article{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:28px 34px}
+h1{font-size:1.7rem;line-height:1.25;margin:.2em 0 .6em;border-bottom:2px solid var(--border);padding-bottom:.3em}
+h2{font-size:1.32rem;margin:1.6em 0 .5em;border-bottom:1px solid var(--border);padding-bottom:.2em}
+h3{font-size:1.1rem;margin:1.3em 0 .4em}
+a{color:var(--accent)}
+table{border-collapse:collapse;width:100%;margin:1em 0;font-size:.94rem;display:block;overflow-x:auto}
+th,td{border:1px solid var(--border);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:var(--code)}
+tr:nth-child(even) td{background:#fafafa}
+code{background:var(--code);padding:.12em .4em;border-radius:5px;font-size:.88em;font-family:"SF Mono",Menlo,Consolas,monospace}
+blockquote{margin:1em 0;padding:.3em 1em;border-left:4px solid var(--accent);background:#f6f8ff;color:#374151}
+.build{border:1px solid var(--border);border-radius:10px;padding:4px 18px 14px;margin:1.1em 0;background:#fff}
+.build h2{border:none;margin-top:.7em}
+.pros li{color:var(--good)} .cons li{color:var(--bad)}
+.pros,.pros *{list-style:none} .tag{display:inline-block;font-size:.74rem;font-weight:600;padding:1px 8px;border-radius:20px;background:var(--code);color:var(--muted);margin-left:6px;vertical-align:middle}
+.boon{color:var(--good);font-weight:600}.bane{color:var(--bad);font-weight:600}.neutral{color:var(--muted)}
+.lead{color:var(--muted)}
+</style></head>
+<body><div class="wrap">
+<nav class="top"><a href="../../../index.html">⌂ Home</a> <a href="../../../suggestions/index.html">suggestions</a> <a href="../../routesV2/index.html">routesV2</a></nav>
+<article>
+<h1 id="felix">Felix Hugo Fraldarius / 菲力克斯 — Build Menu <span class="tag">V2</span></h1>
+<blockquote><p><strong>Blue Lions.</strong> Auto-joins on Azure Moon; recruitable elsewhere (Spd 15 + Sword B+). Major Crest of Fraldarius (40% Mt+5). Personal: <strong>Lone Wolf</strong> (+5 dmg with no battalion). Elite combat growths: 55% Str / 55% Spd — one of the best player-phase damage units in the game.<br>
+<strong>Proficiencies:</strong> <span class="boon">Sword (boon)</span>, <span class="boon">Bow (boon)</span>, <span class="boon">Brawl (boon)</span>; <span class="bane">Faith (bane)</span>; budding <strong>Reason</strong> → Black Magic Crit+10; Lance/Axe/Riding/Flying/Authority/HeavyArmor neutral.<br>
+<span class="boon">Harvest note:</span> Bow is a <strong>boon</strong> → Hit+20 is a cheap harvest. Death Blow (Axe C) is <strong>neutral</strong>, not a boon — grab it only if convenient.<br>
+Sources: Game8 / fe3h.com / Reddit (EN), note.com / GameWith / mark-lxiii JP, GamerSky CN.</p></blockquote>
+<p class="rating-line"><strong>Strength</strong> ⭐⭐⭐⭐⭐ (5/5) &nbsp;·&nbsp; <strong>Build difficulty</strong> 🔧🔧○○○ (2/5)</p>
+
+<h2 id="builds-at-a-glance">Builds at a glance</h2>
+<table>
+<tr><th>Build</th><th>One-line</th><th>Tutoring cost</th><th>Best on</th></tr>
+<tr><td><a href="#hero">Hero</a> <span class="tag">chosen on AM</span></td><td>Sword+Axe bruiser, Vantage+crit enemy-phase (male-only)</td><td><span class="neutral">Light–Med</span> (Sword boon + Axe dip)</td><td>Azure Moon (experience pick)</td></tr>
+<tr><td><a href="#swordmaster">Swordmaster</a></td><td>Natural sword-crit ace, lowest effort</td><td><span class="boon">Light</span> (Sword boon)</td><td>Azure Moon's stronger default</td></tr>
+<tr><td><a href="#war-master">War Master</a></td><td>Gauntlet quads + Crit+20 (male-only, fits)</td><td><span class="boon">Light</span> (Brawl + Bow boons)</td><td>Azure Moon highest-ceiling alt</td></tr>
+<tr><td><a href="#bow-knight">Sniper / Bow Knight</a></td><td>Ranged safety on his Bow boon</td><td><span class="boon">Light</span> (Bow boon)</td><td>Azure Moon if you want him at range</td></tr>
+</table>
+
+<div class="build">
+<h2 id="swordmaster">Build 1 — Swordmaster (剑圣)</h2>
+<p><strong>Path:</strong> Myrmidon → Mercenary → <strong>Swordmaster</strong>. <strong>Cert:</strong> <strong>Sword A</strong> (<span class="boon">boon</span>) — cheap; push <strong>Sword S</strong> for Swordfaire. Sword Crit+10 stacks with his Crest for relentless crits.</p>
+<p><strong>Mastery detours:</strong> <code>Hit+20 [⛏ Archer, Bow C — boon harvest]</code> secures crit-fishing accuracy — free on his Bow boon. <code>Death Blow [Brigand, Axe C — neutral]</code> optional extra player-phase damage (not a boon, but cheap). <code>Speed+2 [⛏ Myrmidon, his start]</code>.</p>
+<p><strong>5 skills:</strong> Swordfaire · Sword Crit+10 · Hit+20 · Death Blow · Sword Avo+20.</p>
+<ul class="pros"><li>✔ <strong>His natural class</strong> — Sword Aptitude + Sword Crit+10 + 40% Crest = constant crits, almost no investment.</li>
+<li>✔ +4 Spd class bonus = reliable doubles; Lone Wolf keeps him strong battalion-less.</li></ul>
+<ul class="cons"><li>✘ Only <strong>5 move</strong>, no Canto/flight.</li>
+<li>✘ Slightly lower ceiling than War Master's gauntlet quads.</li></ul>
+</div>
+
+<div class="build">
+<h2 id="war-master">Build 2 — War Master (战神) — male-only, fits</h2>
+<p><strong>Path:</strong> Myrmidon → Mercenary → Brigand/Archer (master) → Grappler → <strong>War Master</strong>. <strong>Cert:</strong> <strong>Axe A</strong> (neutral) + <strong>Brawl A</strong> (<span class="boon">boon</span>). Male-only — fine for Felix.</p>
+<p><strong>Mastery detours:</strong> <code>Hit+20 [⛏ Archer, Bow C — boon harvest]</code>; <code>Death Blow [Brigand, Axe C — neutral, cheap]</code>; <code>Quick Riposte [⛏ War Master mastery]</code>. Gauntlets exploit his 40% Crest.</p>
+<p><strong>5 skills:</strong> Fistfaire · Crit+20 (War Master) · Death Blow · Hit+20 · Quick Riposte.</p>
+<ul class="pros"><li>✔ <strong>Highest ceiling</strong> — gauntlet quads + Crit+20 + Crest is monstrous burst.</li>
+<li>✔ Brawl boon makes the path cheap; Quick Riposte adds enemy-phase doubles.</li></ul>
+<ul class="cons"><li>✘ Axe A is neutral (not a boon) — a bit more grind than staying Swordmaster.</li>
+<li>✘ Overkill on Normal where Swordmaster already shreds.</li></ul>
+</div>
+
+<div class="build">
+<h2 id="bow-knight">Build 3 — Sniper / Bow Knight (狙击手/弓骑)</h2>
+<p><strong>Path:</strong> Archer → Sniper → <strong>Bow Knight</strong>. <strong>Cert:</strong> <strong>Bow A</strong> (<span class="boon">boon</span>) + Riding A (neutral) for Bow Knight; stop at Sniper if you skip Riding.</p>
+<p><strong>Mastery detours:</strong> <code>Hit+20 [⛏ Archer, Bow C — boon harvest]</code> sits on the path. Hunter's Volley (Bow A) is a counter-proof 2-hit nuke.</p>
+<p><strong>5 skills:</strong> Bowfaire · Hunter's Volley enabler · Hit+20 · Bow Crit+10 · Close Counter.</p>
+<ul class="pros"><li>✔ <strong>Ranged safety</strong> on his Bow boon; Hunter's Volley + his Str/Dex = a precise nuke.</li>
+<li>✔ Bow Knight adds 1–3 range + mobility + Canto.</li></ul>
+<ul class="cons"><li>✘ Underuses his elite melee Str; raw output below his sword/gauntlet builds.</li>
+<li>✘ Bow Knight wants Riding A (neutral) — extra dip; many keep him a Sniper.</li></ul>
+</div>
+
+<div class="build">
+<h2 id="hero">Build 4 — Hero (勇者) — male-only, Advanced <span class="tag">experience pick</span></h2>
+<p><strong>Path:</strong> Myrmidon → Mercenary → (Brigand for Axe) → <strong>Hero</strong>. <strong>Cert:</strong> <strong>Sword A</strong> (<span class="boon">boon</span>, he has it) + Axe to cert rank (<span class="neutral">neutral</span> — a small dip). Male-only, so Felix qualifies.</p>
+<p><strong>Mastery detours:</strong> <code>Vantage [⛏ Hero mastery]</code> — attack first on enemy phase at &lt;50% HP, deadly with his Crit+Crest. <code>Hit+20 [⛏ Archer, Bow C — boon harvest]</code>; <code>Death Blow [Brigand, Axe C — on the way to the Axe cert]</code>.</p>
+<p><strong>5 skills:</strong> Swordfaire · <strong>Vantage</strong> · Sword Crit+10 · Hit+20 · Death Blow.</p>
+<ul class="pros"><li>✔ <strong>Sword + Axe flexibility</strong> and more HP/bulk than Swordmaster; <strong>Vantage + his crit/Crest</strong> make a self-sufficient enemy-phase dueler.</li>
+<li>✔ Uses his Sword boon; the Axe dip doubles as the Brigand→Death Blow harvest.</li></ul>
+<ul class="cons"><li>✘ Advanced (not Master) — lower stat caps than War Master; Axe is neutral (small grind).</li>
+<li>✘ A side-grade to Swordmaster on raw numbers — chosen here to <strong>experience the class</strong>, not to min-max.</li></ul>
+</div>
+
+<h2 id="route-usage">Route usage this playthrough (team-driven · R12 difficulty)</h2>
+<table>
+<tr><th>Route (difficulty)</th><th>Build</th><th>Why — for the whole team</th></tr>
+<tr><td><strong>Azure Moon</strong> (Normal)</td><td><a href="#hero">Hero</a> (harvest Vantage + <a href="#bow-knight">Hit+20</a>)</td><td><strong>Experience pick</strong> on the Normal route (R3 — indulge a non-max build where it costs nothing). Felix's Sword boon + crit Crest make <strong>Hero's Vantage</strong> a self-sufficient enemy-phase dueler, and the Axe dip doubles as a Death Blow harvest. Dimitri carries lance, Dedue walls, so Felix is free to experiment. <em>Swordmaster / War Master remain his stronger picks (see menu).</em></td></tr>
+<tr><td colspan="2"><strong>Crimson Flower / Silver Snow / Verdant Wind</strong></td><td>Not used this playthrough — Felix is fielded only on Azure Moon here.</td></tr>
+</table>
+<p class="lead">Route file links to the chosen anchor, e.g. <code>…/blue-lions/felix-hugo-fraldarius-菲力克斯.html#swordmaster</code>.</p>
+</article>
+</div></body></html>

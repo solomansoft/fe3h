@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hapi / 哈匹 — Build Menu (V2)</title>
+<style>
+:root{--fg:#1c1e26;--muted:#6b7280;--bg:#fbfbfd;--card:#fff;--accent:#3b5bdb;--border:#e5e7eb;--code:#f3f4f6;--good:#067647;--bad:#b42318}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei",sans-serif}
+.wrap{max-width:920px;margin:0 auto;padding:0 20px 80px}
+nav.top{position:sticky;top:0;background:rgba(251,251,253,.92);backdrop-filter:blur(6px);padding:12px 0;border-bottom:1px solid var(--border);margin-bottom:28px;font-size:14px}
+nav.top a{color:var(--accent);text-decoration:none;margin-right:14px}
+article{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:28px 34px}
+h1{font-size:1.7rem;line-height:1.25;margin:.2em 0 .6em;border-bottom:2px solid var(--border);padding-bottom:.3em}
+h2{font-size:1.32rem;margin:1.6em 0 .5em;border-bottom:1px solid var(--border);padding-bottom:.2em}
+h3{font-size:1.1rem;margin:1.3em 0 .4em}
+a{color:var(--accent)}
+table{border-collapse:collapse;width:100%;margin:1em 0;font-size:.94rem;display:block;overflow-x:auto}
+th,td{border:1px solid var(--border);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:var(--code)}
+tr:nth-child(even) td{background:#fafafa}
+code{background:var(--code);padding:.12em .4em;border-radius:5px;font-size:.88em;font-family:"SF Mono",Menlo,Consolas,monospace}
+blockquote{margin:1em 0;padding:.3em 1em;border-left:4px solid var(--accent);background:#f6f8ff;color:#374151}
+.build{border:1px solid var(--border);border-radius:10px;padding:4px 18px 14px;margin:1.1em 0;background:#fff}
+.build h2{border:none;margin-top:.7em}
+.pros li{color:var(--good)} .cons li{color:var(--bad)}
+.pros,.pros *{list-style:none} .tag{display:inline-block;font-size:.74rem;font-weight:600;padding:1px 8px;border-radius:20px;background:var(--code);color:var(--muted);margin-left:6px;vertical-align:middle}
+.boon{color:var(--good);font-weight:600}.bane{color:var(--bad);font-weight:600}.neutral{color:var(--muted)}
+.lead{color:var(--muted)}
+</style></head>
+<body><div class="wrap">
+<nav class="top"><a href="../../../index.html">⌂ Home</a> <a href="../../../suggestions/index.html">suggestions</a> <a href="../../routesV2/index.html">routesV2</a></nav>
+<article>
+<h1 id="hapi">Hapi / 哈匹 — Build Menu <span class="tag">V2</span> <span class="tag">🧩 DLC</span></h1>
+<blockquote><p><strong>Ashen Wolves (Cindered Shadows DLC).</strong> Recruitable into Part 1 after clearing Cindered Shadows Ch.5. Personal <strong>Monstrous Appeal</strong> (effective vs monsters; monsters more likely to target her). Solid Mag (45%) + Dex/Spd; very low Def/Lck. Community-praised for "probably the best spell list in the game" (her <em>dark</em> magic — Banshee Θ / Death Θ).<br>
+<strong>Proficiencies:</strong> <span class="boon">Reason (boon)</span>, <span class="boon">Riding (boon)</span>, <span class="boon">Flying (boon)</span>; <span class="bane">Brawl (bane)</span>, <span class="bane">Authority (bane)</span>, <span class="bane">HeavyArmor (bane)</span>; budding <span class="neutral">Axe</span>. Sword/Lance/Bow/Faith neutral.<br>
+<span class="bane">Avoid Dark Flier:</span> Flying is a boon, but Dark Flier has <strong>NO Dark Tomefaire</strong> — that specifically weakens Hapi, whose best spells are dark. Use Dark Knight (Riding boon) or Valkyrie instead.<br>
+Sources: Game8 / GameFAQs / fe3h.com (EN), GameWith / note.com (JP), GamerSky (CN).</p></blockquote>
+<p class="rating-line"><strong>Strength</strong> ⭐⭐⭐⭐☆ (4/5) &nbsp;·&nbsp; <strong>Build difficulty</strong> 🔧🔧🔧○○ (3/5)</p>
+
+<h2 id="builds-at-a-glance">Builds at a glance</h2>
+<table>
+<tr><th>Build</th><th>One-line</th><th>Tutoring cost</th><th>Best on</th></tr>
+<tr><td><a href="#dark-knight">Dark Knight</a></td><td>Mounted Canto caster; the ONLY Dark Tomefaire class</td><td><span class="boon">Light</span> (Reason boon + Riding boon A)</td><td>Verdant Wind (mobile dark nuke)</td></tr>
+<tr><td><a href="#valkyrie">Valkyrie</a></td><td>Mounted +1 range; Uncanny Blow fixes accuracy</td><td><span class="boon">Light</span> (Reason boon + Riding boon)</td><td>VW alt for range/accuracy</td></tr>
+</table>
+
+<div class="build">
+<h2 id="dark-knight">Build 1 — Dark Knight (暗骑士)</h2>
+<p><strong>Path:</strong> Mage → <strong>Warlock</strong> (grow Mag) → <strong>Dark Knight</strong> (Master Seal). <strong>Cert:</strong> Lance C (<span class="neutral">neutral</span>) / Reason B+ (<span class="boon">boon</span>) / <strong>Riding A</strong> (<span class="boon">boon</span>) — Riding is a boon, so the mount req is cheap; only the small Lance C dip is off-profile.</p>
+<p><strong>Mastery detours (boon-harvest):</strong> <code>Fiendish Blow [⛏ Mage, Reason C — boon]</code> the cornerstone +6 Mag on initiate — natural beginner step, harvest early. <code>Uncanny Blow [⛏ Valkyrie]</code> optional accuracy fix for long-range tomes. <code>Seal Resistance [⛏ Dark Knight]</code> its own mastery, debuffs enemy Res. <span class="bane">Never Brigand/Axe</span> — Axe is only budding and Brawl is a bane.</p>
+<p><strong>5 skills:</strong> Dark Tomefaire · Black Tomefaire · Fiendish Blow · Hit+20 · Seal Resistance.</p>
+<ul class="pros"><li>✔ <strong>The ONLY player class with Dark Tomefaire</strong> (+5 to dark magic) — directly boosts her signature Banshee Θ / Death Θ list.</li>
+<li>✔ Mounted 7 move + <strong>Canto</strong> on her Riding boon = hit a Res-weak target and pull back to safety.</li>
+<li>✔ High Res; Dark Knight even adds +Mag growth, so it's a fine final shell after a short Warlock phase.</li></ul>
+<ul class="cons"><li>✘ Very low Def/Lck — keep her out of bow range and behind a blocker.</li>
+<li>✘ Lance C is a minor off-profile dip.</li></ul>
+</div>
+
+<div class="build">
+<h2 id="valkyrie">Build 2 — Valkyrie (圣魔导, DLC, female-only)</h2>
+<p><strong>Path:</strong> Mage → Warlock (grow Mag) → <strong>Valkyrie</strong> (Abyssian Master Seal). <strong>Cert:</strong> Reason B+ (<span class="boon">boon</span>) / Faith C (<span class="neutral">neutral</span>) / Riding (<span class="boon">boon</span>).</p>
+<p><strong>Mastery detours:</strong> <code>Fiendish Blow [⛏ Mage, Reason C — boon]</code> as above; <code>Uncanny Blow [⛏ Valkyrie]</code> is the class's own mastery — Hit boost on initiate fixes long-range tome accuracy.</p>
+<p><strong>5 skills:</strong> Black Tomefaire · Fiendish Blow · Uncanny Blow · Hit+20 · Alert Stance+.</p>
+<ul class="pros"><li>✔ Mounted caster with <strong>+1 magic range</strong> + Canto; Uncanny Blow makes long-range nukes reliable.</li>
+<li>✔ Equip <strong>Thyrsus</strong> for absurd Banshee/Bolting range from total safety.</li></ul>
+<ul class="cons"><li>✘ <strong>No Dark Tomefaire</strong> — slightly weaker on her dark-heavy spell list than Dark Knight.</li>
+<li>✘ Same frailty; lives off range + Canto rather than bulk.</li></ul>
+<p class="lead">Foot alt <strong>Gremory</strong> (x2 dark spells, +5 Mag) maximizes spell economy but loses Canto. Dark Knight edges all of them on her dark list thanks to the exclusive Dark Tomefaire.</p>
+</div>
+
+<h2 id="route-usage">Route usage this playthrough (team-driven · R12 difficulty)</h2>
+<table>
+<tr><th>Route (difficulty)</th><th>Build</th><th>Why — for the whole team</th></tr>
+<tr><td><strong>Verdant Wind</strong> (Maddening)</td><td><a href="#dark-knight">Dark Knight</a></td><td>Golden Deer wants a mobile magic deleter; Hapi's elite dark list + the exclusive <strong>Dark Tomefaire</strong> + Canto (Riding boon) make her a hit-and-run nuke, and <strong>Monstrous Appeal</strong> makes her the team's anti-monster specialist. Pair near a healer/blocker (low Def). <span class="neutral">(R12: Maddening = full optimal; take <a href="#valkyrie">Valkyrie</a> instead if the team needs the +1 range/accuracy over dark damage.)</span></td></tr>
+<tr><td><strong>AM / SS</strong></td><td>—</td><td>Part-1-only recruit; not featured here.</td></tr>
+<tr><td><strong>Crimson Flower</strong></td><td>—</td><td>Recruitable, but our caster slots are filled on CF.</td></tr>
+</table>
+<p class="lead">Each route file links straight to the chosen build anchor above, e.g. <code>…/character_recommendationV2/others/hapi-哈匹.html#dark-knight</code>.</p>
+</article>
+</div></body></html>

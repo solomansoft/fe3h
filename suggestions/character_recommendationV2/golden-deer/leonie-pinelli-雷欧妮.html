@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonie Pinelli / 雷欧妮 — Build Menu (V2)</title>
+<style>
+:root{--fg:#1c1e26;--muted:#6b7280;--bg:#fbfbfd;--card:#fff;--accent:#3b5bdb;--border:#e5e7eb;--code:#f3f4f6;--good:#067647;--bad:#b42318}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei",sans-serif}
+.wrap{max-width:920px;margin:0 auto;padding:0 20px 80px}
+nav.top{position:sticky;top:0;background:rgba(251,251,253,.92);backdrop-filter:blur(6px);padding:12px 0;border-bottom:1px solid var(--border);margin-bottom:28px;font-size:14px}
+nav.top a{color:var(--accent);text-decoration:none;margin-right:14px}
+article{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:28px 34px}
+h1{font-size:1.7rem;line-height:1.25;margin:.2em 0 .6em;border-bottom:2px solid var(--border);padding-bottom:.3em}
+h2{font-size:1.32rem;margin:1.6em 0 .5em;border-bottom:1px solid var(--border);padding-bottom:.2em}
+h3{font-size:1.1rem;margin:1.3em 0 .4em}
+a{color:var(--accent)}
+table{border-collapse:collapse;width:100%;margin:1em 0;font-size:.94rem;display:block;overflow-x:auto}
+th,td{border:1px solid var(--border);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:var(--code)}
+tr:nth-child(even) td{background:#fafafa}
+code{background:var(--code);padding:.12em .4em;border-radius:5px;font-size:.88em;font-family:"SF Mono",Menlo,Consolas,monospace}
+blockquote{margin:1em 0;padding:.3em 1em;border-left:4px solid var(--accent);background:#f6f8ff;color:#374151}
+.build{border:1px solid var(--border);border-radius:10px;padding:4px 18px 14px;margin:1.1em 0;background:#fff}
+.build h2{border:none;margin-top:.7em}
+.pros li{color:var(--good)} .cons li{color:var(--bad)}
+.pros,.pros *{list-style:none} .tag{display:inline-block;font-size:.74rem;font-weight:600;padding:1px 8px;border-radius:20px;background:var(--code);color:var(--muted);margin-left:6px;vertical-align:middle}
+.boon{color:var(--good);font-weight:600}.bane{color:var(--bad);font-weight:600}.neutral{color:var(--muted)}
+.lead{color:var(--muted)}
+</style></head>
+<body><div class="wrap">
+<nav class="top"><a href="../../../index.html">⌂ Home</a> <a href="../../../suggestions/index.html">suggestions</a> <a href="../../routesV2/index.html">routesV2</a></nav>
+<article>
+<h1 id="leonie">Leonie Pinelli / 雷欧妮 — Build Menu <span class="tag">V2</span></h1>
+<blockquote><p><strong>Golden Deer house member</strong> (auto-joins Verdant Wind; recruitable to other houses — easy via Bow/Lance/Strength). No Crest, no budding talent. Growths Spd 60 / Dex 55 / Str 40 / Def 40 — fast, accurate, durable; Rivalry personal gives +2 dmg / −2 taken next to male allies. "One of the best non-lord combat units" [Reddit].<br>
+<strong>Proficiencies:</strong> <span class="boon">Lance (boon)</span>, <span class="boon">Bow (boon)</span>, <span class="boon">Riding (boon)</span>; <strong>no bane</strong> — certifies into almost anything without remedial tutoring.<br>
+<strong>Harvest:</strong> <code>Hit+20 [⛏ Archer, Bow C — boon]</code> on-boon, free; <code>Darting Blow [⛏ Pegasus Knight, Lance C + Flying D — Lance boon, female-OK]</code> the key Maddening doubler. <code>Death Blow [⛏ Brigand, Axe C — neutral]</code> off-boon but painless given zero banes.<br>
+Sources: Fire Emblem Wiki / Game8 / fe3h.com / Reddit (EN), note.com / namu.wiki (JP/KR), GamerSky (CN).</p></blockquote>
+<p class="rating-line"><strong>Strength</strong> ⭐⭐⭐⭐☆ (4/5) &nbsp;·&nbsp; <strong>Build difficulty</strong> 🔧🔧○○○ (2/5)</p>
+
+<h2 id="builds-at-a-glance">Builds at a glance</h2>
+<table>
+<tr><th>Build</th><th>One-line</th><th>Tutoring cost</th><th>Best on</th></tr>
+<tr><td><a href="#bow-knight">Bow Knight</a></td><td>Mov-8 1–3 range bow+lance cavalry, best BK candidate</td><td><span class="boon">Light</span> (Bow A + Riding A + Lance C, all boons)</td><td>Verdant Wind (Maddening)</td></tr>
+<tr><td><a href="#falcon-knight">Falcon Knight</a></td><td>Flying Speed dodge-tank, Darting Blow doubler</td><td><span class="boon">Light</span> (Lance A + Flying A; Lance boon)</td><td>Azure Moon (Normal)</td></tr>
+<tr><td><a href="#wyvern-lord">Wyvern Lord</a></td><td>Off-class flying axe bruiser</td><td><span class="neutral">Medium</span> (Axe A neutral grind + Flying A)</td><td>Alt — raw flying damage</td></tr>
+</table>
+
+<div class="build">
+<h2 id="bow-knight">Build 1 — Bow Knight (弓骑兵) <span class="tag">VW pick</span></h2>
+<p><strong>Path:</strong> Commoner → Soldier → Cavalier → Paladin → <strong>Bow Knight</strong>. <strong>Cert:</strong> Bow A (<span class="boon">boon</span>) + Riding A (<span class="boon">boon</span>) + Lance C (<span class="boon">boon</span>) — all on-strength. The <strong>strongest Bow Knight candidate among cavalry defaults</strong> [Fire Emblem Wiki]; her base growths carry the class's mediocre modifiers.</p>
+<p><strong>Mastery detours (boon-harvest):</strong> <code>Hit+20 [⛏ Archer, Bow C — boon]</code> already on the road — master it. <code>Death Blow [⛏ Brigand, Axe C — neutral]</code> painless given no banes; +6 Str on every bow/lance initiation. <code>Darting Blow [⛏ Pegasus Knight, Lance C — boon, female-OK]</code> grab it before settling in.</p>
+<p><strong>5 skills:</strong> Bowfaire · Death Blow · Darting Blow · Hit+20 · Bowrange+1.</p>
+<ul class="pros"><li>✔ <strong>Mov 8 + Canto + Bowrange+2</strong> — Cantos in, fires 1–3 range bow or melee lance, retreats; a mobile player-phase powerhouse.</li>
+<li>✔ Uses all three boons; her Spd/Dex make her accurate and dodgy.</li></ul>
+<ul class="cons"><li>✘ Bow Knight's own growths are mediocre — relies on her base growths leading in.</li>
+<li>✘ No flight/evasion ceiling of the Falcon build.</li></ul>
+</div>
+
+<div class="build">
+<h2 id="falcon-knight">Build 2 — Falcon Knight (天马骑士) <span class="tag">AM pick</span></h2>
+<p><strong>Path:</strong> Commoner → Soldier → Pegasus Knight → <strong>Falcon Knight</strong> (female-only). <strong>Cert:</strong> Lance A (<span class="boon">boon</span>) + Flying A (neutral, trains fine). Her huge Speed → a flying dodge-tank with Canto.</p>
+<p><strong>Mastery detours (boon-harvest):</strong> <code>Darting Blow [⛏ Pegasus Knight, Lance C — boon]</code> sits on the path — free, essential to double the fastest Maddening enemies. <code>Hit+20 [⛏ Archer, Bow C — boon]</code> on-boon accuracy passive.</p>
+<p><strong>5 skills:</strong> Lancefaire · Darting Blow · Hit+20 · Alert Stance+ · Avo+10.</p>
+<ul class="pros"><li>✔ <strong>Flight + Canto + dodge</strong> — her Speed makes a near-untouchable evasion flier.</li>
+<li>✔ Darting Blow lets her double the fastest foes; great low-stakes AM workhorse.</li></ul>
+<ul class="cons"><li>✘ Lower raw output than Bow Knight's 1–3 range carry.</li>
+<li>✘ Loses bow range — pure lance melee on the flier frame.</li></ul>
+</div>
+
+<div class="build">
+<h2 id="wyvern-lord">Build 3 — Wyvern Lord (飞龙领主)</h2>
+<p><strong>Path:</strong> Commoner → Fighter → Brigand → Wyvern Rider → <strong>Wyvern Lord</strong>. <strong>Cert:</strong> Lance C (<span class="boon">boon</span>) / Axe A (<span class="neutral">neutral grind</span>) / Flying A (neutral). She lacks an Axe boon so Axe A is a real grind, but her Str/Spd carry it [namu.wiki].</p>
+<p><strong>Mastery detours (boon-harvest):</strong> <code>Death Blow [⛏ Brigand, Axe C — neutral]</code> on the path already — harvest it. <code>Darting Blow [⛏ Pegasus Knight, Lance C — boon]</code> for the doubling enabler.</p>
+<p><strong>5 skills:</strong> Axefaire · Death Blow · Darting Blow · Avo+10 · Defiant Crit.</p>
+<ul class="pros"><li>✔ Best physical class + her stats = a fearless flying bruiser with Axefaire and Avo+10.</li>
+<li>✔ Distinct from her bow/lance builds if a route already has a Bow Knight.</li></ul>
+<ul class="cons"><li>✘ Axe A is a neutral grind (her one non-boon weapon path).</li>
+<li>✘ Loses the 1–3 range utility her boons naturally give.</li></ul>
+</div>
+
+<h2 id="route-usage">Route usage this playthrough (team-driven · R12 difficulty)</h2>
+<table>
+<tr><th>Route (difficulty)</th><th>Build</th><th>Why — for the whole team</th></tr>
+<tr><td><strong>Azure Moon</strong> (Normal)</td><td><a href="#falcon-knight">Falcon Knight</a></td><td>BL already fields lance cavalry/bruisers; on Normal Leonie slots in as the cheap <strong>flying dodge-tank + Darting Blow doubler</strong>, adding air mobility the foot-heavy early roster lacks. <span class="neutral">(R12: lean kit on Normal.)</span></td></tr>
+<tr><td><strong>Verdant Wind</strong> (Maddening)</td><td><a href="#bow-knight">Bow Knight</a></td><td>GD's best Bow Knight candidate. With Claude on a wyvern, Leonie covers the <strong>mounted 1–3 range carry</strong> slot — Cantos in, fires bow or lance, retreats. Her boons make the build nearly free. (Distinct from her AM flier per R3.)</td></tr>
+<tr><td><strong>Crimson Flower / Silver Snow</strong></td><td>—</td><td>Not featured — recruitable but built on AM/VW in this playthrough.</td></tr>
+</table>
+<p class="lead">Each route file links straight to the chosen build anchor above, e.g. <code>…/character_recommendationV2/golden-deer/leonie-pinelli-雷欧妮.html#bow-knight</code>.</p>
+</article>
+</div></body></html>

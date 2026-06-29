@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Annette Fantine Dominic / 安妮特 — Build Menu (V2)</title>
+<style>
+:root{--fg:#1c1e26;--muted:#6b7280;--bg:#fbfbfd;--card:#fff;--accent:#3b5bdb;--border:#e5e7eb;--code:#f3f4f6;--good:#067647;--bad:#b42318}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei",sans-serif}
+.wrap{max-width:920px;margin:0 auto;padding:0 20px 80px}
+nav.top{position:sticky;top:0;background:rgba(251,251,253,.92);backdrop-filter:blur(6px);padding:12px 0;border-bottom:1px solid var(--border);margin-bottom:28px;font-size:14px}
+nav.top a{color:var(--accent);text-decoration:none;margin-right:14px}
+article{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:28px 34px}
+h1{font-size:1.7rem;line-height:1.25;margin:.2em 0 .6em;border-bottom:2px solid var(--border);padding-bottom:.3em}
+h2{font-size:1.32rem;margin:1.6em 0 .5em;border-bottom:1px solid var(--border);padding-bottom:.2em}
+h3{font-size:1.1rem;margin:1.3em 0 .4em}
+a{color:var(--accent)}
+table{border-collapse:collapse;width:100%;margin:1em 0;font-size:.94rem;display:block;overflow-x:auto}
+th,td{border:1px solid var(--border);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:var(--code)}
+tr:nth-child(even) td{background:#fafafa}
+code{background:var(--code);padding:.12em .4em;border-radius:5px;font-size:.88em;font-family:"SF Mono",Menlo,Consolas,monospace}
+blockquote{margin:1em 0;padding:.3em 1em;border-left:4px solid var(--accent);background:#f6f8ff;color:#374151}
+.build{border:1px solid var(--border);border-radius:10px;padding:4px 18px 14px;margin:1.1em 0;background:#fff}
+.build h2{border:none;margin-top:.7em}
+.pros li{color:var(--good)} .cons li{color:var(--bad)}
+.pros,.pros *{list-style:none} .tag{display:inline-block;font-size:.74rem;font-weight:600;padding:1px 8px;border-radius:20px;background:var(--code);color:var(--muted);margin-left:6px;vertical-align:middle}
+.boon{color:var(--good);font-weight:600}.bane{color:var(--bad);font-weight:600}.neutral{color:var(--muted)}
+.lead{color:var(--muted)}
+</style></head>
+<body><div class="wrap">
+<nav class="top"><a href="../../../index.html">⌂ Home</a> <a href="../../../suggestions/index.html">suggestions</a> <a href="../../routesV2/index.html">routesV2</a></nav>
+<article>
+<h1 id="annette">Annette Fantine Dominic / 安妮特 — Build Menu <span class="tag">V2</span></h1>
+<blockquote><p><strong>Blue Lions.</strong> Auto-joins on Azure Moon; recruitable elsewhere (Magic 10 + Faith B). <strong>No budding talent.</strong> Minor Crest of Dominic (10% conserve attack-magic use). Personal: <strong>Perseverance / Rally Strength</strong> (adjacent ally Str+4). Magic growths (50% Mag / 50% Dex) plus a usable 30% Str and her <strong>Axe boon</strong> make her a unique hybrid mage/axe unit. Owns relic <strong>Crusher (大锤)</strong> on Azure Moon.<br>
+<strong>Proficiencies:</strong> <span class="boon">Axe (boon)</span>, <span class="boon">Reason (boon)</span>, <span class="boon">Authority (boon)</span>; <span class="bane">Bow (bane)</span>, <span class="bane">HeavyArmor (bane)</span>; Sword/Lance/Brawl/Riding/Flying/Faith neutral.<br>
+<span class="bane">Harvest note:</span> Fiendish Blow (Reason boon) + Death Blow (Axe boon) are free harvests. <span class="bane">Bow bane → NO Hit+20 harvest</span>; Crusher's low Hit needs an Accuracy Ring instead.<br>
+Sources: fe3h.com / Game8 (EN), note.com / GameWith JP, GamerSky CN.</p></blockquote>
+<p class="rating-line"><strong>Strength</strong> ⭐⭐⭐⭐☆ (4/5) &nbsp;·&nbsp; <strong>Build difficulty</strong> 🔧🔧🔧○○ (3/5)</p>
+
+<h2 id="builds-at-a-glance">Builds at a glance</h2>
+<table>
+<tr><th>Build</th><th>One-line</th><th>Tutoring cost</th><th>Best on</th></tr>
+<tr><td><a href="#warlock-gremory">Warlock → Gremory</a></td><td>Pure mage, max Magic + spell doubling</td><td><span class="boon">Light</span> (Reason + Authority boons)</td><td>Azure Moon (Normal)</td></tr>
+<tr><td><a href="#wyvern-lord">Wyvern Lord</a></td><td>Flying Lightning-Axe nuke (community alt)</td><td><span class="neutral">Medium</span> (Axe boon + Flying A neutral)</td><td>Azure Moon mobility ceiling</td></tr>
+<tr><td><a href="#dark-knight">Dark Knight</a></td><td>Mounted mage with Reason</td><td><span class="neutral">Medium</span> (Reason boon + Riding A neutral)</td><td>Mobile-caster alt</td></tr>
+</table>
+
+<div class="build">
+<h2 id="warlock-gremory">Build 1 — Warlock → Gremory (黑魔法师→格莫瑞) — female-only, fits</h2>
+<p><strong>Path:</strong> Monk → Mage → Warlock → <strong>Gremory</strong>. <strong>Cert:</strong> <strong>Reason A</strong> (<span class="boon">boon</span>) + Faith for staff utility + <strong>Authority</strong> (<span class="boon">boon</span>) for Rally stacking. Highest Magic, doubles spell uses; female-only, fits.</p>
+<p><strong>Mastery detours (boon-harvest):</strong> <code>Fiendish Blow [⛏ Mage, Reason C — boon, on path]</code> Magic+6 core nuke spike. <code>Magic+2 [⛏ Monk]</code> early. <span class="bane">SKIP Hit+20</span> (Archer needs Bow C — Bow is her <strong>bane</strong>); use an Accuracy Ring for Crusher.</p>
+<p><strong>5 skills:</strong> Reason Prowess · Fiendish Blow · Magic+2 · Faith Prowess · Perseverance (Rally Str, always-on).</p>
+<ul class="pros"><li>✔ <strong>Max Magic + doubled spell uses</strong> (Bolganone/Fimbulvetr); Authority boon feeds her Rally Strength buffs.</li>
+<li>✔ Lowest investment — all certs are boons; Fiendish Blow harvested free.</li></ul>
+<ul class="cons"><li>✘ Lower mobility than the flying build; no Lightning-Axe burst.</li>
+<li>✘ Crusher accuracy needs the Accuracy Ring (Hit+20 is bane-gated).</li></ul>
+</div>
+
+<div class="build">
+<h2 id="wyvern-lord">Build 2 — Wyvern Lord (飞龙领主, "flying Annette") — community alt</h2>
+<p><strong>Path:</strong> Monk (master) → Mage (master) → Brigand → Wyvern Rider → <strong>Wyvern Lord</strong>. <strong>Cert:</strong> <strong>Axe A</strong> (<span class="boon">boon</span>) + <strong>Flying A</strong> (neutral). Dart in, swing <strong>Lightning Axe</strong> (magic-scaling, one-shots many enemies), retreat with Canto.</p>
+<p><strong>Mastery detours (double boon-harvest):</strong> <code>Fiendish Blow [⛏ Mage, Reason C — boon]</code> for magic-axe damage AND <code>Death Blow [⛏ Brigand, Axe C — boon, on path]</code> for physical-axe damage — <strong>both boons</strong>. <span class="bane">SKIP Hit+20</span> (Bow bane) — Accuracy Ring for Crusher/Bolt Axe.</p>
+<p><strong>5 skills:</strong> Axefaire · Fiendish Blow · Death Blow · Magic+2 · Perseverance (always-on).</p>
+<ul class="pros"><li>✔ <strong>8-move flight + Canto + Lightning Axe</strong> (scales on Magic) = a mobile nuke that deletes Maddening enemies; Crusher/Bolt Axe synergy.</li>
+<li>✔ Both Reason-boon Fiendish Blow and Axe-boon Death Blow harvested for free.</li></ul>
+<ul class="cons"><li>✘ Needs <strong>Flying A</strong> (neutral) and a long class path — heavier than Gremory.</li>
+<li>✘ Crusher's low accuracy; Hit+20 bane-gated → Accuracy Ring mandatory.</li></ul>
+</div>
+
+<div class="build">
+<h2 id="dark-knight">Build 3 — Dark Knight (暗黑骑士)</h2>
+<p><strong>Path:</strong> Monk → Mage → Warlock → <strong>Dark Knight</strong>. <strong>Cert:</strong> <strong>Reason A</strong> (<span class="boon">boon</span>) + <strong>Riding A</strong> (neutral) + Lance C. Mounted mage with mobility + Reason [Game8 alt].</p>
+<p><strong>Mastery detours (boon-harvest):</strong> <code>Fiendish Blow [⛏ Mage, Reason C — boon]</code> on path. <span class="bane">SKIP Hit+20</span> (Bow bane).</p>
+<p><strong>5 skills:</strong> Reason Prowess · Fiendish Blow · Magic+2 · Lancefaire/Movement · Perseverance.</p>
+<ul class="pros"><li>✔ <strong>7 move + Canto</strong> mounted caster — more reach than Gremory, no Flying grind.</li></ul>
+<ul class="cons"><li>✘ Gremory out-magics it (no spell-use doubling) and Wyvern out-mobilizes it.</li>
+<li>✘ Riding A is neutral (off-boon); middling pick.</li></ul>
+</div>
+
+<h2 id="route-usage">Route usage this playthrough (team-driven · R12 difficulty)</h2>
+<table>
+<tr><th>Route (difficulty)</th><th>Build</th><th>Why — for the whole team</th></tr>
+<tr><td><strong>Azure Moon</strong> (Normal)</td><td><a href="#warlock-gremory">Warlock → Gremory</a> (harvest Fiendish Blow)</td><td>The BL <strong>magic carry + Rally buffer</strong>: she nukes from range and her Perseverance (Str+4) + the Mercedes A-support (+3 Mt) buff a physical attacker she stands beside. On Normal the lean Gremory kit is enough; <strong>Fiendish Blow (Reason boon) is a free harvest</strong>, and we skip the bane-gated Hit+20 (Accuracy Ring for Crusher). <span class="neutral">(R12: lean Gremory — Wyvern only if you tutor Flying.)</span></td></tr>
+<tr><td colspan="2"><strong>Crimson Flower / Silver Snow / Verdant Wind</strong></td><td>Not used this playthrough — fielded only on Azure Moon here.</td></tr>
+</table>
+<p class="lead">Route file links to the chosen anchor, e.g. <code>…/blue-lions/annette-fantine-dominic-安妮特.html#warlock-gremory</code>.</p>
+</article>
+</div></body></html>

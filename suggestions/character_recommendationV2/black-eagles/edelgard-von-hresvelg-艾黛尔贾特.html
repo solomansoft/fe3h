@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Edelgard von Hresvelg / 艾黛尔贾特 — Build Menu (V2)</title>
+<style>
+:root{--fg:#1c1e26;--muted:#6b7280;--bg:#fbfbfd;--card:#fff;--accent:#3b5bdb;--border:#e5e7eb;--code:#f3f4f6;--good:#067647;--bad:#b42318}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei",sans-serif}
+.wrap{max-width:920px;margin:0 auto;padding:0 20px 80px}
+nav.top{position:sticky;top:0;background:rgba(251,251,253,.92);backdrop-filter:blur(6px);padding:12px 0;border-bottom:1px solid var(--border);margin-bottom:28px;font-size:14px}
+nav.top a{color:var(--accent);text-decoration:none;margin-right:14px}
+article{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:28px 34px}
+h1{font-size:1.7rem;line-height:1.25;margin:.2em 0 .6em;border-bottom:2px solid var(--border);padding-bottom:.3em}
+h2{font-size:1.32rem;margin:1.6em 0 .5em;border-bottom:1px solid var(--border);padding-bottom:.2em}
+h3{font-size:1.1rem;margin:1.3em 0 .4em}
+a{color:var(--accent)}
+table{border-collapse:collapse;width:100%;margin:1em 0;font-size:.94rem;display:block;overflow-x:auto}
+th,td{border:1px solid var(--border);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:var(--code)}
+tr:nth-child(even) td{background:#fafafa}
+code{background:var(--code);padding:.12em .4em;border-radius:5px;font-size:.88em;font-family:"SF Mono",Menlo,Consolas,monospace}
+blockquote{margin:1em 0;padding:.3em 1em;border-left:4px solid var(--accent);background:#f6f8ff;color:#374151}
+.build{border:1px solid var(--border);border-radius:10px;padding:4px 18px 14px;margin:1.1em 0;background:#fff}
+.build h2{border:none;margin-top:.7em}
+.pros li{color:var(--good)} .cons li{color:var(--bad)}
+.pros,.pros *{list-style:none} .tag{display:inline-block;font-size:.74rem;font-weight:600;padding:1px 8px;border-radius:20px;background:var(--code);color:var(--muted);margin-left:6px;vertical-align:middle}
+.boon{color:var(--good);font-weight:600}.bane{color:var(--bad);font-weight:600}.neutral{color:var(--muted)}
+.lead{color:var(--muted)}
+</style></head>
+<body><div class="wrap">
+<nav class="top"><a href="../../../index.html">⌂ Home</a> <a href="../../../suggestions/index.html">suggestions</a> <a href="../../routesV2/index.html">routesV2</a></nav>
+<article>
+<h1 id="edelgard">Edelgard von Hresvelg / 艾黛尔贾特 — Build Menu <span class="tag">V2</span></h1>
+<blockquote><p><strong>Black Eagles lord — locked to the house, never recruitable.</strong> Leads <strong>Crimson Flower</strong>; enemy on the other three routes. Minor Crest of Seiros, growths Str 55% / Mag 45% / Cha 60%, personal <strong>Imperial Lineage</strong> (1.2× EXP). Unique class line Armored Lord → Emperor; relic axe <strong>Aymr</strong> (Raging Storm extra action).<br>
+<strong>Proficiencies:</strong> <span class="boon">Sword (boon)</span>, <span class="boon">Axe (boon)</span>, <span class="boon">Authority (boon)</span>, <span class="boon">Heavy Armor (boon)</span>; <span class="bane">Bow (BANE)</span>, <span class="bane">Faith (BANE)</span>; budding talent <strong>Reason</strong>; Lance/Brawl/Riding/Flying neutral.<br>
+<span class="bane">Bow bane correction:</span> the old guide casually listed <strong>Hit +20</strong> — but Archer/Bow is a <strong>BANE</strong> for her, so the Archer detour is too expensive. <strong>Drop Hit +20</strong>; replace with <strong>Defiant Crit</strong> or <strong>Armored Effectiveness −</strong> from her own Armor line. <span class="boon">HARVEST Death Blow</span> instead — Axe is a boon and Brigand sits on her path.<br>
+Sources: Game8 / GameFAQs / fe3h.com (EN), GameWith / note.com (JP), GamerSky (CN).</p></blockquote>
+<p class="rating-line"><strong>Strength</strong> ⭐⭐⭐⭐⭐ (5/5) &nbsp;·&nbsp; <strong>Build difficulty</strong> 🔧○○○○ (1/5)</p>
+
+<h2 id="builds-at-a-glance">Builds at a glance</h2>
+<table>
+<tr><th>Build</th><th>One-line</th><th>Tutoring cost</th><th>Best on</th></tr>
+<tr><td><a href="#emperor">Emperor</a></td><td>Unique lord; Aymr + Raging Storm wrecking ball</td><td><span class="boon">Light</span> (Axe/Armor/Auth all boons)</td><td>Crimson Flower (her route)</td></tr>
+<tr><td><a href="#wyvern-lord">Wyvern Lord</a></td><td>"Best WL in the game" — flight min-max</td><td><span class="neutral">Heavy</span> (Flying A + Lance C)</td><td>CF min-max alt</td></tr>
+<tr><td><a href="#fortress-knight">Fortress Knight</a></td><td>Heavy-Armor immovable wall</td><td><span class="boon">Light</span> (Armor boon)</td><td>CF defensive variant</td></tr>
+</table>
+
+<div class="build">
+<h2 id="emperor">Build 1 — Emperor (帝王)</h2>
+<p><strong>Path:</strong> Noble → Fighter → Brigand → <strong>Armored Lord</strong> → <strong>Emperor</strong> (her exclusive line). <strong>Cert:</strong> Axe + Heavy Armor + Authority — all <span class="boon">boons</span>, so this is a <span class="boon">light</span> investment for her signature class.</p>
+<p><strong>Mastery detours:</strong> <code>Death Blow [⛏ HARVEST — Brigand, Axe C boon]</code> sits directly on the path; +6 Str on initiate stacks with Raging Storm. <code>Strength +2 [⛏ Fighter]</code> cheap early grab. <span class="bane">SKIP Hit +20</span> — Archer/Bow is her BANE; use her own <code>Armored Effectiveness −</code> / <code>Defiant Crit</code> instead.</p>
+<p><strong>5 skills:</strong> Axefaire · Death Blow · Defiant Crit · Armored Effectiveness − · Battalion Wrath.</p>
+<ul class="pros"><li>✔ <strong>Aymr + Raging Storm</strong> = extra action after a KO; one of the best player-phase combat arts in the game.</li>
+<li>✔ Huge Str + Def from the Armor line; her Charm 60% makes Authority gambits hit hard.</li></ul>
+<ul class="cons"><li>✘ Armored line = low Move, no Canto; relies on Aymr to shine (JP note.com only A-tier without it).</li>
+<li>✘ Bow/Faith are dead weapons — no Hit +20 fix for armored accuracy.</li></ul>
+</div>
+
+<div class="build">
+<h2 id="wyvern-lord">Build 2 — Wyvern Lord (飞龙领主)</h2>
+<p><strong>Path:</strong> Noble → Fighter → Brigand → Wyvern Rider → <strong>Wyvern Lord</strong>. <strong>Cert:</strong> <strong>Axe A</strong> (<span class="boon">boon</span>) + <strong>Flying A</strong> (<span class="neutral">neutral</span> — tutor) + Lance C. Multiple sources call her "one of the best Wyvern Lord units in the game."</p>
+<p><strong>Mastery detours:</strong> <code>Death Blow [⛏ HARVEST — Brigand, Axe C boon]</code> is already on the path. <span class="bane">SKIP Hit +20</span> (Bow bane).</p>
+<p><strong>5 skills:</strong> Axefaire · Death Blow · Defiant Crit · Alert Stance+ · Battalion Wrath.</p>
+<ul class="pros"><li>✔ <strong>Move 8 + flight + Canto</strong> turns her Str growth into a mobile wrecking ball.</li>
+<li>✔ Solves the armored mobility problem the community flags for Maddening.</li></ul>
+<ul class="cons"><li>✘ Tutoring Flying A from neutral; <strong>drops Aymr/Raging Storm synergy</strong> (Armor-line exclusive).</li>
+<li>✘ Loses the unique-lord identity that is her whole appeal on CF.</li></ul>
+</div>
+
+<div class="build">
+<h2 id="fortress-knight">Build 3 — Fortress Knight (铁壁骑士)</h2>
+<p><strong>Path:</strong> Noble → Armored Knight → <strong>Fortress Knight</strong>. <strong>Cert:</strong> Heavy Armor — her <span class="boon">boon</span>, so a <span class="boon">light</span> wall build.</p>
+<p><strong>Mastery detours:</strong> <code>Death Blow [⛏ HARVEST — Brigand, Axe C boon]</code> for the rare offensive turn. <span class="bane">SKIP Hit +20</span> (Bow bane).</p>
+<p><strong>5 skills:</strong> Axefaire · Death Blow · Armored Effectiveness − · Defiant Crit · Weight −3.</p>
+<ul class="pros"><li>✔ Leans on her Heavy-Armor boon for a near-unkillable choke-point wall.</li>
+<li>✔ Cheap; Altema rates an armored Edelgard a "strong final candidate."</li></ul>
+<ul class="cons"><li>✘ Move 4, no Canto; the worst mobility of her three options.</li>
+<li>✘ Gives up Aymr/Raging Storm — strictly a durability pick, not a carry.</li></ul>
+</div>
+
+<h2 id="route-usage">Route usage this playthrough (team-driven · R12 difficulty)</h2>
+<table>
+<tr><th>Route (difficulty)</th><th>Build</th><th>Why — for the whole team</th></tr>
+<tr><td><strong>Crimson Flower</strong> (Hard)</td><td><a href="#emperor">Emperor</a></td><td>🔒 the lord — non-negotiable. The CF team leans into her Aymr/Raging Storm burst as the front-line wrecking ball while Hubert (Dark Knight) and Dorothea (Gremory) cover magic range. <span class="neutral">(R12: Hard = fuller kit, harvest Death Blow.)</span></td></tr>
+<tr><td><strong>CF min-max alt</strong></td><td><a href="#wyvern-lord">Wyvern Lord</a></td><td>If the team is already armor-heavy and needs air mobility, fly her instead — the highest raw ceiling, at the cost of Aymr synergy.</td></tr>
+<tr><td><strong>CF defensive alt</strong></td><td><a href="#fortress-knight">Fortress Knight</a></td><td>Choke-point wall when the team wants a turtle line; lowest priority.</td></tr>
+<tr><td><strong>AM / SS / VW</strong></td><td>—</td><td>Not playable (enemy lord on every non-CF route).</td></tr>
+</table>
+<p class="lead">Route files link straight to the chosen anchor, e.g. <code>…/character_recommendationV2/black-eagles/edelgard-von-hresvelg-艾黛尔贾特.html#emperor</code>.</p>
+</article>
+</div></body></html>

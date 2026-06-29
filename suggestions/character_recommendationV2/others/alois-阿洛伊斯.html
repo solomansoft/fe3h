@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alois / 阿洛伊斯 — Build Menu (V2)</title>
+<style>
+:root{--fg:#1c1e26;--muted:#6b7280;--bg:#fbfbfd;--card:#fff;--accent:#3b5bdb;--border:#e5e7eb;--code:#f3f4f6;--good:#067647;--bad:#b42318}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei",sans-serif}
+.wrap{max-width:920px;margin:0 auto;padding:0 20px 80px}
+nav.top{position:sticky;top:0;background:rgba(251,251,253,.92);backdrop-filter:blur(6px);padding:12px 0;border-bottom:1px solid var(--border);margin-bottom:28px;font-size:14px}
+nav.top a{color:var(--accent);text-decoration:none;margin-right:14px}
+article{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:28px 34px}
+h1{font-size:1.7rem;line-height:1.25;margin:.2em 0 .6em;border-bottom:2px solid var(--border);padding-bottom:.3em}
+h2{font-size:1.32rem;margin:1.6em 0 .5em;border-bottom:1px solid var(--border);padding-bottom:.2em}
+h3{font-size:1.1rem;margin:1.3em 0 .4em}
+a{color:var(--accent)}
+table{border-collapse:collapse;width:100%;margin:1em 0;font-size:.94rem;display:block;overflow-x:auto}
+th,td{border:1px solid var(--border);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:var(--code)}
+tr:nth-child(even) td{background:#fafafa}
+code{background:var(--code);padding:.12em .4em;border-radius:5px;font-size:.88em;font-family:"SF Mono",Menlo,Consolas,monospace}
+blockquote{margin:1em 0;padding:.3em 1em;border-left:4px solid var(--accent);background:#f6f8ff;color:#374151}
+.build{border:1px solid var(--border);border-radius:10px;padding:4px 18px 14px;margin:1.1em 0;background:#fff}
+.build h2{border:none;margin-top:.7em}
+.pros li{color:var(--good)} .cons li{color:var(--bad)}
+.pros,.pros *{list-style:none} .tag{display:inline-block;font-size:.74rem;font-weight:600;padding:1px 8px;border-radius:20px;background:var(--code);color:var(--muted);margin-left:6px;vertical-align:middle}
+.boon{color:var(--good);font-weight:600}.bane{color:var(--bad);font-weight:600}.neutral{color:var(--muted)}
+.lead{color:var(--muted)}
+</style></head>
+<body><div class="wrap">
+<nav class="top"><a href="../../../index.html">⌂ Home</a> <a href="../../../suggestions/index.html">suggestions</a> <a href="../../routesV2/index.html">routesV2</a></nav>
+<article>
+<h1 id="alois">Alois / 阿洛伊斯 — Build Menu <span class="tag">V2</span></h1>
+<blockquote><p><strong>Knights of Seiros recruit.</strong> Joins late (Ch.11, Byleth Lv 15) as a <strong>Lv 21 Warrior</strong> on all explorable routes (auto on Silver Snow). Serviceable axe/gauntlet frontliner but a late, mediocre-growth recruit — a roster-depth pick, not a centerpiece. Personal <strong>Compassion</strong> (Rally Luck +8).<br>
+<strong>Proficiencies:</strong> <span class="boon">Axe / Brawl / HeavyArmor (boons)</span>; <span class="bane">Reason / Flying (bane)</span>; Sword/Lance/Bow/Authority/Faith neutral.<br>
+<span class="bane">* Gender:</span> male — War Master / Grappler / Hero available (those are male-only).<br>
+Sources: Game8 / fe3h.com / GameFAQs / Neoseeker / Fandom (EN), note.com (JP), GamerSky (CN).</p></blockquote>
+<p class="rating-line"><strong>Strength</strong> ⭐⭐☆☆☆ (2/5) &nbsp;·&nbsp; <strong>Build difficulty</strong> 🔧🔧🔧🔧○ (4/5)</p>
+
+<h2 id="builds-at-a-glance">Builds at a glance</h2>
+<table>
+<tr><th>Build</th><th>One-line</th><th>Tutoring cost</th><th>Best on</th></tr>
+<tr><td><a href="#war-master">War Master</a></td><td>Axe+gauntlet bruiser, Quick Riposte counter</td><td><span class="boon">None</span> (Axe/Brawl boons → A)</td><td>Silver Snow (frontline body)</td></tr>
+<tr><td><a href="#great-knight">Great Knight</a></td><td>Mounted armored hybrid, fixes 4-move armor</td><td><span class="neutral">Mid</span> (Riding A; Axe boon, HeavyArmor boon)</td><td>Verdant Wind (mobile wall)</td></tr>
+</table>
+
+<div class="build">
+<h2 id="war-master">Build 1 — War Master (战神 · male-only)</h2>
+<p><strong>Path:</strong> joins Warrior → <strong>War Master</strong>. <strong>Cert:</strong> Axe A (<span class="boon">boon</span>) / Brawl A (<span class="boon">boon</span>) — both boons, he joins with high axe, so <strong>little to no tutoring</strong>; just push both to A.</p>
+<p><strong>Mastery detours (boon-harvest):</strong> <code>Death Blow [⛏ Brigand, Axe C — boon]</code> top priority, his single best damage skill, harvested cheap off his Axe boon. <code>Fierce Iron Fist [⛏ Grappler, Brawl B]</code> sits on his Brawl-boon path. <code>Hit+20 [⛏ Archer, Bow C — neutral]</code> accuracy insurance for his mediocre Dex. (Skip Reason — <span class="bane">bane</span>.)</p>
+<p><strong>5 skills:</strong> Axefaire · Death Blow · Quick Riposte (post-mastery) · Battalion Wrath · Axe Prowess 5.</p>
+<ul class="pros"><li>✔ <strong>Consensus best class</strong> — Axefaire + Crit +20, master skill <strong>Quick Riposte</strong> (guaranteed enemy-phase double) + War Master's Strike. Near-zero cert cost off his two boons.</li>
+<li>✔ Top Str growth, guaranteed counter — a well-rounded frontline body when the roster is thin.</li></ul>
+<ul class="cons"><li>✘ Late recruit with mediocre 45/40 growths — feed him kills early or he plateaus; 5 move, no Canto.</li>
+<li>✘ "Generally not powerful enough to replace a well-trained student" — a stopgap.</li></ul>
+</div>
+
+<div class="build">
+<h2 id="great-knight">Build 2 — Great Knight (大骑士)</h2>
+<p><strong>Path:</strong> Warrior/Armored Knight → <strong>Great Knight</strong>. <strong>Cert:</strong> Axe A (<span class="boon">boon</span>) / HeavyArmor A (<span class="boon">boon</span>) / Riding A (<span class="neutral">neutral</span>) — Axe and HeavyArmor are both boons for him, so only <strong>Riding A needs the grind</strong>. Mid tutoring.</p>
+<p><strong>Mastery detours (boon-harvest):</strong> <code>Death Blow [⛏ Brigand, Axe C — boon]</code> same cheap Axe-boon harvest, gives his offense bite. <code>Hit+20 [⛏ Archer, Bow C — neutral]</code> accuracy. (Skip Reason — <span class="bane">bane</span>; skip Flying — <span class="bane">bane</span>.)</p>
+<p><strong>5 skills:</strong> Axefaire · Death Blow · Hit+20 · Pavise · Axe Prowess 5.</p>
+<ul class="pros"><li>✔ <strong>Mounted + armored</strong> — keeps his HeavyArmor-boon tankiness but fixes the immobile-armor problem with 7 move + Canto.</li>
+<li>✔ HeavyArmor being a <em>boon</em> (unlike Gilbert) makes this a clean fit; high Def/HP soak.</li></ul>
+<ul class="cons"><li>✘ Low Spd gets doubled by fast enemies; play him as a mobile wall, not a doubler.</li>
+<li>✘ Riding A grind on top of a late recruit; still a depth pick, not a carry.</li></ul>
+</div>
+
+<h2 id="route-usage">Route usage this playthrough (team-driven · R3 distinct · R7 roster · R12 difficulty)</h2>
+<table>
+<tr><th>Route (difficulty)</th><th>Build</th><th>Why — for the whole team</th></tr>
+<tr><td><strong>Silver Snow</strong> (Maddening)</td><td><a href="#war-master">War Master</a></td><td>Featured for <strong>roster size (R7)</strong> — SS deploys ~12 and the church side is thin, so Alois fills a near-free frontline body. War Master off his Axe/Brawl boons + Death Blow harvest gives a guaranteed-counter bruiser with almost no cert cost. <span class="neutral">(R12: full kit.)</span></td></tr>
+<tr><td><strong>Verdant Wind</strong> (Maddening)</td><td><a href="#great-knight">Great Knight</a></td><td>Also featured for roster depth. GD's armored options are thin; here he's a <strong>mobile wall</strong> that leans on his HeavyArmor boon while staying relevant via Riding + Canto. (R3: distinct from his SS War Master.)</td></tr>
+<tr><td><strong>Crimson Flower</strong></td><td>—</td><td>Not used this run (church-side roster pick).</td></tr>
+</table>
+<p class="lead">Route file links to the build anchor, e.g. <code>…/character_recommendationV2/others/alois-阿洛伊斯.html#great-knight</code>.</p>
+</article>
+</div></body></html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gilbert / 吉尔伯特 — Build Menu (V2)</title>
+<style>
+:root{--fg:#1c1e26;--muted:#6b7280;--bg:#fbfbfd;--card:#fff;--accent:#3b5bdb;--border:#e5e7eb;--code:#f3f4f6;--good:#067647;--bad:#b42318}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei",sans-serif}
+.wrap{max-width:920px;margin:0 auto;padding:0 20px 80px}
+nav.top{position:sticky;top:0;background:rgba(251,251,253,.92);backdrop-filter:blur(6px);padding:12px 0;border-bottom:1px solid var(--border);margin-bottom:28px;font-size:14px}
+nav.top a{color:var(--accent);text-decoration:none;margin-right:14px}
+article{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:28px 34px}
+h1{font-size:1.7rem;line-height:1.25;margin:.2em 0 .6em;border-bottom:2px solid var(--border);padding-bottom:.3em}
+h2{font-size:1.32rem;margin:1.6em 0 .5em;border-bottom:1px solid var(--border);padding-bottom:.2em}
+h3{font-size:1.1rem;margin:1.3em 0 .4em}
+a{color:var(--accent)}
+table{border-collapse:collapse;width:100%;margin:1em 0;font-size:.94rem;display:block;overflow-x:auto}
+th,td{border:1px solid var(--border);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:var(--code)}
+tr:nth-child(even) td{background:#fafafa}
+code{background:var(--code);padding:.12em .4em;border-radius:5px;font-size:.88em;font-family:"SF Mono",Menlo,Consolas,monospace}
+blockquote{margin:1em 0;padding:.3em 1em;border-left:4px solid var(--accent);background:#f6f8ff;color:#374151}
+.build{border:1px solid var(--border);border-radius:10px;padding:4px 18px 14px;margin:1.1em 0;background:#fff}
+.build h2{border:none;margin-top:.7em}
+.pros li{color:var(--good)} .cons li{color:var(--bad)}
+.pros,.pros *{list-style:none} .tag{display:inline-block;font-size:.74rem;font-weight:600;padding:1px 8px;border-radius:20px;background:var(--code);color:var(--muted);margin-left:6px;vertical-align:middle}
+.boon{color:var(--good);font-weight:600}.bane{color:var(--bad);font-weight:600}.neutral{color:var(--muted)}
+.lead{color:var(--muted)}
+</style></head>
+<body><div class="wrap">
+<nav class="top"><a href="../../../index.html">⌂ Home</a> <a href="../../../suggestions/index.html">suggestions</a> <a href="../../routesV2/index.html">routesV2</a></nav>
+<article>
+<h1 id="gilbert">Gilbert (Gustave) / 吉尔伯特 — Build Menu <span class="tag">V2</span></h1>
+<blockquote><p><strong>Knights of Seiros — Azure Moon ONLY.</strong> Auto-joins Ch.13 (War Phase) at ~Lv 26 Fortress Knight; no academy-phase access, no other route. High Def/HP, low Spd/Res, mediocre Mag, no Crest. Personal <strong>Veteran Knight</strong> (−2 dmg while a battalion is equipped).<br>
+<strong>Proficiencies:</strong> <span class="boon">Lance / Axe / Authority / Riding (boons)</span>; <span class="bane">HeavyArmor (bane)</span>; Sword/Bow/Brawl/Reason/Faith neutral.<br>
+<span class="bane">* Key trap:</span> his join class (Fortress Knight) and the "tank" path lean on <strong>HeavyArmor, which is his BANE</strong> — that grind is the thing to avoid. No gender-lock issues.<br>
+Sources: Game8 / GameFAQs / Reddit / Neoseeker / Fandom (EN), note.com (JP), GamerSky (CN).</p></blockquote>
+<p class="rating-line"><strong>Strength</strong> ⭐⭐☆☆☆ (2/5) &nbsp;·&nbsp; <strong>Build difficulty</strong> 🔧🔧🔧○○ (3/5)</p>
+
+<h2 id="builds-at-a-glance">Builds at a glance</h2>
+<table>
+<tr><th>Build</th><th>One-line</th><th>Tutoring cost</th><th>Best on</th></tr>
+<tr><td><a href="#fortress-knight">Fortress Knight</a></td><td>#1 community wall — but ⚠ HeavyArmor BANE grind</td><td><span class="bane">Heavy</span> (HeavyArmor A vs bane)</td><td>Azure Moon (cheap body, if you must)</td></tr>
+<tr><td><a href="#wyvern-lord">Wyvern Lord</a></td><td>Triangle Attack flier; Axe boon, fixes his Speed</td><td><span class="neutral">Mid</span> (Flying A; Axe boon)</td><td>Azure Moon (mobility + Speed fix)</td></tr>
+<tr><td><a href="#paladin">Paladin</a></td><td>Low-effort mounted; sidesteps the armor bane</td><td><span class="boon">Light</span> (Lance/Riding both boons)</td><td>Azure Moon (efficient pick)</td></tr>
+</table>
+
+<div class="build">
+<h2 id="fortress-knight">Build 1 — Fortress Knight (重装骑士)</h2>
+<p><strong>Path:</strong> stay (joins Fortress Knight). <strong>Cert:</strong> HeavyArmor A (<span class="bane">BANE</span>) — he joins already in the class so it's "free" on arrival, but pushing/holding HeavyArmor A is a <strong>grind against his bane</strong>, and he uses a weaker Fortress variant carried over from his Ch.5 NPC build.</p>
+<p><strong>Mastery detours:</strong> <code>Pavise [⛏ Fortress Knight — already here]</code> halve physical damage; core wall skill, cheap since he joins armored. <code>Death Blow [⛏ Brigand, Axe C — boon]</code> harvest off his Axe boon to give his weak offense bite. <span class="bane">⚠ The whole HeavyArmor line is his bane — this is the build you only take if you accept the grind.</span></p>
+<p><strong>5 skills:</strong> Lance/Axe Prowess 5 · Pavise · Death Blow · Defense +2 · Veteran Knight / battalion-defense.</p>
+<ul class="pros"><li>✔ <strong>#1 in community guides</strong> as his simplest role — no reclass, leans on his huge Def/HP for a wall on join.</li>
+<li>✔ Pavise + a defense battalion + Veteran Knight make a stubborn damage soak.</li></ul>
+<ul class="cons"><li>✘ <strong>⚠ HeavyArmor is his BANE</strong> — holding the rank fights his weakness; weak Res, 4 move, and a downgraded Fortress variant.</li>
+<li>✘ Low Spd → doubled by fast enemies; pure wall, near-zero offense. <strong>We recommend a non-armor build below instead.</strong></li></ul>
+</div>
+
+<div class="build">
+<h2 id="wyvern-lord">Build 2 — Wyvern Lord (飞龙领主)</h2>
+<p><strong>Path:</strong> Wyvern Rider → <strong>Wyvern Lord</strong>. <strong>Cert:</strong> Lance C (<span class="boon">boon</span>) / Axe A (<span class="boon">boon</span>) / Flying A (<span class="neutral">neutral</span>) — Lance & Axe are boons; only <strong>Flying A needs training</strong>. Mid tutoring, and it gets him entirely off his HeavyArmor bane.</p>
+<p><strong>Mastery detours (boon-harvest):</strong> <code>Death Blow [⛏ Brigand, Axe C — boon]</code> cheap off his Axe boon, gives him real offense. <code>Hit+20 [⛏ Archer, Bow C — neutral]</code> accuracy. (Skip the HeavyArmor line — <span class="bane">bane</span>.)</p>
+<p><strong>5 skills:</strong> Axefaire · Death Blow · Hit+20 · Defiant Crit · Axe Prowess 5.</p>
+<ul class="pros"><li>✔ <strong>Triangle Attack pick</strong> — three fliers around a target force a guaranteed crit-style combo; built on his Axe boon.</li>
+<li>✔ 8 move + flight + Canto <strong>fixes his Speed/mobility problem</strong> (move covers what his low Spd can't), and Death Blow makes his Str finally hit hard.</li></ul>
+<ul class="cons"><li>✘ Flying A grind from scratch on a Ch.13 recruit; loses his armor-tank identity.</li>
+<li>✘ Lower Def than the wall builds — he flies, he doesn't soak.</li></ul>
+</div>
+
+<div class="build">
+<h2 id="paladin">Build 3 — Paladin (圣骑士 · low-effort)</h2>
+<p><strong>Path:</strong> Cavalier → <strong>Paladin</strong>. <strong>Cert:</strong> Lance A (<span class="boon">boon</span>) / Riding A (<span class="boon">boon</span>) — <strong>both boons</strong>, so the cheapest path, and it completely sidesteps his HeavyArmor bane.</p>
+<p><strong>Mastery detours (boon-harvest):</strong> <code>Aegis [⛏ Paladin — already here]</code> halve ranged/magic damage (the other half of the Aegis/Pavise wall). <code>Death Blow [⛏ Brigand, Axe C — boon]</code> Axe-boon offense. (Skip HeavyArmor — <span class="bane">bane</span>.)</p>
+<p><strong>5 skills:</strong> Lancefaire · Death Blow · Aegis · Defense +2 · Lance Prowess 5.</p>
+<ul class="pros"><li>✔ <strong>Lowest-effort optimal build</strong> — both cert gates are boons, no grind against any weakness; 7 move + Canto.</li>
+<li>✔ Still tanky enough (Aegis + his natural Def) to wall, but mobile; keeps Veteran Knight value with a battalion.</li></ul>
+<ul class="cons"><li>✘ Less raw Def than Fortress; low Spd still means few doubles.</li>
+<li>✘ A solid, efficient body — not a damage carry on a late recruit.</li></ul>
+</div>
+
+<h2 id="route-usage">Route usage this playthrough (team-driven · R11 recruit · R12 difficulty)</h2>
+<table>
+<tr><th>Route (difficulty)</th><th>Build</th><th>Why — for the whole team</th></tr>
+<tr><td><strong>Azure Moon</strong> (Normal)</td><td><a href="#paladin">Paladin</a> <em>(or <a href="#wyvern-lord">Wyvern Lord</a>)</em></td><td>AM-only unit. We recommend <strong>Paladin</strong> (or Wyvern) over the <strong>bane-grind Fortress</strong>: on Normal he's a stopgap body, so take the path that costs nothing against his weakness — Paladin runs entirely on his Lance/Riding boons, Wyvern Lord (Triangle Attack) uses his Axe boon and fixes his Speed via move. Skip the HeavyArmor grind. <span class="neutral">(R12: lean kit on Normal.)</span></td></tr>
+<tr><td><strong>Crimson Flower / Silver Snow / Verdant Wind</strong></td><td>—</td><td>Not playable (Azure Moon exclusive).</td></tr>
+</table>
+<p class="lead">Route file links to the build anchor, e.g. <code>…/character_recommendationV2/others/gilbert-吉尔伯特.html#paladin</code>.</p>
+</article>
+</div></body></html>

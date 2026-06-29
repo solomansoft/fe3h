@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Crimson Flower (Black Eagles → Empire) — Route Plan (V2)</title>
+<style>
+:root{--fg:#1c1e26;--muted:#6b7280;--bg:#fbfbfd;--card:#fff;--accent:#3b5bdb;--border:#e5e7eb;--code:#f3f4f6;--good:#067647;--bad:#b42318}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei",sans-serif}
+.wrap{max-width:920px;margin:0 auto;padding:0 20px 80px}
+nav.top{position:sticky;top:0;background:rgba(251,251,253,.92);backdrop-filter:blur(6px);padding:12px 0;border-bottom:1px solid var(--border);margin-bottom:28px;font-size:14px}
+nav.top a{color:var(--accent);text-decoration:none;margin-right:14px}
+article{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:28px 34px}
+h1{font-size:1.7rem;line-height:1.25;margin:.2em 0 .6em;border-bottom:2px solid var(--border);padding-bottom:.3em}
+h2{font-size:1.32rem;margin:1.6em 0 .5em;border-bottom:1px solid var(--border);padding-bottom:.2em}
+h3{font-size:1.1rem;margin:1.3em 0 .4em}
+a{color:var(--accent)}
+table{border-collapse:collapse;width:100%;margin:1em 0;font-size:.94rem;display:block;overflow-x:auto}
+th,td{border:1px solid var(--border);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:var(--code)}
+tr:nth-child(even) td{background:#fafafa}
+code{background:var(--code);padding:.12em .4em;border-radius:5px;font-size:.88em;font-family:"SF Mono",Menlo,Consolas,monospace}
+blockquote{margin:1em 0;padding:.3em 1em;border-left:4px solid var(--accent);background:#f6f8ff;color:#374151}
+.build{border:1px solid var(--border);border-radius:10px;padding:4px 18px 14px;margin:1.1em 0;background:#fff}
+.build h2{border:none;margin-top:.7em}
+.pros li{color:var(--good)} .cons li{color:var(--bad)}
+.pros,.pros *{list-style:none} .tag{display:inline-block;font-size:.74rem;font-weight:600;padding:1px 8px;border-radius:20px;background:var(--code);color:var(--muted);margin-left:6px;vertical-align:middle}
+.boon{color:var(--good);font-weight:600}.bane{color:var(--bad);font-weight:600}.neutral{color:var(--muted)}
+.lead{color:var(--muted)}
+</style></head>
+<body><div class="wrap">
+<nav class="top"><a href="../../index.html">⌂ Home</a> <a href="../index.html">suggestions</a> <a href="../character_recommendationV2/index.html">character menu</a></nav>
+<article>
+<h1 id="crimson-flower">Route 2 — Crimson Flower <span class="tag">V2</span></h1>
+<blockquote><p><strong>Black Eagles → Empire · Hard · Byleth ♂.</strong> Run 2 of 4. Side with Edelgard against the Church in Ch.11. Short, fast route; final maps punish ground units, so lean on fliers.<br>
+<strong>Byleth gender/birthday:</strong> <strong>Male · Harpstring Moon (M5), wk 1.</strong> CF is the one route where male Byleth is fully supported — Byleth × Edelgard S-support works for male, and male unlocks <strong>War Master</strong>. Early M5 birthday → <strong>Black Eagle Pendant</strong> (Charm +2) in both parts.<br>
+<strong>Roster size:</strong> 13 with DLC (Anna 🧩) / <strong>12 non-DLC</strong>. ⚠️ <strong>Crimson Flower is the game's smallest roster and cannot reach 15:</strong> only the 8 Black Eagles + Byleth + Jeritza + 2 faculty (Manuela, Hanneman) are recruitable — the Knights of Seiros (Catherine, Alois) and other Church units are enemies on the anti-Church route. So you deploy ≤12 with only 0–1 adjutant bodies; lean on <strong>Battalions</strong> to compensate. (Anna, DLC, is the only path to a 13th.)<br>
+<strong>V2 plan:</strong> rebuilt around the path/detour principle — route each unit's class path <em>through</em> mastery classes on their <strong>boon/neutral</strong> weapons and harvest those masteries; <strong>skip masteries gated behind a bane</strong> weapon. Hard difficulty → run <strong>fuller</strong> skill sets, not the Normal lean-kit (R12).<br>
+Tags: 🔒 route-exclusive · ⚠️ tutor/special-care · 💃 dancer · ⭐ top carry · 🧩 DLC-optional (non-DLC alt given) · ⛏ mastery detour · <strong>(core)/(flex)</strong></p></blockquote>
+
+<h2 id="build-basis">V2 build basis</h2>
+<p>This plan is built from each unit's <strong>boon/bane</strong> profile (the boon makes a weapon cheap to rank; the bane makes it costly — so we <em>avoid</em> detouring through bane-gated mastery classes). Community consensus cross-checked against <strong>Game8, GamerSky, GameWith, Fandom, GameFAQs, and Reddit (r/FireEmblemThreeHouses)</strong>.</p>
+<p>Cert ranks for the mastery-detour classes used below:</p>
+<ul>
+<li><strong>Brigand</strong> → Axe <strong>C</strong> (yields <strong>Death Blow</strong>)</li>
+<li><strong>Archer</strong> → Bow <strong>C</strong> (yields <strong>Hit+20</strong>)</li>
+<li><strong>Mage</strong> → Reason <strong>C</strong> (yields <strong>Fiendish Blow</strong>)</li>
+<li><strong>Pegasus Knight</strong> → Lance <strong>C</strong> + Flying <strong>D</strong> — <span class="bane">FEMALE-ONLY</span> (yields Darting Blow)</li>
+</ul>
+<p>Key V2 corrections vs V1:</p>
+<ul>
+<li><strong>Edelgard:</strong> Bow is her <span class="bane">bane</span> → <strong>drop Archer/Hit+20</strong>. Use Defiant Crit / Armored Effect− (Vengeance+Vantage optional). Axe is a <span class="boon">boon</span> → Death Blow stays.</li>
+<li><strong>Jeritza:</strong> Pegasus Knight is <span class="bane">female-only</span> and Jeritza is male → <strong>the V1 "Pegasus → Darting Blow" line is impossible.</strong> Drop it.</li>
+<li><strong>Bernadetta:</strong> Axe is her <span class="bane">bane</span> → <strong>no Brigand/Death Blow</strong> (community: "poor investment"). Bow boon → Hit+20 only.</li>
+<li><strong>Manuela:</strong> Reason is her <span class="bane">bane</span> → <strong>drop Mage/Fiendish Blow</strong>; lean white-magic + Faith skills.</li>
+</ul>
+
+<h2 id="route-exclusive">🔒 Route-exclusive highlights (verified)</h2>
+<ul>
+<li><strong>Edelgard</strong> — playable <strong>only</strong> on Crimson Flower.</li>
+<li><strong>Hubert</strong> — playable only here; leaves if you side with the Church.</li>
+<li><strong>Jeritza</strong> — <strong>free, NOT DLC</strong> (ships with the free 1.1.0 update). Auto-joins start of Part 2 (~Ch.13) as a Lv27 Death Knight, no recruitment.</li>
+<li><strong>Church units are NOT available here</strong> (Seteth, Flayn, Catherine, Cyril, Shamir).</li>
+</ul>
+
+<h2 id="roster-composition">Roster composition — built as a team (R9)</h2>
+<ul>
+<li><strong>Damage split:</strong> Well balanced. <strong>Magic:</strong> Hubert (Dark Knight), Dorothea (Gremory), Hanneman (Warlock, flex), Manuela (Holy Knight white-magic, flex). <strong>Physical:</strong> Byleth (War Master), Edelgard (Emperor), Jeritza (Wyvern Lord), Ferdinand (Paladin), Caspar (War Master), Bernadetta (bow).</li>
+<li><strong>Healing/staff:</strong> Linhardt (Bishop, Warp/Physic primary) + Dorothea (Faith → Physic, Gremory doubles uses) + Manuela (mounted Holy Knight healer, flex). Solid.</li>
+<li><strong>Fliers / mobility:</strong> Jeritza + Anna (Wyvern Lord) and Edelgard (armored, no flight) for offense; Ferdinand (Paladin) + Hubert/Manuela (mounted) give Canto. Linhardt's Warp repositions the slow brawlers (Byleth/Caspar).</li>
+<li><strong>Ranged / effective coverage:</strong> Bernadetta (Sniper/Bow Knight, anti-flier) + Hubert/Dorothea/Hanneman magic (anti-armor) + 1–2 range from mages. CF's late maps reward fliers + bows — both present.</li>
+<li><strong>Gambits/Authority:</strong> Edelgard + Hubert carry the strongest battalions (Authority boons); Byleth/Caspar want a Stride/Warp escort for low Move.</li>
+<li><strong>Composition picks flagged below:</strong> Ferdinand → Paladin (#1 anyway; reuse-variant vs SS Wyvern Lord); Bernadetta runs Sniper→Bow Knight for mobility; <strong>Manuela → Holy Knight as a composition pick</strong> (mobile healer that avoids redundancy with Linhardt's Bishop — community default for her is Bishop; noted); Hanneman flex deepens CF's thin caster bench.</li>
+</ul>
+
+<h2 id="deployment-roster">Deployment roster (13 DLC / 12 non-DLC)</h2>
+<table>
+<tr><th>Unit</th><th>Class (deep-linked build)</th><th>Team reason</th></tr>
+<tr><td><strong>Byleth ♂</strong> <span class="tag">core</span></td><td><a href="../character_recommendationV2/others/byleth-贝雷特.html#war-master">War Master</a></td><td>Brawl-axe carry. Male enables War Master; Brawl boon, Axe neutral — both perfectly suited. Quick Riposte + Crit+20 frontliner; wants a Stride/Warp escort for low Move.</td></tr>
+<tr><td><strong>Edelgard</strong> 🔒⭐ <span class="tag">core</span></td><td><a href="../character_recommendationV2/black-eagles/edelgard-von-hresvelg-艾黛尔贾特.html#emperor">Emperor</a></td><td>Unique axe lord / armored carry. Sword/Axe/Authority/Heavy Armor all boons; Raging Storm + Aymr. Imperial Lineage 1.2× EXP.</td></tr>
+<tr><td><strong>Hubert</strong> 🔒⚠️ <span class="tag">core</span></td><td><a href="../character_recommendationV2/black-eagles/hubert-von-vestra-修伯特.html#dark-knight">Dark Knight</a></td><td>Mounted dark mage — only class with Dark Tomefaire. Reason/Bow/Authority boons; Frozen Lance via Lance budding. Anti-armor magic.</td></tr>
+<tr><td><strong>Jeritza</strong> 🔒⚠️ <span class="tag">core</span></td><td><a href="../character_recommendationV2/others/jeritza-von-hrym-耶利查.html#wyvern-lord">Wyvern Lord</a></td><td>High-power killer / flier. Flying budding talent + Sword/Lance/Brawl/Riding boons. Mastermind = 2× class EXP. Late-joiner — reclass out of Death Knight immediately.</td></tr>
+<tr><td><strong>Petra</strong> 💃⭐ <span class="tag">core</span></td><td><a href="../character_recommendationV2/black-eagles/petra-macneary-佩托拉.html#dancer">Dancer</a></td><td>Top Spd + Cha + Sword dodge — the refresher. With Jeritza/Anna flying and Edelgard/Byleth carrying, her dance value beats marginal combat.</td></tr>
+<tr><td><strong>Ferdinand</strong> <span class="tag">core</span></td><td><a href="../character_recommendationV2/black-eagles/ferdinand-von-aegir-菲尔迪南特.html#paladin">Paladin</a></td><td>Lance cavalry — Swift Strikes + Move 8 + Canto. Composition pick: reuse-variant kept distinct vs SS Wyvern Lord. Keep adjacent to Dorothea.</td></tr>
+<tr><td><strong>Dorothea</strong> <span class="tag">core</span></td><td><a href="../character_recommendationV2/black-eagles/dorothea-arnault-多洛缇雅.html#mortal-savant">Mortal Savant</a> <span class="tag">experience pick</span></td><td><strong>Mortal Savant</strong> chosen here to experience the class — built on her Sword+Reason boons so it's cheap, and CF (Hard) tolerates a non-max build. Still throws black magic at 1–2 range; Hubert + Hanneman carry the heavier nuking. (Gremory is her stronger option — see her menu.)</td></tr>
+<tr><td><strong>Bernadetta</strong> ⚠️ <span class="tag">core</span></td><td><a href="../character_recommendationV2/black-eagles/bernadetta-von-varley-贝尔娜提塔.html#sniper">Sniper</a> → <a href="../character_recommendationV2/black-eagles/bernadetta-von-varley-贝尔娜提塔.html#bow-knight">Bow Knight</a></td><td>Mobile bow nuke. Bow boon; Vengeance + Persecution Complex for huge fixed damage. Frail — feed boosters, needs a tank. Sniper #1, Bow Knight #2 endgame mobility.</td></tr>
+<tr><td><strong>Caspar</strong> ⚠️ <span class="tag">core</span></td><td><a href="../character_recommendationV2/black-eagles/caspar-von-bergliez-卡斯帕尔.html#war-master">War Master</a></td><td>Brawler crit DPS — Crit+20 + Quick Riposte. Axe and Brawl both boons. Low Move — needs Stride or a Linhardt Warp escort.</td></tr>
+<tr><td><strong>Linhardt</strong> <span class="tag">core</span></td><td><a href="../character_recommendationV2/black-eagles/linhardt-von-hevring-林哈尔特.html#bishop">Bishop</a></td><td>Premier Warp/Physic user; Reason/Faith boons. His Warp repositions Caspar/Byleth/Bernadetta. Reuse-variant vs SS Warlock.</td></tr>
+<tr><td><strong>Manuela</strong> (recruit) <span class="tag">flex</span></td><td><a href="../character_recommendationV2/others/manuela-玛努艾拉.html#holy-knight">Holy Knight</a></td><td>Mounted healer — Sword/Faith/Riding all boons. Composition pick: a <em>mobile</em> healer that avoids redundancy with Linhardt's Bishop (community default for her is Bishop; noted). Reuse-variant vs SS Dancer.</td></tr>
+<tr><td><strong>Hanneman</strong> (recruit) ⚠️ <span class="tag">flex</span></td><td><a href="../character_recommendationV2/others/hanneman-汉尼曼.html#warlock">Warlock</a></td><td>Second long-range nuke — Black Tomefaire. Bow/Reason/Riding boons. Deepens CF's thin caster bench. Reuse-variant vs SS Dark Knight.</td></tr>
+<tr><td><strong>Anna</strong> 🧩 (DLC) <span class="tag">flex</span></td><td><a href="../character_recommendationV2/others/anna-安娜.html#wyvern-lord">Wyvern Lord</a></td><td>Self-sufficient flier — class Str growth + flight address her weak Str. Sword/Axe/Bow/Faith boons. No supports possible. (Intended class Trickster; noted.) <strong>Skip if no Expansion Pass.</strong></td></tr>
+</table>
+
+<h2 id="best-skills">Best skill sets — 5 equipped slots (R10)</h2>
+<p><strong>⛏ = requires a class-mastery detour.</strong> Everything else is a <strong>skill-rank</strong> ability (Faires, Alert Stance+, White Magic Avo+20, rank Hit/Avo) or a free <strong>current-class</strong> ability.</p>
+<table>
+<tr><th>Unit</th><th>Best 5 equipped skills</th><th>Mastery detours needed (⛏)</th></tr>
+<tr><td><strong>Byleth ♂</strong> (War Master)</td><td>Fistfaire · <strong>Death Blow ⛏</strong> · <strong>Quick Riposte</strong> <em>(WM auto)</em> · Crit+20 · Alert Stance+</td><td>Brigand (Death Blow)</td></tr>
+<tr><td><strong>Edelgard</strong> (Emperor)</td><td>Axefaire · <strong>Death Blow ⛏</strong> · Defiant Crit · Armored Effect− · Authority <em>(or Vantage)</em></td><td>Brigand (Death Blow) — <strong>no Archer (Bow bane)</strong></td></tr>
+<tr><td><strong>Hubert</strong> (Dark Knight)</td><td>Dark/Black Tomefaire · <strong>Fiendish Blow ⛏</strong> · <strong>Hit+20 ⛏</strong> · Seal Resistance <em>(DK auto)</em> · Defiant Mag</td><td>Mage (Fiendish Blow), Archer (Hit+20)</td></tr>
+<tr><td><strong>Jeritza</strong> (Wyvern Lord)</td><td>Lance/Axefaire · <strong>Death Blow ⛏</strong> · Crit+20 · Alert Stance+ · Defiant Str</td><td>Brigand (Death Blow) — <strong>no Pegasus (female-only)</strong></td></tr>
+<tr><td><strong>Petra</strong> 💃 (Dancer)</td><td>Sword Avo+20 <em>(Dancer)</em> · Sword Dance <em>(art)</em> · <strong>Death Blow ⛏</strong> · <strong>Hit+20 ⛏</strong> · Special Dance <em>(auto)</em></td><td>Brigand (Death Blow), Archer (Hit+20) — both boons</td></tr>
+<tr><td><strong>Ferdinand</strong> (Paladin)</td><td>Lancefaire · <strong>Death Blow ⛏</strong> · Swift Strikes <em>(art)</em> · <strong>Aegis</strong> <em>(Paladin auto)</em> · Movement+1</td><td>Brigand (Death Blow)</td></tr>
+<tr><td><strong>Dorothea</strong> (Gremory)</td><td>Black Tomefaire · <strong>Fiendish Blow ⛏</strong> · White Magic Avo+20 · Defiant Mag · Meteor range <em>(/ <strong>Hit+20 ⛏</strong> opt.)</em></td><td>Mage (Fiendish Blow); Archer (Hit+20) optional (Bow neutral)</td></tr>
+<tr><td><strong>Bernadetta</strong> (Sniper/Bow Knight)</td><td>Bowfaire · <strong>Hit+20 ⛏</strong> · Hunter's Volley <em>(art)</em> · Vengeance · Defiant Spd <em>(BK auto)</em></td><td>Archer (Hit+20) — <strong>no Brigand (Axe bane)</strong></td></tr>
+<tr><td><strong>Caspar</strong> (War Master)</td><td>Fistfaire · <strong>Death Blow ⛏</strong> · <strong>Quick Riposte</strong> <em>(WM auto)</em> · Crit+20 · <strong>Fierce Iron Fist ⛏</strong> <em>(Grappler art)</em></td><td>Brigand (Death Blow), Grappler (Fierce Iron Fist art)</td></tr>
+<tr><td><strong>Linhardt</strong> (Bishop)</td><td>(no faire) <strong>Renewal</strong> <em>(Bishop auto)</em> · White Magic Avo+20 · Live to Serve · Warp range · <strong>Fiendish Blow ⛏</strong> <em>(opt.)</em></td><td>Mage (Fiendish Blow) — optional</td></tr>
+<tr><td><strong>Manuela</strong> (Holy Knight)</td><td>(no faire) White Magic Avo+20 · Live to Serve · Movement+1 · Sword Avo+20 · Renewal <em>(Faith skills — <strong>no Fiendish Blow, Reason bane</strong>)</em></td><td>none required (white-magic kit)</td></tr>
+<tr><td><strong>Hanneman</strong> (Warlock)</td><td>Black Tomefaire · <strong>Fiendish Blow ⛏</strong> · <strong>Hit+20 ⛏</strong> · Bowbreaker <em>(Warlock auto)</em> · Defiant Mag</td><td>Mage (Fiendish Blow), Archer (Hit+20)</td></tr>
+<tr><td><strong>Anna</strong> (Wyvern Lord)</td><td>Axefaire · <strong>Death Blow ⛏</strong> · <strong>Hit+20 ⛏</strong> · Alert Stance+ · Defiant Crit</td><td>Brigand (Death Blow), Archer (Hit+20)</td></tr>
+</table>
+
+<h2 id="dancer">💃 Dancer this route: Petra (R4)</h2>
+<p>Highest Speed in the cast plus strong Charm and Sword — textbook dance/dodge. With Jeritza and Anna flying and Edelgard/Byleth carrying, Petra's refresher value beats her marginal combat value. Her #1 <strong>combat</strong> class would be <a href="../character_recommendationV2/black-eagles/petra-macneary-佩托拉.html#wyvern-lord">Wyvern Lord</a>, but the team role here is the refresher. (Different unit from Azure Moon's Dancer, Dorothea — this is <strong>Petra</strong> on CF.)</p>
+
+<h2 id="dlc-vs-nondlc">🧩 DLC vs non-DLC rosters (R8)</h2>
+<ul>
+<li><strong>DLC roster (13):</strong> the 12 below + <strong>Anna</strong>.</li>
+<li><strong>Non-DLC roster (12):</strong> Byleth ♂, Edelgard 🔒, Hubert 🔒, Jeritza 🔒, Petra 💃, Ferdinand, Dorothea, Bernadetta, Caspar, Linhardt, <strong>Manuela (rec)</strong>, <strong>Hanneman (rec)</strong>.</li>
+<li><strong>Dancer is the same</strong> (Petra) on both rosters; <strong>pairings are identical</strong> (Anna can never support, so removing her changes nothing). Nothing here requires DLC — <strong>Jeritza is FREE, not DLC.</strong> Dropping Anna costs only her self-sufficient flier slot (Jeritza/Byleth/Edelgard already cover front-line offense).</li>
+</ul>
+
+<h2 id="recruitment">Recruitment plan &amp; timing (R11)</h2>
+<ul>
+<li><strong>Anna 🧩 (DLC)</strong> — appears Ch.3, recruit freely (no stat reqs). Skip if no Expansion Pass.</li>
+<li><strong>Jeritza (free, NOT DLC)</strong> — auto-joins start of Part 2 (~Ch.13) as a Lv27 Death Knight. Reclass out of Death Knight immediately and build Flying.</li>
+<li><strong>Manuela, Hanneman (faculty recruits)</strong> — recruit <strong>before the Ch.11–12 point of no return</strong>; meet their (modest Charm/Authority) stat gates early so they aren't under-leveled. <strong>R11:</strong> don't grind an off-build skill on Byleth just to recruit — use support/passive stats or skip.</li>
+<li>All other units are native Black Eagles. Push <strong>Ferdinand onto Paladin</strong>, <strong>Jeritza/Anna onto Wyvern Lord</strong>, and <strong>Byleth/Caspar onto War Master</strong>.</li>
+</ul>
+
+<h2 id="tutor-care">⚠️ Tutor / special-care this run</h2>
+<ul>
+<li><strong>Bernadetta ⚠️</strong> — feed Str/Spd boosters and protect early. <strong>No Brigand detour (Axe bane).</strong></li>
+<li><strong>Jeritza 🔒⚠️</strong> — reclass out of Death Knight immediately; <strong>no Pegasus/Darting Blow (female-only class).</strong></li>
+<li><strong>Caspar ⚠️</strong> — escort with Stride/Warp (low Move). Byleth (War Master) also wants Stride.</li>
+<li><strong>Hubert 🔒⚠️</strong> — grind Riding A + Lance C for Dark Knight; <strong>never Warlock</strong>; avoid Axe/Flying detours (banes).</li>
+<li><strong>Edelgard ⚠️(build)</strong> — <strong>skip the Archer detour (Bow bane)</strong>; use Defiant Crit / Armored Effect−.</li>
+<li><strong>Manuela ⚠️(build)</strong> — <strong>skip the Mage detour (Reason bane)</strong>; white-magic kit only.</li>
+<li><strong>Hanneman ⚠️</strong> — late catch-up EXP if recruited.</li>
+</ul>
+
+<h2 id="pairings">Romance / pairings this route — best-by-default, with allowed easy-route diversity (R5)</h2>
+<p>Crimson Flower is the <strong>second</strong> of the two easy routes (Hard), so per R5 a diversity swap is permitted here too. Most units take their best pairing. (Pairings carry over unchanged from V1 — the boon/bane re-routing of classes does not affect supports.)</p>
+<ul>
+<li><strong>Byleth ♂ S-support → Edelgard</strong> 🔒 (CF-exclusive; works for male Byleth).</li>
+</ul>
+<p>Non-Byleth paired endings (4):</p>
+<ul>
+<li><strong>Ferdinand × Dorothea</strong> — best-by-default (mutual confirmed pairing; Songstress/Confidence synergy). ✔ best</li>
+<li><strong>Caspar × Linhardt</strong> — best-by-default (mutual confirmed best support; fixes Caspar's Move). ✔ best</li>
+<li><strong>Hanneman × Manuela</strong> — best-by-default for both (the classic mutual-best "bickering" pair). <strong>Intentional best-pairing REPEAT</strong> (R5.2 allows it). ✔ best (repeat)</li>
+<li><strong>Petra × Bernadetta</strong> — ⚠️ <strong>DIVERSITY pick — deliberately sub-optimal.</strong> <strong>Why it's a weak choice:</strong> Petra's <em>strongest</em> partner is <strong>Petra × Dorothea</strong>, but Dorothea is locked to her mutual-best <strong>Ferdinand</strong> here, so Petra is pulled onto a lesser chain; Bernadetta's best is <strong>Byleth</strong> (taken by Edelgard) with only thin alternatives. It's a confirmed support but not either unit's optimal — used only to add variety and pad the count, acceptable solely because Crimson Flower is one of the easy routes.</li>
+</ul>
+<ul>
+<li><strong>Genuinely unpairable on this roster:</strong> <strong>Hubert</strong> (canon-devoted to Edelgard, who is Byleth-locked here), <strong>Jeritza</strong> (only S-tie is his sister Mercedes — not romantic, not on CF), and <strong>Anna</strong> (cannot support anyone). All combat-only.</li>
+</ul>
+<blockquote><p><strong>What a "diversity pairing" is, and why it's a bad choice (R5):</strong> it trades a unit's <em>best</em> support — and that support's affinity/stat bonus and combat synergy — for a weaker but different one, just to showcase variety across runs. It's a deliberate cost, allowed only on the easy routes (never Maddening). Here that swap is <strong>Petra × Bernadetta</strong> (Petra's #1 partner Dorothea is taken by Ferdinand).<br>
+<strong>Best-pairing repeat:</strong> <strong>Hanneman × Manuela</strong> — both are each other's best; R5 allows repeating a best pairing.</p></blockquote>
+</article>
+</div></body></html>

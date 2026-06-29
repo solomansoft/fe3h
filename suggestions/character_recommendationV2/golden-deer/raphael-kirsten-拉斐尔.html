@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Raphael Kirsten / 拉斐尔 — Build Menu (V2)</title>
+<style>
+:root{--fg:#1c1e26;--muted:#6b7280;--bg:#fbfbfd;--card:#fff;--accent:#3b5bdb;--border:#e5e7eb;--code:#f3f4f6;--good:#067647;--bad:#b42318}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei",sans-serif}
+.wrap{max-width:920px;margin:0 auto;padding:0 20px 80px}
+nav.top{position:sticky;top:0;background:rgba(251,251,253,.92);backdrop-filter:blur(6px);padding:12px 0;border-bottom:1px solid var(--border);margin-bottom:28px;font-size:14px}
+nav.top a{color:var(--accent);text-decoration:none;margin-right:14px}
+article{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:28px 34px}
+h1{font-size:1.7rem;line-height:1.25;margin:.2em 0 .6em;border-bottom:2px solid var(--border);padding-bottom:.3em}
+h2{font-size:1.32rem;margin:1.6em 0 .5em;border-bottom:1px solid var(--border);padding-bottom:.2em}
+h3{font-size:1.1rem;margin:1.3em 0 .4em}
+a{color:var(--accent)}
+table{border-collapse:collapse;width:100%;margin:1em 0;font-size:.94rem;display:block;overflow-x:auto}
+th,td{border:1px solid var(--border);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:var(--code)}
+tr:nth-child(even) td{background:#fafafa}
+code{background:var(--code);padding:.12em .4em;border-radius:5px;font-size:.88em;font-family:"SF Mono",Menlo,Consolas,monospace}
+blockquote{margin:1em 0;padding:.3em 1em;border-left:4px solid var(--accent);background:#f6f8ff;color:#374151}
+.build{border:1px solid var(--border);border-radius:10px;padding:4px 18px 14px;margin:1.1em 0;background:#fff}
+.build h2{border:none;margin-top:.7em}
+.pros li{color:var(--good)} .cons li{color:var(--bad)}
+.pros,.pros *{list-style:none} .tag{display:inline-block;font-size:.74rem;font-weight:600;padding:1px 8px;border-radius:20px;background:var(--code);color:var(--muted);margin-left:6px;vertical-align:middle}
+.boon{color:var(--good);font-weight:600}.bane{color:var(--bad);font-weight:600}.neutral{color:var(--muted)}
+.lead{color:var(--muted)}
+</style></head>
+<body><div class="wrap">
+<nav class="top"><a href="../../../index.html">⌂ Home</a> <a href="../../../suggestions/index.html">suggestions</a> <a href="../../routesV2/index.html">routesV2</a></nav>
+<article>
+<h1 id="raphael">Raphael Kirsten / 拉斐尔 — Build Menu <span class="tag">V2</span></h1>
+<blockquote><p><strong>Golden Deer house member</strong> (auto-joins Verdant Wind; recruitable elsewhere). No Crest, no budding talent. Growths HP 65 / Str 50 / Def 45 — a tanky bruiser; very low Mag 15 / Spd 15 / Res 10 (will rarely double). Goody Basket personal self-heals (scales with Luck).<br>
+<strong>Proficiencies:</strong> <span class="boon">Axe (boon)</span>, <span class="boon">Brawl (boon)</span>, <span class="boon">Heavy Armor (boon)</span>; <span class="bane">Bow (bane)</span>, <span class="bane">Riding (bane)</span>; Sword/Lance/Reason/Faith neutral.<br>
+<strong>Harvest:</strong> <code>Death Blow [⛏ Brigand, Axe C — boon]</code> on-boon, free; <strong>Fierce Iron Fist</strong> (Grappler) + <strong>Quick Riposte</strong> (War Master) are his class kit, not detours. <span class="bane">Skip the Archer detour</span> — Bow is a bane, so Hit+20 is a slow grind for little gain. <strong>War Master is male-only</strong> — Raphael qualifies.<br>
+Sources: Game8 / GameWith (JP), Reddit, GamerSky (CN).</p></blockquote>
+<p class="rating-line"><strong>Strength</strong> ⭐⭐⭐☆☆ (3/5) &nbsp;·&nbsp; <strong>Build difficulty</strong> 🔧🔧🔧🔧○ (4/5)</p>
+
+<h2 id="builds-at-a-glance">Builds at a glance</h2>
+<table>
+<tr><th>Build</th><th>One-line</th><th>Tutoring cost</th><th>Best on</th></tr>
+<tr><td><a href="#war-master">War Master</a></td><td>Premier brawler — Crit+20, Str+5 mod, Quick Riposte fixes enemy phase</td><td><span class="boon">Light</span> (Axe A + Brawl A, both boons)</td><td>Verdant Wind (Maddening)</td></tr>
+<tr><td><a href="#grappler">Grappler</a></td><td>Fierce Iron Fist 3-hit burst + Fistfaire</td><td><span class="boon">Light</span> (Brawl A boon)</td><td>VW alt — pre-Master-Seal</td></tr>
+<tr><td><a href="#fortress-warrior">Fortress → Warrior</a></td><td>Defensive wall pivoting to mobile axe</td><td><span class="boon">Light</span> (Heavy Armor + Axe boons)</td><td>VW alt — tank niche</td></tr>
+</table>
+
+<div class="build">
+<h2 id="war-master">Build 1 — War Master (战神) <span class="tag">recommended</span></h2>
+<p><strong>Path:</strong> Commoner → Fighter → Brigand → Grappler → <strong>War Master</strong> (male-only). <strong>Cert:</strong> Axe A (<span class="boon">boon</span>) + Brawl A (<span class="boon">boon</span>) — both on-strength, fast. Game's premier brawler: Str+5 modifier, Crit+20, and the <strong>Quick Riposte</strong> mastery gives the enemy-phase follow-up he otherwise lacks (low Spd) [Game8, GameWith JP, Reddit].</p>
+<p><strong>Mastery detours (boon-harvest):</strong> <code>Death Blow [⛏ Brigand, Axe C — boon]</code> already on the path — free, on-boon; +6 Str turns his huge Str into massive player-phase burst. <span class="bane">Skip Archer</span> — Bow is a bane, Hit+20 would be a slow grind.</p>
+<p><strong>5 skills:</strong> Fistfaire · Death Blow · Quick Riposte · Crit+20 (innate) · Battalion Wrath.</p>
+<ul class="pros"><li>✔ <strong>Quick Riposte fixes his enemy phase</strong> — high HP/Def + guaranteed follow-up = self-sufficient bruiser.</li>
+<li>✔ Top Str modifier + Crit+20; both cert weapons are boons, so he trains fast.</li>
+<li>✔ Battalion Wrath + Vantage combo is brutal on his huge HP frame.</li></ul>
+<ul class="cons"><li>✘ Foot Mov 5, no Canto; low Spd means he relies on Quick Riposte to double.</li>
+<li>✘ Fix accuracy with a high-Hit/Crit battalion (modest Dex).</li></ul>
+</div>
+
+<div class="build">
+<h2 id="grappler">Build 2 — Grappler (格斗家)</h2>
+<p><strong>Path:</strong> Commoner → Fighter → Brigand → <strong>Grappler</strong> (male-only). <strong>Cert:</strong> Brawl A (<span class="boon">boon</span>). Grappler's <strong>Fierce Iron Fist</strong> hits three times for big burst, plus Fistfaire; slightly higher Spd modifier than War Master.</p>
+<p><strong>Mastery detours (boon-harvest):</strong> <code>Death Blow [⛏ Brigand, Axe C — boon]</code> already on the path — harvest before advancing.</p>
+<p><strong>5 skills:</strong> Fistfaire · Death Blow · Fierce Iron Fist (combat art) · Tomebreaker (mastery) · Battalion Wrath.</p>
+<ul class="pros"><li>✔ Fierce Iron Fist 3-hit burst is one of the highest single-target damage spikes in the game.</li>
+<li>✔ Essentially the penultimate stop of War Master — keep it if you've no Master Seal yet.</li></ul>
+<ul class="cons"><li>✘ No Quick Riposte — weaker enemy phase than War Master.</li>
+<li>✘ Same Mov 5 / no Canto limitation.</li></ul>
+</div>
+
+<div class="build">
+<h2 id="fortress-warrior">Build 3 — Fortress Knight → Warrior (重装→战士)</h2>
+<p><strong>Path:</strong> Commoner → Armored Knight → <strong>Fortress Knight</strong> (then → Warrior late). <strong>Cert:</strong> Heavy Armor (<span class="boon">boon</span>) then Axe A (<span class="boon">boon</span>). A wall route leveraging his huge Def; switch to Warrior late because Fortress Mov 4 is too low [GameWith JP].</p>
+<p><strong>Mastery detours (boon-harvest):</strong> <code>Death Blow [⛏ Brigand, Axe C — boon]</code> on-boon. <span class="bane">Avoid Bow/Riding classes</span> — both banes.</p>
+<p><strong>5 skills:</strong> Axefaire · Death Blow · Quick Riposte · Hit+20 · Defiant Str.</p>
+<ul class="pros"><li>✔ Pure tank wall using his Heavy Armor boon + huge Def early.</li>
+<li>✔ Warrior pivot restores Mov + axe damage if Fortress feels too slow.</li></ul>
+<ul class="cons"><li>✘ Defensive niche only — his Str/HP are wasted as a passive wall; consensus is to go offensive brawler.</li>
+<li>✘ Fortress Mov 4 cripples positioning until the Warrior swap.</li></ul>
+</div>
+
+<h2 id="route-usage">Route usage this playthrough (team-driven · R12 difficulty)</h2>
+<table>
+<tr><th>Route (difficulty)</th><th>Build</th><th>Why — for the whole team</th></tr>
+<tr><td><strong>Verdant Wind</strong> (Maddening)</td><td><a href="#war-master">War Master</a></td><td>GD leans on squishy fliers/casters (Claude, Hilda, Lysithea, Marianne); Raphael is the <strong>front-line wall + enemy-phase bruiser</strong> who body-blocks for them. Quick Riposte + high HP/Def means he holds chokepoints while Lysithea nukes from behind. Both cert weapons are boons. (Grappler if pre-Master-Seal.)</td></tr>
+<tr><td><strong>Other routes</strong></td><td>—</td><td>Not featured — built once on Verdant Wind in this playthrough.</td></tr>
+</table>
+<p class="lead">Each route file links straight to the chosen build anchor above, e.g. <code>…/character_recommendationV2/golden-deer/raphael-kirsten-拉斐尔.html#war-master</code>.</p>
+</article>
+</div></body></html>

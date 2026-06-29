@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shamir / 萨米亚 — Build Menu (V2)</title>
+<style>
+:root{--fg:#1c1e26;--muted:#6b7280;--bg:#fbfbfd;--card:#fff;--accent:#3b5bdb;--border:#e5e7eb;--code:#f3f4f6;--good:#067647;--bad:#b42318}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei",sans-serif}
+.wrap{max-width:920px;margin:0 auto;padding:0 20px 80px}
+nav.top{position:sticky;top:0;background:rgba(251,251,253,.92);backdrop-filter:blur(6px);padding:12px 0;border-bottom:1px solid var(--border);margin-bottom:28px;font-size:14px}
+nav.top a{color:var(--accent);text-decoration:none;margin-right:14px}
+article{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:28px 34px}
+h1{font-size:1.7rem;line-height:1.25;margin:.2em 0 .6em;border-bottom:2px solid var(--border);padding-bottom:.3em}
+h2{font-size:1.32rem;margin:1.6em 0 .5em;border-bottom:1px solid var(--border);padding-bottom:.2em}
+h3{font-size:1.1rem;margin:1.3em 0 .4em}
+a{color:var(--accent)}
+table{border-collapse:collapse;width:100%;margin:1em 0;font-size:.94rem;display:block;overflow-x:auto}
+th,td{border:1px solid var(--border);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:var(--code)}
+tr:nth-child(even) td{background:#fafafa}
+code{background:var(--code);padding:.12em .4em;border-radius:5px;font-size:.88em;font-family:"SF Mono",Menlo,Consolas,monospace}
+blockquote{margin:1em 0;padding:.3em 1em;border-left:4px solid var(--accent);background:#f6f8ff;color:#374151}
+.build{border:1px solid var(--border);border-radius:10px;padding:4px 18px 14px;margin:1.1em 0;background:#fff}
+.build h2{border:none;margin-top:.7em}
+.pros li{color:var(--good)} .cons li{color:var(--bad)}
+.pros,.pros *{list-style:none} .tag{display:inline-block;font-size:.74rem;font-weight:600;padding:1px 8px;border-radius:20px;background:var(--code);color:var(--muted);margin-left:6px;vertical-align:middle}
+.boon{color:var(--good);font-weight:600}.bane{color:var(--bad);font-weight:600}.neutral{color:var(--muted)}
+.lead{color:var(--muted)}
+</style></head>
+<body><div class="wrap">
+<nav class="top"><a href="../../../index.html">⌂ Home</a> <a href="../../../suggestions/index.html">suggestions</a> <a href="../../routesV2/index.html">routesV2</a></nav>
+<article>
+<h1 id="shamir">Shamir / 萨米亚 — Build Menu <span class="tag">V2</span></h1>
+<blockquote><p><strong>Knights of Seiros recruit.</strong> Recruitable from ~Ch.6; auto-joins <strong>Silver Snow</strong>; recruitable on Azure Moon / Verdant Wind. Joins <strong>Lv 11 Sniper, Bow A</strong>, personal <strong>Survival Instinct</strong> (+4 Str/Mag/Dex/Spd for a turn after she initiates a kill). Premier archer the moment she joins.<br>
+<strong>Proficiencies:</strong> <span class="boon">Bow / Lance / Reason (boons)</span>; <span class="bane">Faith (bane)</span>; Sword/Axe/Brawl/Authority/Flying neutral. No gender-lock issues.<br>
+Sources: fe3h.com / Game8 / GameFAQs / FE Fanatics (EN), GameWith (JP), GamerSky (CN).</p></blockquote>
+<p class="rating-line"><strong>Strength</strong> ⭐⭐⭐⭐☆ (4/5) &nbsp;·&nbsp; <strong>Build difficulty</strong> 🔧○○○○ (1/5)</p>
+
+<h2 id="builds-at-a-glance">Builds at a glance</h2>
+<table>
+<tr><th>Build</th><th>One-line</th><th>Tutoring cost</th><th>Best on</th></tr>
+<tr><td><a href="#bow-knight">Bow Knight</a></td><td>8-move 4-range kiting nuke, Canto</td><td><span class="neutral">Light</span> (Bow A on join; Riding A)</td><td>Silver Snow (mobility carry)</td></tr>
+<tr><td><a href="#sniper">Sniper</a></td><td>Hunter's Volley guaranteed double, Maddening favorite</td><td><span class="boon">None</span> (Bow A on join)</td><td>Verdant Wind (raw burst)</td></tr>
+</table>
+
+<div class="build">
+<h2 id="bow-knight">Build 1 — Bow Knight (弓骑士)</h2>
+<p><strong>Path:</strong> stay Sniper / Cavalier → <strong>Bow Knight</strong>. <strong>Cert:</strong> Lance C (<span class="boon">boon</span>) / Bow A (<span class="boon">boon — met on join</span>) / Riding A (<span class="neutral">neutral</span>) — only <strong>Riding needs training</strong>; light tutoring.</p>
+<p><strong>Mastery detours (boon-harvest):</strong> <code>Hit+20 [⛏ Archer, Bow C — boon]</code> harvest cheap off her Bow boon — Archer is her natural beginner step. <code>Death Blow [⛏ Brigand, Axe C — neutral]</code> "essentially +12 damage," explicitly recommended for her; off-boon but cheap. (Skip Faith detours — <span class="bane">Faith bane</span>.)</p>
+<p><strong>5 skills:</strong> Bowfaire · Death Blow · Hit+20 · Bow Prowess 5 · Defiant Crit (or Vantage for an enemy-phase setup).</p>
+<ul class="pros"><li>✔ <strong>8 move + Canto + 4-range no-counter bow</strong> — kiting nuke. "Generally better than Sniper, as evidenced by the level requirement."</li>
+<li>✔ Endgame she "reliably one-rounds all non-armored units" incl. Falcon Knights; a Magic Bow uses her Reason boon vs high-Res targets.</li></ul>
+<ul class="cons"><li>✘ Loses Sniper's <strong>Hunter's Volley</strong> guaranteed double — burst dips vs the Sniper build.</li>
+<li>✘ Needs the Riding A grind (her only neutral gate).</li></ul>
+</div>
+
+<div class="build">
+<h2 id="sniper">Build 2 — Sniper (狙击手)</h2>
+<p><strong>Path:</strong> stay (joins as Sniper, <strong>Bow A</strong>) → push <strong>Bow S+</strong> for Bowfaire. <strong>Cert:</strong> Bow A — already met, <span class="boon">zero tutoring</span>.</p>
+<p><strong>Mastery detours (boon-harvest):</strong> <code>Hit+20 [⛏ Archer, Bow C — boon]</code> cheap accuracy harvest off her boon. <code>Death Blow [⛏ Brigand, Axe C — neutral]</code> the +12-damage dip. (Skip Faith — <span class="bane">bane</span>.)</p>
+<p><strong>5 skills:</strong> Bowfaire · Death Blow · Hit+20 · Bow Prowess 5 · Vantage. (Hunter's Volley is the combat art she leads with.)</p>
+<ul class="pros"><li>✔ <strong>Hunter's Volley</strong> = guaranteed player-phase double — "overpowered, fantastic especially on Maddening where doubling is hard."</li>
+<li>✔ Zero setup, immediately a top archer; Survival Instinct snowballs her after a kill.</li></ul>
+<ul class="cons"><li>✘ Only 5 move, no Canto — falls off on big Maddening maps vs Bow Knight.</li>
+<li>✘ No mounted utility; static positioning.</li></ul>
+</div>
+
+<h2 id="route-usage">Route usage this playthrough (team-driven · R3 distinct · R12 difficulty)</h2>
+<table>
+<tr><th>Route (difficulty)</th><th>Build</th><th>Why — for the whole team</th></tr>
+<tr><td><strong>Silver Snow</strong> (Maddening)</td><td><a href="#bow-knight">Bow Knight</a></td><td>SS already fields static carries; the team's archer slot wants <strong>mobility</strong>. Her 8-move + 4-range no-counter lets her reposition across big Maddening maps and finish off what the fliers (Seteth/Cyril) soften. <span class="neutral">(R12: full kit.)</span></td></tr>
+<tr><td><strong>Verdant Wind</strong> (Maddening)</td><td><a href="#sniper">Sniper</a></td><td>GD already has mounted/flying mobility (Hilda/Claude/Cyril-Wyvern), so Shamir fills the <strong>guaranteed-double burst</strong> slot Hunter's Volley provides — doubling is hard on Maddening and she does it on demand. (R3: distinct from her SS Bow Knight.)</td></tr>
+<tr><td><strong>Crimson Flower</strong></td><td>—</td><td>Not relevant this run (church-side unit).</td></tr>
+</table>
+<p class="lead">Route file links to the build anchor, e.g. <code>…/character_recommendationV2/others/shamir-萨米亚.html#sniper</code>.</p>
+</article>
+</div></body></html>

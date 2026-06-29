@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Verdant Wind (Golden Deer) — Maddening — Route Plan (V2)</title>
+<style>
+:root{--fg:#1c1e26;--muted:#6b7280;--bg:#fbfbfd;--card:#fff;--accent:#3b5bdb;--border:#e5e7eb;--code:#f3f4f6;--good:#067647;--bad:#b42318}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei",sans-serif}
+.wrap{max-width:920px;margin:0 auto;padding:0 20px 80px}
+nav.top{position:sticky;top:0;background:rgba(251,251,253,.92);backdrop-filter:blur(6px);padding:12px 0;border-bottom:1px solid var(--border);margin-bottom:28px;font-size:14px}
+nav.top a{color:var(--accent);text-decoration:none;margin-right:14px}
+article{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:28px 34px}
+h1{font-size:1.7rem;line-height:1.25;margin:.2em 0 .6em;border-bottom:2px solid var(--border);padding-bottom:.3em}
+h2{font-size:1.32rem;margin:1.6em 0 .5em;border-bottom:1px solid var(--border);padding-bottom:.2em}
+h3{font-size:1.1rem;margin:1.3em 0 .4em}
+a{color:var(--accent)}
+table{border-collapse:collapse;width:100%;margin:1em 0;font-size:.94rem;display:block;overflow-x:auto}
+th,td{border:1px solid var(--border);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:var(--code)}
+tr:nth-child(even) td{background:#fafafa}
+code{background:var(--code);padding:.12em .4em;border-radius:5px;font-size:.88em;font-family:"SF Mono",Menlo,Consolas,monospace}
+blockquote{margin:1em 0;padding:.3em 1em;border-left:4px solid var(--accent);background:#f6f8ff;color:#374151}
+.build{border:1px solid var(--border);border-radius:10px;padding:4px 18px 14px;margin:1.1em 0;background:#fff}
+.build h2{border:none;margin-top:.7em}
+.pros li{color:var(--good)} .cons li{color:var(--bad)}
+.pros,.pros *{list-style:none} .tag{display:inline-block;font-size:.74rem;font-weight:600;padding:1px 8px;border-radius:20px;background:var(--code);color:var(--muted);margin-left:6px;vertical-align:middle}
+.boon{color:var(--good);font-weight:600}.bane{color:var(--bad);font-weight:600}.neutral{color:var(--muted)}
+.lead{color:var(--muted)}
+</style></head>
+<body><div class="wrap">
+<nav class="top"><a href="../../index.html">⌂ Home</a> <a href="../index.html">suggestions</a> <a href="../character_recommendationV2/index.html">character menu</a></nav>
+<article>
+<h1 id="verdant-wind">Verdant Wind / 翠风之章 — Route Plan <span class="tag">V2</span></h1>
+<blockquote><p><strong>House:</strong> Golden Deer · <strong>Difficulty:</strong> <strong>Maddening</strong> · <strong>Byleth:</strong> <strong>Female</strong> (required for the iconic <strong>Byleth&nbsp;×&nbsp;Claude</strong> S-support — Claude romances female Byleth only — and unlocks her Wyvern Lord path here).<br>
+Run 4 of 4: the finale and the hardest run, on full Maddening, and the most lore-complete route. Golden Deer is <strong>flier-light</strong>, so this plan closes the air gap with native Wyvern users and paths every unit through mastery classes on <span class="boon">boon/neutral</span> weapons while skipping <span class="bane">bane</span>-gated detours.<br>
+<strong>Byleth's birthday:</strong> <strong>Harpstring Moon (M5), wk 1</strong> → early <strong>Golden Deer Bracelet</strong> (Charm +2) in both parts — equip on your Dancer / gambit user.<br>
+Tags: 🔒 route-exclusive · ⚠️ tutor/special-care · 💃 dancer · ⭐ top carry · 🧩 DLC-optional (non-DLC alt given) · ⛏ HARVEST (mastery picked up via a boon/neutral cert detour).<br>
+Sources: Game8 (Maddening tier lists & class guides), GamerSky, GameWith, Fandom (cert ranks & gender locks), GameFAQs / Reddit r/fireemblem (Maddening discussion). Boon/bane per Fandom per-character pages.</p></blockquote>
+
+<blockquote><p><strong>DLC is OPTIONAL.</strong> The <strong>recommended default</strong> (you do <strong>not</strong> own the Cindered Shadows DLC) is the <strong>all-Golden-Deer non-DLC roster</strong> in the next section — it un-reserves <strong>Lysithea</strong> (native GD), uses <strong>Marianne</strong> as Dancer, and adds <strong>Mercedes as a dedicated healer</strong>. The DLC Ashen Wolves roster that follows is kept as an <strong>optional</strong> path for owners.</p></blockquote>
+
+<h2 id="route-exclusive">🔒 Route-exclusive highlight (verified)</h2>
+<p><strong>Claude</strong> is playable <strong>only</strong> on Verdant Wind (NPC/enemy elsewhere, never controllable). Edelgard is again an enemy/major boss here.</p>
+<blockquote><p>Maddening tip: GD's three opening bow users (Claude, Leonie, Ignatz) give ranged safety from turn 1 — lean on it. The early Death Blow / Hit+20 harvests below sharpen exactly that opening.</p></blockquote>
+
+<h2 id="build-basis">V2 build basis</h2>
+<ul>
+<li><strong>Design principle:</strong> route each unit's <em>path</em> through intermediate/advanced classes that certify on a <span class="boon">boon or neutral</span> weapon, and <strong>HARVEST</strong> (⛏) the masteries worth keeping along the way. <strong>Skip masteries gated behind a unit's <span class="bane">BANE</span>.</strong> Cert ranks used: <strong>Brigand = Axe C</strong> (→ Death Blow), <strong>Archer = Bow C</strong> (→ Hit+20), <strong>Mage = Reason C</strong> (→ Fiendish Blow), <strong>Pegasus Knight = Lance C + Flying D, FEMALE-ONLY</strong> (→ Darting Blow).</li>
+<li><strong>Gender locks enforced:</strong> Hero / Brawler / Grappler / War Master = <span class="bane">MALE-ONLY</span>; Falcon Knight / Pegasus Knight / Valkyrie / Dark Flier / Gremory = <strong>FEMALE-ONLY</strong>.</li>
+<li><strong>Byleth this run (R3 — distinct):</strong> <strong>Wyvern Lord</strong> (飛龍の長) — the strongest endgame physical chassis (Move 8 flying, Axefaire, Defiant Avo, Alert Stance+). Distinct from R1 Enlightened One, CF War Master, SS Falcon Knight.</li>
+<li><strong>Difficulty (R12):</strong> Maddening → <strong>full optimal kit</strong> for every unit.</li>
+</ul>
+
+<hr>
+
+<h2 id="nondlc-roster">🧩 Non-DLC roster — RECOMMENDED DEFAULT (15)</h2>
+<p>The four Ashen Wolves (Yuri, Balthus, Constance, Hapi) require the Cindered Shadows DLC. Without it, replace them with Golden Deer's own depth plus cross-house recruits. <strong>Roster size is 15</strong> — fills the 12-unit deploy cap + 3 adjutants (R7): the <strong>13 core/flex</strong> in the table below plus <strong>2 adjutant/insurance 🪑</strong> easy cross-house faculty recruits — <strong>Hanneman</strong> (spare mage) and <strong>Manuela</strong> (spare healer/dance-flex). (On the DLC path the four Ashen Wolves already push the pool past 15, so no extra recruits are needed there.) Mercedes is the dedicated healer GD otherwise lacks once Marianne moves to Dancer.</p>
+
+<table>
+<tr><th>Unit</th><th>Role</th><th>Non-DLC class (Run 4)</th><th>Core/flex</th></tr>
+<tr><td><strong>Byleth</strong> ♀ ⭐</td><td>flying axe carry</td><td><strong>Wyvern Lord</strong></td><td>core</td></tr>
+<tr><td><strong>Claude</strong> 🔒 ⭐</td><td>flying bow lord</td><td><strong>Barbarossa</strong></td><td>core</td></tr>
+<tr><td><strong>Lorenz</strong></td><td>mage-cavalry</td><td><strong>Dark Knight</strong></td><td>core</td></tr>
+<tr><td><strong>Leonie</strong> ⭐</td><td>bow cavalry</td><td><strong>Bow Knight</strong></td><td>core</td></tr>
+<tr><td><strong>Hilda</strong> ⚠️</td><td>flying axe</td><td><strong>Wyvern Lord</strong></td><td>core</td></tr>
+<tr><td><strong>Marianne</strong> 💃 ⚠️</td><td>dancer / healer</td><td><strong>Dancer</strong> (still Physic-heals)</td><td>core</td></tr>
+<tr><td><strong>Raphael</strong> ⚠️</td><td>brawler</td><td><strong>War Master</strong></td><td>core</td></tr>
+<tr><td><strong>Ignatz</strong></td><td>archer / debuff</td><td><strong>Sniper</strong></td><td>core</td></tr>
+<tr><td><strong>Lysithea</strong> ⭐ ⚠️</td><td>mage nuke</td><td><strong>Valkyrie</strong> <em>(reuse-variant)</em></td><td>core</td></tr>
+<tr><td><strong>Shamir</strong> (rec)</td><td>archer</td><td><strong>Sniper</strong> <em>(reuse-variant)</em></td><td>flex</td></tr>
+<tr><td><strong>Catherine</strong> (rec) ⭐</td><td>flying sword/axe</td><td><strong>Wyvern Lord</strong> <em>(reuse-variant)</em></td><td>flex</td></tr>
+<tr><td><strong>Alois</strong> (rec)</td><td>armor-cavalry tank</td><td><strong>Great Knight</strong> <em>(reuse-variant)</em></td><td>flex</td></tr>
+<tr><td><strong>Mercedes</strong> (rec) ⚠️</td><td><strong>dedicated healer (13th body)</strong></td><td><strong>Bishop</strong></td><td>flex</td></tr>
+</table>
+
+<h3 id="nondlc-deployment">Deployment roster — non-DLC (Unit · class deep-link · team reason)</h3>
+<table>
+<tr><th>Unit</th><th>Class (deep-link)</th><th>Why — for the whole team</th></tr>
+<tr><td><strong>Byleth</strong> ♀ ⭐</td><td><a href="../character_recommendationV2/others/byleth-贝雷特.html#wyvern-lord">Wyvern Lord</a></td><td>The single best physical mount in the game on Byleth's stat ceiling; Move 8 flying directly answers GD's air gap, and the Sword of the Creator still rides along.</td></tr>
+<tr><td><strong>Claude</strong> 🔒 ⭐</td><td><a href="../character_recommendationV2/golden-deer/claude-von-riegan-克劳德.html#barbarossa">Barbarossa</a></td><td>His signature flying-bow lord seat — Bow/Flying/Authority all boons, Bowfaire on a Move 8 flier. Anti-air + ranged safety, top battalion.</td></tr>
+<tr><td><strong>Lorenz</strong></td><td><a href="../character_recommendationV2/golden-deer/lorenz-hellman-gloucester-洛伦兹.html#dark-knight">Dark Knight</a></td><td>The #1 mounted-mage seat (Lance/Reason/Riding all boons, Crest adds Mt). Mounted Canto magic that hits low-Res armor.</td></tr>
+<tr><td><strong>Leonie</strong> ⭐</td><td><a href="../character_recommendationV2/golden-deer/leonie-pinelli-雷欧妮.html#bow-knight">Bow Knight</a></td><td>Move 8, 1–3 range bow cavalry (Lance/Bow/Riding all boons) — mobile anti-flier raider with Canto.</td></tr>
+<tr><td><strong>Hilda</strong> ⚠️</td><td><a href="../character_recommendationV2/golden-deer/hilda-valentine-goneril-希尔妲.html#wyvern-lord">Wyvern Lord</a></td><td>Second native flier (Axe boon → directly on path); Axefaire + Avo+10 KO flier closing the air gap.</td></tr>
+<tr><td><strong>Marianne</strong> 💃 ⚠️</td><td><a href="../character_recommendationV2/golden-deer/marianne-von-edmund-玛莉安奴.html#dancer">Dancer</a></td><td>Route Dancer (R4): high Charm + Sword boon dodge-dance, and uniquely keeps her Faith to Physic-heal between refreshes.</td></tr>
+<tr><td><strong>Raphael</strong> ⚠️</td><td><a href="../character_recommendationV2/golden-deer/raphael-kirsten-拉斐尔.html#war-master">War Master</a></td><td>Brawler tank-DPS (Axe/Brawl/HeavyArmor all boons) — Crit+20 + Quick Riposte enemy-phase wall; doubles as caster bodyguard.</td></tr>
+<tr><td><strong>Ignatz</strong></td><td><a href="../character_recommendationV2/golden-deer/ignatz-victor-伊古纳兹.html#sniper">Sniper</a></td><td>Third opening bow + Hunter's Volley; his keystone is the <strong>Seal Strength</strong> debuff (Reason budding) for the whole team.</td></tr>
+<tr><td><strong>Lysithea</strong> ⭐ ⚠️</td><td><a href="../character_recommendationV2/golden-deer/lysithea-von-ordelia-莉丝缇亚.html#valkyrie">Valkyrie</a></td><td>Magic nuke; Valkyrie is mounted (Canto retreat) with <strong>NO Lance requirement</strong> — avoids the Dark Knight gate on her <span class="bane">Lance bane</span>. (SS uses Gremory per R3.)</td></tr>
+<tr><td><strong>Shamir</strong> (rec)</td><td><a href="../character_recommendationV2/others/shamir-萨米亚.html#sniper">Sniper</a></td><td>Combat-ready Bow boon raider; distinct from her SS Bow Knight seat. Adds another anti-flier ranged body with almost no tutoring.</td></tr>
+<tr><td><strong>Catherine</strong> (rec) ⭐</td><td><a href="../character_recommendationV2/others/catherine-卡多莉奴.html#wyvern-lord">Wyvern Lord</a></td><td>The community Maddening mobility fix for her 5-move Swordmaster problem — Move 8 flying, female-legal. Fourth flier; distinct from AM/SS seats.</td></tr>
+<tr><td><strong>Alois</strong> (rec)</td><td><a href="../character_recommendationV2/others/alois-阿洛伊斯.html#great-knight">Great Knight</a></td><td>Armor-cavalry frontline tank (Axe/HeavyArmor boons) — body-blocks for the frail mages. Distinct from his SS War Master seat (R3).</td></tr>
+<tr><td><strong>Mercedes</strong> (rec) ⚠️</td><td><a href="../character_recommendationV2/blue-lions/mercedes-von-martritz-梅尔赛德丝.html#bishop">Bishop</a></td><td><strong>Added as the 13th body to fill VW's healing gap.</strong> Once Marianne moves to Dancer, GD has no dedicated healer; Mercedes (Reason/Faith boons) brings full white-magic range, Live to Serve, and Warp utility. Distinct from her AM Gremory (R3).</td></tr>
+</table>
+<p class="lead">With 12 deploy slots + 1 flex, drop one flex body (Shamir, or Alois if you want a fourth flier slot) per map; <strong>keep Mercedes in</strong> on harder maps — the dedicated healer is the point of the 13th body.</p>
+
+<h3 id="nondlc-composition">Non-DLC roster composition (R9, Maddening)</h3>
+<ul>
+<li><strong>Damage split — Magic:</strong> Lorenz (Dark Knight), Lysithea (Valkyrie) hit armor/low-Res. <strong>Physical:</strong> Byleth (Wyvern), Claude (flying bow), Leonie (bow cav), Hilda (Wyvern), Raphael (brawl), Ignatz (bow), Catherine (Wyvern), Shamir (bow), Alois (Great Knight).</li>
+<li><strong>Healing/staff:</strong> <strong>Mercedes (Bishop) is the primary dedicated healer</strong> — she fills the gap Marianne leaves by dancing; plus Marianne's retained Physic between refreshes and Lysithea's Faith access. No longer thin.</li>
+<li><strong>Fliers/mobility:</strong> Byleth + Claude + Hilda + Catherine (four fliers — VW's air gap fully closed); Lorenz + Lysithea (mounted) + Leonie + Alois Canto; Marianne's Dance is the tempo lever.</li>
+<li><strong>Ranged/effective:</strong> Claude / Leonie / Ignatz / Shamir bows (anti-flier) + magic (anti-armor) — excellent.</li>
+<li><strong>Tank/body-block:</strong> Alois (Great Knight) + Raphael front the frail casters.</li>
+<li><strong>Gambits:</strong> Byleth + Claude carry the strongest battalions (both Authority-capable); Ignatz brings the <strong>Seal Strength</strong> debuff.</li>
+</ul>
+
+<hr>
+
+<h2 id="dlc-roster">🧩 DLC roster — Ashen Wolves path (optional, 12)</h2>
+<blockquote><p>The four Ashen Wolves below require <strong>Cindered Shadows DLC</strong>. If you don't own it, use the non-DLC all-GD roster above. <strong>With DLC, reserve Lysithea for Silver Snow only</strong> and drop the cross-house recruits as needed to maximize distinct units across the four runs. DLC roster size: <strong>12</strong> (Byleth + 7 native GD + 4 Ashen Wolves). With DLC, <strong>Yuri dances and Marianne becomes a Holy Knight healer.</strong></p></blockquote>
+
+<h3 id="dlc-deployment">Deployment roster — DLC (Unit · class deep-link · team reason)</h3>
+<table>
+<tr><th>Unit</th><th>Class (deep-link)</th><th>Why — for the whole team</th></tr>
+<tr><td><strong>Byleth</strong> ♀ ⭐</td><td><a href="../character_recommendationV2/others/byleth-贝雷特.html#wyvern-lord">Wyvern Lord</a></td><td>Best physical mount; closes the air gap, carries SotC.</td></tr>
+<tr><td><strong>Claude</strong> 🔒 ⭐</td><td><a href="../character_recommendationV2/golden-deer/claude-von-riegan-克劳德.html#barbarossa">Barbarossa</a></td><td>Signature flying-bow lord; anti-air + ranged lead.</td></tr>
+<tr><td><strong>Lorenz</strong></td><td><a href="../character_recommendationV2/golden-deer/lorenz-hellman-gloucester-洛伦兹.html#dark-knight">Dark Knight</a></td><td>#1 mounted-mage seat; one of three DLC-roster casters.</td></tr>
+<tr><td><strong>Leonie</strong> ⭐</td><td><a href="../character_recommendationV2/golden-deer/leonie-pinelli-雷欧妮.html#bow-knight">Bow Knight</a></td><td>Move 8 bow cavalry raider with Canto.</td></tr>
+<tr><td><strong>Hilda</strong> ⚠️</td><td><a href="../character_recommendationV2/golden-deer/hilda-valentine-goneril-希尔妲.html#wyvern-lord">Wyvern Lord</a></td><td>Second native flier; Axefaire KO machine.</td></tr>
+<tr><td><strong>Marianne</strong> ⚠️</td><td><a href="../character_recommendationV2/golden-deer/marianne-von-edmund-玛莉安奴.html#holy-knight">Holy Knight</a></td><td>Off Dancer because Yuri dances → becomes the #1 mounted healer (keeps Physic/Faith, gains Move + Canto).</td></tr>
+<tr><td><strong>Raphael</strong> ⚠️</td><td><a href="../character_recommendationV2/golden-deer/raphael-kirsten-拉斐尔.html#war-master">War Master</a></td><td>Brawler wall (Crit+20 + Quick Riposte); caster bodyguard.</td></tr>
+<tr><td><strong>Ignatz</strong></td><td><a href="../character_recommendationV2/golden-deer/ignatz-victor-伊古纳兹.html#sniper">Sniper</a></td><td>Bow + Hunter's Volley; Seal Strength debuff anchor.</td></tr>
+<tr><td><strong>Yuri</strong> 💃 🧩</td><td><a href="../character_recommendationV2/others/yuri-尤利斯.html#dancer">Dancer</a></td><td>"Arguably the best Dancer in the game" — top Charm + Sword Avo dodge-tank, Fetters of Dromi mobility. (Combat #1 is Trickster.)</td></tr>
+<tr><td><strong>Balthus</strong> 🧩</td><td><a href="../character_recommendationV2/others/balthus-巴鲁塔扎尔.html#war-master">War Master</a></td><td>Second male brawler (Axe/Brawl boons) — Axefaire + Fistfaire + Crit+20 frontline.</td></tr>
+<tr><td><strong>Constance</strong> 🧩 ⚠️</td><td><a href="../character_recommendationV2/others/constance-康丝坦兹.html#dark-flier">Dark Flier</a></td><td>Flying nuke mage + Canto (female-only); third caster, replaces Lysithea's nuke role. Grow Mag in Warlock first.</td></tr>
+<tr><td><strong>Hapi</strong> 🧩 ⚠️</td><td><a href="../character_recommendationV2/others/hapi-哈匹.html#dark-knight">Dark Knight</a></td><td>Mounted dark mage (only class with Dark Tomefaire + Canto; Reason/Riding boons) — deep low-Res coverage.</td></tr>
+</table>
+<p class="lead">DLC composition picks: <strong>Yuri → Dancer</strong> (over his #1 Trickster); <strong>Marianne → Holy Knight</strong> (kept off Dancer because Yuri dances); <strong>Lysithea reserved to Silver Snow</strong>. Add one cross-house recruit (e.g. Mercedes / Catherine) for a 13th flex body if you want extra depth, but the core 12 is complete.</p>
+
+<h3 id="dlc-composition">DLC roster composition (R9, Maddening)</h3>
+<ul>
+<li><strong>Damage split — Magic:</strong> Lorenz (Dark Knight), Constance (Dark Flier), Hapi (Dark Knight) — triple casters, deep low-Res coverage. <strong>Physical:</strong> Byleth (Wyvern), Claude (flying bow), Leonie (bow cav), Hilda (Wyvern), Raphael, Balthus, Ignatz.</li>
+<li><strong>Healing/staff:</strong> Marianne (Holy Knight, primary — off Dancer because Yuri dances) + Faith from Yuri; deeper than the non-DLC plan's Bishop alone.</li>
+<li><strong>Fliers/mobility:</strong> Byleth + Claude + Hilda + Constance (Dark Flier) air; Lorenz + Hapi (Dark Knight) + Leonie Canto; Yuri's Dance + Fetters of Dromi tempo. Excellent.</li>
+<li><strong>Ranged/effective:</strong> Claude / Leonie / Ignatz bows + three mages — saturated coverage.</li>
+</ul>
+
+<hr>
+
+<h2 id="best5">Best-5 skills per unit (R10 — full optimal kit ⛏)</h2>
+<p>Each loadout lists the five equipped skills and the ⛏ HARVEST detours (boon/neutral cert) that feed them; <span class="bane">bane</span>-gated masteries are skipped per the path principle.</p>
+
+<h3 id="best5-nondlc">Non-DLC roster</h3>
+<table>
+<tr><th>Unit</th><th>Best 5 skills</th><th>⛏ HARVEST detours (cert → mastery)</th></tr>
+<tr><td><strong>Byleth</strong> ♀ (Wyvern Lord)</td><td>Axefaire · Death Blow · Alert Stance+ · Defiant Avo · Hit+20</td><td>Brigand (Axe C, neutral) → <strong>Death Blow</strong>; opt. Archer → Hit+20</td></tr>
+<tr><td><strong>Claude</strong> (Barbarossa)</td><td>Bowfaire · Death Blow · Hit+20 · Avo+10 · Hunter's Volley</td><td>Archer (Bow C <span class="boon">boon</span>) → <strong>Hit+20</strong>; Brigand (Axe budding → Diamond Axe) → <strong>Death Blow</strong></td></tr>
+<tr><td><strong>Lorenz</strong> (Dark Knight)</td><td>Black Tomefaire · Lancefaire · Fiendish Blow · Movement+1 · Hit+20</td><td>Mage (Reason C <span class="boon">boon</span>) → <strong>Fiendish Blow</strong>; opt. Archer → Hit+20. <span class="bane">Avoid Brawl (bane)</span></td></tr>
+<tr><td><strong>Leonie</strong> (Bow Knight)</td><td>Bowfaire · Death Blow · Darting Blow · Hit+20 · Hunter's Volley</td><td>Archer (Bow C <span class="boon">boon</span>) → <strong>Hit+20</strong>; Pegasus Knight (Lance C + Flying D, female) → <strong>Darting Blow</strong>; opt. Brigand → Death Blow</td></tr>
+<tr><td><strong>Hilda</strong> (Wyvern Lord)</td><td>Axefaire · Death Blow · Avo+10 · Darting Blow · Defiant Str</td><td>Brigand (Axe C <span class="boon">boon</span>) → <strong>Death Blow</strong> (directly on path)</td></tr>
+<tr><td><strong>Marianne</strong> 💃 (Dancer)</td><td>Sword Avo+20 (Dancer) · Sword Crit+10 · Faith heals (Physic) · Charm passive · Defiant Avo</td><td>None — Dancer's value is the refresh; no bane detours</td></tr>
+<tr><td><strong>Raphael</strong> (War Master)</td><td>Fistfaire · Death Blow · Quick Riposte · Crit+20 · Battalion Wrath</td><td>Brigand (Axe C <span class="boon">boon</span>) → <strong>Death Blow</strong>; Grappler (Brawl B <span class="boon">boon</span>, male) → <strong>Fierce Iron Fist</strong></td></tr>
+<tr><td><strong>Ignatz</strong> (Sniper)</td><td>Bowfaire · Hit+20 · Seal Strength · Death Blow · Hunter's Volley</td><td>Archer (Bow C <span class="boon">boon</span>) → <strong>Hit+20</strong>; tutor Reason to pop budding → <strong>Seal Strength</strong>; opt. Brigand → Death Blow</td></tr>
+<tr><td><strong>Lysithea</strong> ⭐ (Valkyrie)</td><td>Black Tomefaire · Fiendish Blow · Uncanny Blow · Hit+20 · Warp</td><td>Mage (Reason C <span class="boon">boon</span>) → <strong>Fiendish Blow</strong>; Valkyrie <strong>Uncanny Blow</strong> mastery fixes hit. <span class="bane">No Dark Knight (Lance bane)</span></td></tr>
+<tr><td><strong>Shamir</strong> (Sniper)</td><td>Bowfaire · Hit+20 · Death Blow · Bow Crit+10 · Hunter's Volley</td><td>Archer (Bow C <span class="boon">boon</span>) → <strong>Hit+20</strong></td></tr>
+<tr><td><strong>Catherine</strong> ⭐ (Wyvern Lord)</td><td>Axefaire · Death Blow · Sword Crit+10 · Avo+10 · Defiant Crit</td><td>Brigand (Axe C, neutral) → <strong>Death Blow</strong> (on path)</td></tr>
+<tr><td><strong>Alois</strong> (Great Knight)</td><td>Axefaire · Death Blow · Defiant Def · Hit+20 · Armored Effectiveness−</td><td>Brigand (Axe C <span class="boon">boon</span>) → <strong>Death Blow</strong>. <span class="bane">No Reason/Flying detours (banes)</span></td></tr>
+<tr><td><strong>Mercedes</strong> (Bishop)</td><td>Faithfaire (White Tomefaire) · Live to Serve · Fiendish Blow · Warp · Hit+20</td><td>Mage (Reason C <span class="boon">boon</span>) → <strong>Fiendish Blow</strong>; opt. Archer (Bow budding) → <strong>Hit+20</strong>. <span class="bane">No Sword/Lance/Axe melee detours (banes)</span></td></tr>
+</table>
+
+<h3 id="best5-dlc">DLC-only units</h3>
+<table>
+<tr><th>Unit</th><th>Best 5 skills</th><th>⛏ HARVEST detours (cert → mastery)</th></tr>
+<tr><td><strong>Yuri</strong> 💃 (Dancer)</td><td>Sword Avo+20 (Dancer) · Duelist's Blow · Hit+20 · Charm passive · Faith heals — equip Fetters of Dromi</td><td>None required (Dancer value is the refresh)</td></tr>
+<tr><td><strong>Balthus</strong> (War Master)</td><td>Fistfaire · Axefaire · Death Blow · Crit+20 · Quick Riposte</td><td>Brigand (Axe C <span class="boon">boon</span>) → <strong>Death Blow</strong>; Grappler (Brawl boon, male) → <strong>Fierce Iron Fist</strong></td></tr>
+<tr><td><strong>Constance</strong> ⚠️ (Dark Flier)</td><td>Black Tomefaire · Fiendish Blow · Uncanny Blow · Hit+20 · Avo+10</td><td>Mage (Reason C <span class="boon">boon</span>) → <strong>Fiendish Blow</strong>; grow Mag in Warlock first. <span class="bane">No Brigand (Axe bane)</span></td></tr>
+<tr><td><strong>Hapi</strong> ⚠️ (Dark Knight)</td><td>Dark Tomefaire · Black Tomefaire · Fiendish Blow · Hit+20 · Seal Resistance</td><td>Mage (Reason C <span class="boon">boon</span>) → <strong>Fiendish Blow</strong>; grow Mag in Warlock first</td></tr>
+</table>
+
+<hr>
+
+<h2 id="dancer">💃 Dancer this route (R4)</h2>
+<ul>
+<li><strong>Non-DLC (default): Marianne</strong> — high Charm + Sword boon dodge-dance, and uniquely <strong>keeps her Faith to Physic-heal between refreshes</strong> (double duty no other dancer matches). <em>Alt:</em> Hilda (#2 — highest GD Charm) if you'd rather keep Marianne mounted as a Holy Knight healer.</li>
+<li><strong>DLC: Yuri</strong> — "arguably the best Dancer in the game": top Charm, Sword Avo dodge-tank, Fetters of Dromi mobility. With Yuri dancing, <strong>Marianne → Holy Knight</strong> healer.</li>
+<li>Distinct from the R1/CF/SS dancers (Dorothea / Petra / Manuela).</li>
+</ul>
+
+<h2 id="recruitment">Recruitment plan &amp; timing (R11)</h2>
+<ul>
+<li><strong>Native GD</strong> (Claude, Lorenz, Leonie, Hilda, Marianne, Raphael, Ignatz, Lysithea) — no recruiting. Push <strong>Byleth + Hilda + Catherine</strong> toward Wyvern (Axe/Flying), <strong>Leonie</strong> toward Bow Knight, <strong>Lorenz</strong> toward Dark Knight, <strong>Lysithea</strong> toward Valkyrie. Start the Brigand/Archer/Mage <strong>harvest detours early</strong> so Death Blow / Hit+20 / Fiendish Blow land before the timeskip.</li>
+<li><strong>Non-DLC cross-house recruits</strong> — recruit early in Part 1: <strong>Shamir</strong> (Bow/combat gate), <strong>Catherine</strong> (combat gate), <strong>Alois</strong> (combat gate), <strong>Mercedes</strong> (the 13th body — recruit cross-house for the dedicated healer). All near combat-ready; Mercedes needs only Faith upkeep, no off-build grind on Byleth (R11).</li>
+<li><strong>Ashen Wolves DLC</strong> (Yuri, Balthus, Constance, Hapi) — recruitable into <strong>Part 1 only</strong>, each after the corresponding Cindered Shadows chapter (Constance Ch.2, Balthus Ch.4, Hapi Ch.5, Yuri Ch.6). They join ~Lv3 and become instant top-tier — recruit ASAP on Maddening.</li>
+</ul>
+
+<h2 id="tutor-care">⚠️ Tutor / special-care this run (full Maddening)</h2>
+<ul>
+<li><strong>Lysithea ⚠️</strong> (non-DLC) / <strong>Constance ⚠️ / Hapi ⚠️</strong> (DLC) — frail nuke mages; body-block (Alois/Raphael), pair with the Dancer's refresh. Lysithea's Valkyrie Canto eases this.</li>
+<li><strong>Marianne ⚠️</strong> — frail; stat boosters + dance from safety (or stay mounted as Holy Knight on DLC).</li>
+<li><strong>Mercedes ⚠️</strong> — slow and squishy; keep behind the line, lean on Live to Serve + range; her job is healing, not the front.</li>
+<li><strong>Raphael ⚠️</strong> — very low Spd; feed <strong>Speedwings</strong>, lean on <strong>Quick Riposte</strong>; never let mages reach him.</li>
+<li><strong>Hilda ⚠️</strong> — lazy-base; concentrate her limited instruction on <strong>Axe/Flying only</strong>.</li>
+<li><strong>Wyvern grinders (Byleth, Catherine):</strong> Axe/Flying are neutral, so start Brigand → Wyvern training early and feed instruction tickets; the Death Blow harvest is on the path.</li>
+<li><strong>Late DLC joiners</strong> — recruit ASAP in Part 1 so they level into the timeskip.</li>
+<li><strong>General:</strong> rich-train ~6 carries (Byleth, Claude, Leonie, Hilda, Raphael, one mage); rotate stat boosters onto fliers and Byleth first.</li>
+</ul>
+
+<h2 id="pairings">Pairings (best-by-default, maximized — Maddening; repeats allowed, R5)</h2>
+<p>Maddening always uses <strong>best pairings</strong> and maximizes the paired-ending count; repeating a best pairing from another route is fine (R5.2) and preferable to leaving a unit unpaired.</p>
+
+<h3 id="pairings-nondlc">Non-DLC pairings</h3>
+<ul>
+<li><strong>Byleth ♀ S-support → Claude</strong> 🔒 — the iconic Verdant Wind S-support (female Byleth only).</li>
+<li><strong>Lorenz × Marianne</strong> — best-by-default (confirmed thematic S-support / paralogue partners). ✔ best</li>
+<li><strong>Catherine × Shamir</strong> — intentional best-pairing <strong>REPEAT</strong> (their signature, each one's best); repeats allowed on Maddening (R5.2). ✔ best (repeat)</li>
+<li><strong>Raphael × Leonie</strong> ⚠️ — real in-game support chain (strong A-support); their best on-roster pairing. <em>(verify the A→S window in-game.)</em></li>
+<li><strong>Ignatz × Hilda</strong> ⚠️ — real in-game support chain; both otherwise have only Byleth (taken). Used to maximize. <em>(verify in-game.)</em></li>
+<li><strong>Mercedes</strong> — added as a healer, not a romance fit on this roster; her confirmed romantic chains (e.g. blue-lions partners) are not present here. <strong>Combat/support-only</strong> on VW — her supports with Raphael (paralogue ties) and others are gameplay-only here since those partners are paired. <em>(No invented pairing.)</em></li>
+<li><strong>Alois</strong> — no confirmed romantic on-roster partner here (his ties are gameplay/parental) → <strong>combat-only</strong>.</li>
+<li><strong>Lysithea</strong> — confirmed romance is Byleth (taken); her only on-roster ties (Raphael bodyguard, Hilda) are gameplay-only or already paired → <strong>unpaired, combat-only</strong>.</li>
+</ul>
+<blockquote><p>No diversity pairings on this Maddening route (R5 satisfied). All pairings are best-by-default; <strong>Catherine × Shamir repeats on purpose</strong> (allowed). Lysithea, Mercedes, and Alois are combat/support-only because none shares a confirmed romantic chain with a still-available partner here (never invented).</p></blockquote>
+
+<h3 id="pairings-dlc">DLC pairings</h3>
+<ul>
+<li><strong>Byleth ♀ S-support → Claude</strong> 🔒.</li>
+<li><strong>Lorenz × Marianne</strong> — best-by-default (confirmed thematic). ✔ best</li>
+<li><strong>Constance × Hapi</strong> — best-by-default (confirmed shared backstory / paired ending). ✔ best</li>
+<li><strong>Balthus × Hilda</strong> ⚠️ — real in-game support chain (childhood ties); pairs two who'd otherwise be unpaired. <em>(verify the romantic window in-game.)</em></li>
+<li><strong>Raphael × Leonie</strong> ⚠️ — real in-game support chain (strong A-support); their best on-roster pairing. <em>(verify in-game.)</em></li>
+<li><strong>Genuinely unpairable:</strong> <strong>Ignatz</strong> (confirmed romance Byleth, taken; on-roster ties gameplay-only or paired) and <strong>Yuri</strong> (the Dancer; confirmed romance Byleth, taken; remaining Ashen-Wolf ties gameplay-only) → combat/dancer only.</li>
+</ul>
+<blockquote><p>No diversity pairings (R5 satisfied); pairings maximized with best chains. The DLC roster gains the DLC-native best pair <strong>Constance × Hapi</strong>; <strong>Raphael × Leonie</strong> repeats the non-DLC chain (allowed). Only Ignatz and Yuri are left unpaired — no confirmed romantic on-roster partner remains.</p></blockquote>
+
+<p class="lead">Per-unit deep detail and the chosen build anchor live under <code>../character_recommendationV2/&lt;house&gt;/&lt;file&gt;.html#&lt;anchor&gt;</code> — every class above links straight to it.</p>
+</article>
+</div></body></html>

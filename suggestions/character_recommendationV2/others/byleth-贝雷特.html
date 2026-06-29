@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Byleth / 贝雷特·贝雷丝 — Build Menu (V2)</title>
+<style>
+:root{--fg:#1c1e26;--muted:#6b7280;--bg:#fbfbfd;--card:#fff;--accent:#3b5bdb;--border:#e5e7eb;--code:#f3f4f6;--good:#067647;--bad:#b42318}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei",sans-serif}
+.wrap{max-width:920px;margin:0 auto;padding:0 20px 80px}
+nav.top{position:sticky;top:0;background:rgba(251,251,253,.92);backdrop-filter:blur(6px);padding:12px 0;border-bottom:1px solid var(--border);margin-bottom:28px;font-size:14px}
+nav.top a{color:var(--accent);text-decoration:none;margin-right:14px}
+article{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:28px 34px}
+h1{font-size:1.7rem;line-height:1.25;margin:.2em 0 .6em;border-bottom:2px solid var(--border);padding-bottom:.3em}
+h2{font-size:1.32rem;margin:1.6em 0 .5em;border-bottom:1px solid var(--border);padding-bottom:.2em}
+h3{font-size:1.1rem;margin:1.3em 0 .4em}
+a{color:var(--accent)}
+table{border-collapse:collapse;width:100%;margin:1em 0;font-size:.94rem;display:block;overflow-x:auto}
+th,td{border:1px solid var(--border);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:var(--code)}
+tr:nth-child(even) td{background:#fafafa}
+code{background:var(--code);padding:.12em .4em;border-radius:5px;font-size:.88em;font-family:"SF Mono",Menlo,Consolas,monospace}
+blockquote{margin:1em 0;padding:.3em 1em;border-left:4px solid var(--accent);background:#f6f8ff;color:#374151}
+.build{border:1px solid var(--border);border-radius:10px;padding:4px 18px 14px;margin:1.1em 0;background:#fff}
+.build h2{border:none;margin-top:.7em}
+.pros li{color:var(--good)} .cons li{color:var(--bad)}
+.pros,.pros *{list-style:none} .tag{display:inline-block;font-size:.74rem;font-weight:600;padding:1px 8px;border-radius:20px;background:var(--code);color:var(--muted);margin-left:6px;vertical-align:middle}
+.boon{color:var(--good);font-weight:600}.bane{color:var(--bad);font-weight:600}.neutral{color:var(--muted)}
+.lead{color:var(--muted)}
+</style></head>
+<body><div class="wrap">
+<nav class="top"><a href="../../../index.html">⌂ Home</a> <a href="../../../suggestions/index.html">suggestions</a> <a href="../../routesV2/index.html">routesV2</a></nav>
+<article>
+<h1 id="byleth">Byleth / 贝雷特 · 贝雷丝 — Build Menu <span class="tag">V2</span></h1>
+<blockquote><p><strong>Player avatar / protagonist.</strong> Deploys every map; Crest of Flames sustain. Stats, growths, and proficiencies are <strong>identical for M and F</strong> — the ONLY mechanical difference is class access:<br>
+<strong>♀ Female Byleth</strong> → Pegasus/Falcon Knight, Gremory, Dark Flier, Valkyrie. <strong>♂ Male Byleth</strong> → Grappler line, Hero, <strong>War Master</strong>, Dark Mage line. Both can be Wyvern Lord & Enlightened One (not gender-locked).<br>
+<strong>Proficiencies:</strong> <span class="boon">Sword (boon)</span>, <span class="boon">Brawl (boon)</span>, <span class="boon">Authority (boon)</span>; budding <span class="neutral">Faith</span>. Lance/Axe/Bow/Reason/Riding/Flying/HeavyArmor neutral — <strong>no banes</strong>.<br>
+<span class="bane">Community trap — DO NOT use Mortal Savant:</span> Sword A + Reason B+ is reachable, but the cache rates it poorly ("resource investment rarely justifies returns"). It is intentionally <strong>not used</strong> on any route below.<br>
+<strong>This playthrough uses 4 DISTINCT good builds — one per route</strong> (gender set by the route's romance/team). Each harvests Byleth's boon/neutral masteries.<br>
+Sources: GameRant / Game8 / GameFAQs / fe3h.com / Reddit (EN), GameWith / pegasusknight.com (JP), GamerSky (CN).</p></blockquote>
+<p class="rating-line"><strong>Strength</strong> ⭐⭐⭐⭐⭐ (5/5) &nbsp;·&nbsp; <strong>Build difficulty</strong> 🔧🔧○○○ (2/5)</p>
+
+<h2 id="builds-at-a-glance">Builds at a glance</h2>
+<table>
+<tr><th>Build</th><th>Route · gender</th><th>One-line</th><th>Tutoring cost</th></tr>
+<tr><td><a href="#enlightened-one">Enlightened One</a></td><td>Azure Moon · ♀ <span class="tag">Normal</span></td><td>Byleth's unique zero-cert class; Sword + Brawl + support</td><td><span class="boon">None</span> (auto-granted Ch.10)</td></tr>
+<tr><td><a href="#war-master">War Master</a></td><td>Crimson Flower · ♂ <span class="tag">Hard</span></td><td>Top raw damage; Brawl boon + Crit+20</td><td><span class="boon">Light</span> (Brawl boon A + Axe-neutral A)</td></tr>
+<tr><td><a href="#falcon-knight">Falcon Knight</a></td><td>Silver Snow · ♀ <span class="tag">Maddening</span></td><td>Female-only flier; mobile Avo-tank</td><td><span class="neutral">Medium</span> (Lance/Flying neutral)</td></tr>
+<tr><td><a href="#wyvern-lord">Wyvern Lord</a></td><td>Verdant Wind · ♀ <span class="tag">Maddening</span></td><td>Strongest endgame chassis; 8-move flying carry</td><td><span class="neutral">Heavy</span> (Axe A + Flying A neutral)</td></tr>
+</table>
+
+<div class="build">
+<h2 id="enlightened-one">Build 1 — Enlightened One (神祖) <span class="tag">AM · Normal · ♀</span></h2>
+<p><strong>Path:</strong> auto-granted at end of Ch.10 — <strong>just equip it</strong>. Uses Sword + Gauntlets + Black/White magic; Swordfaire (+5), Terrain Res, all-round stat boosts; mastery <strong>Sacred Power</strong> (adjacent allies +3 dmg / −3 dmg taken). <strong>Cert:</strong> <span class="boon">zero certification</span>.</p>
+<p><strong>Mastery detours (boon/neutral-harvest):</strong> <code>Death Blow [⛏ Brigand, Axe C — neutral]</code> player-phase damage; <code>Fiendish Blow [⛏ Mage, Reason C — neutral]</code> only if you lean the magic side of the kit. Both off-boon-but-cheap; optional on Normal (R12: lean kit). His <span class="boon">Sword/Brawl boons</span> make the class's own faires free value.</p>
+<p><strong>5 skills:</strong> Swordfaire · Sacred Power · Hit+20 · White Magic Avo+20 · Death Blow.</p>
+<ul class="pros"><li>✔ <strong>Zero investment</strong> — combat-ready the moment it unlocks; maximizes the <strong>Sword of the Creator</strong> (Ruptured Heaven ranged art).</li>
+<li>✔ <strong>Sacred Power</strong> + Professor's Guidance buff adjacent allies — perfect for a low-stakes Normal run where Byleth babysits growing units.</li>
+<li>✔ Sword + Brawl boons + budding Faith all feed the hybrid sword/support kit.</li></ul>
+<ul class="cons"><li>✘ Foot (5 move) — fine on Normal, would lag on Maddening.</li>
+<li>✘ Lower raw ceiling than the flier/War Master builds (intentional: Normal doesn't need it).</li></ul>
+<p class="lead">♀ on AM for the canonical Byleth × Dimitri romance arc. <strong>Not Mortal Savant</strong> (community trap).</p>
+</div>
+
+<div class="build">
+<h2 id="war-master">Build 2 — War Master (战神) <span class="tag">CF · Hard · ♂</span></h2>
+<p><strong>Path:</strong> Brawler → Grappler → <strong>War Master</strong> (Master Seal). <strong>Cert:</strong> <strong>Brawl A</strong> (<span class="boon">boon — free</span>) + <strong>Axe A</strong> (<span class="neutral">neutral</span>). <strong>Male-only</strong> class — this is why CF runs ♂ Byleth.</p>
+<p><strong>Mastery detours (boon/neutral-harvest):</strong> <code>Death Blow [⛏ Brigand, Axe C — neutral]</code> +6 Str on initiate, stacks with the class. <code>Quick Riposte [⛏ War Master]</code> its own mastery (enemy-phase follow-ups). Brawl boon means his Fistfaire/Crit chassis is cheap.</p>
+<p><strong>5 skills:</strong> Axefaire · Fistfaire · Crit+20 · Death Blow · Quick Riposte.</p>
+<ul class="pros"><li>✔ <strong>Top raw damage</strong> — Axefaire + Fistfaire + Crit+20 ride his Brawl boon; "arguably no better class" for pure damage on Byleth.</li>
+<li>✔ Half the path (Brawl) is a boon, so the only grind is Axe to A.</li>
+<li>✔ Hard difficulty rewards a fuller offensive kit (R12) without needing the full-Maddening flier optimization.</li></ul>
+<ul class="cons"><li>✘ Foot (6 move) — more exposed than the wyvern/falcon shells.</li>
+<li>✘ Locks Byleth ♂ (no female-only classes), which is intentional for CF's romance/team.</li></ul>
+<p class="lead">♂ on CF (Byleth × Edelgard); War Master is male-locked so the gender choice and the build reinforce each other.</p>
+</div>
+
+<div class="build">
+<h2 id="falcon-knight">Build 3 — Falcon Knight (圣天马骑士) <span class="tag">SS · Maddening · ♀ female-only</span></h2>
+<p><strong>Path:</strong> Pegasus Knight (♀) → <strong>Falcon Knight</strong>. <strong>Cert:</strong> Sword C (<span class="boon">boon</span>) / Lance A (<span class="neutral">neutral</span>) / Flying B+ (<span class="neutral">neutral</span>). <strong>Female-only line</strong> — requires ♀ Byleth.</p>
+<p><strong>Mastery detours (boon/neutral-harvest):</strong> <code>Darting Blow [⛏ Pegasus Knight, Lance C + Flying D — FEMALE-ONLY]</code> sits directly on this path — <strong>free harvest</strong> (and only ♀ Byleth can ever get it). <code>Death Blow [⛏ Brigand, Axe C — neutral]</code> optional player-phase boost.</p>
+<p><strong>5 skills:</strong> Lancefaire · Darting Blow · Death Blow · Hit+20 · Alert Stance+.</p>
+<ul class="pros"><li>✔ <strong>8 move + flight + Canto + Avo+10 + Defiant Avo</strong> — a mobile dodge-tank for Maddening SS maps.</li>
+<li>✔ Harvests the <strong>female-exclusive Darting Blow</strong> for guaranteed doubles, on her Sword/Lance path.</li>
+<li>✔ <strong>Forced ♀ by the Byleth × Seteth romance</strong> on SS — and that ♀ requirement unlocks exactly the Pegasus/Falcon line we want anyway.</li></ul>
+<ul class="cons"><li>✘ Slightly less raw bulk than Wyvern Lord (more Spd/Res, less Str/Def).</li>
+<li>✘ Lance + Flying are neutral, so it's a real (if moderate) tutoring investment.</li></ul>
+<p class="lead">♀ on SS for Byleth × Seteth; the female lock is what makes Falcon Knight available, so the romance and the build are the same decision.</p>
+</div>
+
+<div class="build">
+<h2 id="wyvern-lord">Build 4 — Wyvern Lord (飞龙领主) <span class="tag">VW · Maddening · ♀</span></h2>
+<p><strong>Path:</strong> Myrmidon → <strong>Brigand</strong> → Wyvern Rider → <strong>Wyvern Lord</strong> (not gender-locked). <strong>Cert:</strong> Lance C / <strong>Axe A</strong> (<span class="neutral">neutral</span>) / <strong>Flying A</strong> (<span class="neutral">neutral</span>). Heaviest tutoring of the four (Byleth has no native Flying), but the strongest chassis.</p>
+<p><strong>Mastery detours (boon/neutral-harvest):</strong> <code>Death Blow [⛏ Brigand, Axe C — neutral]</code> sits on the path — free harvest, cornerstone +6 Str. <code>Hit+20 [⛏ Archer, Bow C — neutral]</code> accuracy insurance for the axe build.</p>
+<p><strong>5 skills:</strong> Axefaire · Death Blow · Hit+20 · Defiant Crit · Alert Stance+.</p>
+<ul class="pros"><li>✔ <strong>The community-consensus strongest endgame chassis</strong> — 8 move + flight + Canto + Avo+10 + +4 Str/+4 Spd/+3 Def.</li>
+<li>✔ Byleth's Str/Spd growths + Crest of Flames sustain keep a fearless KO flier alive — "no real reason to use other classes over Wyvern Lord for Byleth."</li>
+<li>✔ Axe path harvests Death Blow for free.</li></ul>
+<ul class="cons"><li>✘ Heaviest tutoring (Axe A + Flying A from neutral) — worth it on full Maddening.</li>
+<li>✘ Drops the Sword-relic synergy in favor of axe Might.</li></ul>
+<p class="lead">♀ on VW (Byleth × Claude); Wyvern Lord is not gender-locked, so gender is set purely by the romance while the build stays optimal.</p>
+</div>
+
+<h2 id="route-usage">Route usage this playthrough (team-driven · all 4 distinct · R12 difficulty)</h2>
+<table>
+<tr><th>Route (difficulty)</th><th>Build · gender</th><th>Why — for the whole team</th></tr>
+<tr><td><strong>Azure Moon</strong> (Normal)</td><td><a href="#enlightened-one">Enlightened One</a> · ♀</td><td>🔒 always deployed. On Normal the team doesn't need a min-maxed carry, so Byleth runs the <strong>zero-cert unique class</strong> and uses Sacred Power + Professor's Guidance to <strong>buff/grow the rest of the Blue Lions</strong>. ♀ for the Dimitri romance. <span class="neutral">(R12: lean kit.)</span></td></tr>
+<tr><td><strong>Crimson Flower</strong> (Hard)</td><td><a href="#war-master">War Master</a> · ♂</td><td>🔒 core. Hard wants a fuller offensive kit; Byleth becomes the team's <strong>raw-damage deleter</strong> on his Brawl boon. ♂ enables the male-only War Master AND the Edelgard romance — same decision. <span class="neutral">(R12: fuller.)</span></td></tr>
+<tr><td><strong>Silver Snow</strong> (Maddening)</td><td><a href="#falcon-knight">Falcon Knight</a> · ♀</td><td>🔒 core. ♀ is <strong>forced by the Byleth × Seteth romance</strong>, which conveniently unlocks the female-only Falcon line — Byleth supplies <strong>mobile Avo-tank flight</strong> the SS team values on Maddening. (Distinct class from VW's Wyvern — R3.) <span class="neutral">(R12: full optimal.)</span></td></tr>
+<tr><td><strong>Verdant Wind</strong> (Maddening)</td><td><a href="#wyvern-lord">Wyvern Lord</a> · ♀</td><td>🔒 core. Full Maddening demands the <strong>strongest chassis</strong>; Golden Deer is flier-light, so Byleth rides the best frame in the game as the team's air carry. ♀ for the Claude romance (Wyvern not gender-locked). (Distinct from SS's Falcon — R3.) <span class="neutral">(R12: full optimal.)</span></td></tr>
+</table>
+<p class="lead">All four are genuinely good builds with no trap class — Mortal Savant is deliberately omitted. Each route file links straight to the chosen build anchor, e.g. <code>…/character_recommendationV2/others/byleth-贝雷特.html#wyvern-lord</code>.</p>
+</article>
+</div></body></html>

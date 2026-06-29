@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hanneman / 汉尼曼 — Build Menu (V2)</title>
+<style>
+:root{--fg:#1c1e26;--muted:#6b7280;--bg:#fbfbfd;--card:#fff;--accent:#3b5bdb;--border:#e5e7eb;--code:#f3f4f6;--good:#067647;--bad:#b42318}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei",sans-serif}
+.wrap{max-width:920px;margin:0 auto;padding:0 20px 80px}
+nav.top{position:sticky;top:0;background:rgba(251,251,253,.92);backdrop-filter:blur(6px);padding:12px 0;border-bottom:1px solid var(--border);margin-bottom:28px;font-size:14px}
+nav.top a{color:var(--accent);text-decoration:none;margin-right:14px}
+article{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:28px 34px}
+h1{font-size:1.7rem;line-height:1.25;margin:.2em 0 .6em;border-bottom:2px solid var(--border);padding-bottom:.3em}
+h2{font-size:1.32rem;margin:1.6em 0 .5em;border-bottom:1px solid var(--border);padding-bottom:.2em}
+h3{font-size:1.1rem;margin:1.3em 0 .4em}
+a{color:var(--accent)}
+table{border-collapse:collapse;width:100%;margin:1em 0;font-size:.94rem;display:block;overflow-x:auto}
+th,td{border:1px solid var(--border);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:var(--code)}
+tr:nth-child(even) td{background:#fafafa}
+code{background:var(--code);padding:.12em .4em;border-radius:5px;font-size:.88em;font-family:"SF Mono",Menlo,Consolas,monospace}
+blockquote{margin:1em 0;padding:.3em 1em;border-left:4px solid var(--accent);background:#f6f8ff;color:#374151}
+.build{border:1px solid var(--border);border-radius:10px;padding:4px 18px 14px;margin:1.1em 0;background:#fff}
+.build h2{border:none;margin-top:.7em}
+.pros li{color:var(--good)} .cons li{color:var(--bad)}
+.pros,.pros *{list-style:none} .tag{display:inline-block;font-size:.74rem;font-weight:600;padding:1px 8px;border-radius:20px;background:var(--code);color:var(--muted);margin-left:6px;vertical-align:middle}
+.boon{color:var(--good);font-weight:600}.bane{color:var(--bad);font-weight:600}.neutral{color:var(--muted)}
+.lead{color:var(--muted)}
+</style></head>
+<body><div class="wrap">
+<nav class="top"><a href="../../../index.html">⌂ Home</a> <a href="../../../suggestions/index.html">suggestions</a> <a href="../../routesV2/index.html">routesV2</a></nav>
+<article>
+<h1 id="hanneman">Hanneman / 汉尼曼 — Build Menu <span class="tag">V2</span></h1>
+<blockquote><p><strong>Faculty / Church of Seiros recruit.</strong> Recruitable from Ch.8 (Byleth Lv 15) in the Academy Phase on all routes. Strong Magic (10 base, 55% growth), Minor Crest of Indech (chance to double-strike), personal <strong>Crest Scholar</strong> (Rally Magic +4).<br>
+<strong>Proficiencies:</strong> <span class="boon">Bow / Reason / Riding (boons)</span>; <span class="bane">HeavyArmor (bane)</span>; Sword/Lance/Axe/Brawl/Authority/Faith neutral.<br>
+<span class="bane">* Gender:</span> male → locked out of <strong>Gremory</strong> / Dark Flier (the structural reason he caps below female mages).<br>
+Sources: Game8 / GameWith.net / Fandom / segmentnext (EN), GameWith / note.com (JP), GamerSky (CN).</p></blockquote>
+<p class="rating-line"><strong>Strength</strong> ⭐⭐☆☆☆ (2/5) &nbsp;·&nbsp; <strong>Build difficulty</strong> 🔧🔧🔧🔧○ (4/5)</p>
+
+<h2 id="builds-at-a-glance">Builds at a glance</h2>
+<table>
+<tr><th>Build</th><th>One-line</th><th>Tutoring cost</th><th>Best on</th></tr>
+<tr><td><a href="#warlock">Warlock</a></td><td>Canonical offensive mage, Black Tomefaire + Meteor</td><td><span class="boon">Light</span> (Reason A — boon)</td><td>Crimson Flower (Reason coverage)</td></tr>
+<tr><td><a href="#dark-knight">Dark Knight</a></td><td>8-move Canto mage, fixes positioning</td><td><span class="neutral">Mid</span> (Lance C; Reason+Riding boons)</td><td>Silver Snow (mobile nuker)</td></tr>
+</table>
+
+<div class="build">
+<h2 id="warlock">Build 1 — Warlock (术师)</h2>
+<p><strong>Path:</strong> Monk → Mage → <strong>Warlock</strong>. <strong>Cert:</strong> Reason A (<span class="boon">boon</span>) — natural fit, light tutoring (Warlock is Reason-only). The game even has an unused War-Phase Warlock icon for him, confirming intended design.</p>
+<p><strong>Mastery detours (boon-harvest):</strong> <code>Fiendish Blow [⛏ Mage, Reason C — boon]</code> top priority — +6 Mag on initiation harvested cheap off his Reason boon; Mage is his natural step. <code>Hit+20 [⛏ Archer, Bow C — boon]</code> uses his Bow boon to fix mage accuracy/Spd, explicitly suggested. <code>Magic +2 [⛏ Monk]</code> cheap early Mag bump. (Skip HeavyArmor detours — <span class="bane">bane</span>.)</p>
+<p><strong>5 skills:</strong> Black Tomefaire · Fiendish Blow · Hit+20 · Reason Prowess 5 · Defiant Magic.</p>
+<ul class="pros"><li>✔ <strong>"Fully utilizes his offensive magic potential"</strong> — Black Tomefaire + long-range Meteor; both harvest skills (Fiendish Blow, Hit+20) sit on boons.</li>
+<li>✔ Cheapest path (Reason-only gate); combat-ready with light training. Rally Magic +4 buffs a magic carry.</li></ul>
+<ul class="cons"><li>✘ Static 4-move caster, no Canto — positioning is awkward on big maps.</li>
+<li>✘ As a male, capped below Gremory mages; a coverage pick, not an endgame carry.</li></ul>
+</div>
+
+<div class="build">
+<h2 id="dark-knight">Build 2 — Dark Knight (暗骑士)</h2>
+<p><strong>Path:</strong> Monk → Mage → Dark Mage → <strong>Dark Knight</strong>. <strong>Cert:</strong> Reason B (<span class="boon">boon</span>) / Lance C (<span class="neutral">neutral</span>) / Riding A (<span class="boon">boon</span>) — Reason & Riding are boons; only <strong>Lance C needs a dip</strong>. Mid tutoring.</p>
+<p><strong>Mastery detours (boon-harvest):</strong> <code>Fiendish Blow [⛏ Mage, Reason C — boon]</code> same cheap Reason-boon harvest. <code>Hit+20 [⛏ Archer, Bow C — boon]</code> Bow-boon accuracy. (Skip HeavyArmor — <span class="bane">bane</span>.)</p>
+<p><strong>5 skills:</strong> Black Tomefaire · Fiendish Blow · Hit+20 · Reason Prowess 5 · Lifetaker (or Defiant Magic).</p>
+<ul class="pros"><li>✔ <strong>8 move + Canto on a mage</strong> — solves the Warlock positioning problem; only class combining big magic with mounted mobility.</li>
+<li>✔ Leans on TWO boons (Reason + Riding); Lance also lets him chip in melee. Best pick if you want a mobile nuker.</li></ul>
+<ul class="cons"><li>✘ Loses Black Tomefaire's exclusivity edge and some raw Mag vs Warlock; needs the Lance dip.</li>
+<li>✘ Still male-capped (no Gremory); a strong utility mage, not a top-tier carry.</li></ul>
+</div>
+
+<h2 id="route-usage">Route usage this playthrough (team-driven · R3 distinct · R12 difficulty)</h2>
+<table>
+<tr><th>Route (difficulty)</th><th>Build</th><th>Why — for the whole team</th></tr>
+<tr><td><strong>Crimson Flower</strong> (Hard)</td><td><a href="#warlock">Warlock</a></td><td>CF wants a cheap Reason-coverage caster + Rally Magic for the team's magic carries; on Hard a static Warlock is fine and his lowest-friction Reason-only path keeps tutoring on the lords. <span class="neutral">(R12: fuller kit.)</span></td></tr>
+<tr><td><strong>Silver Snow</strong> (Maddening)</td><td><a href="#dark-knight">Dark Knight</a></td><td>On Maddening a 4-move caster falls behind the team's flier core, so he rides instead — <strong>8 move + Canto</strong> keeps his magic in range, harvesting Fiendish Blow + Hit+20 off his boons. (R3: distinct from his CF Warlock.)</td></tr>
+<tr><td><strong>Verdant Wind</strong></td><td>—</td><td>Not used this run (other mages prioritized).</td></tr>
+</table>
+<p class="lead">Route file links to the build anchor, e.g. <code>…/character_recommendationV2/others/hanneman-汉尼曼.html#dark-knight</code>.</p>
+</article>
+</div></body></html>

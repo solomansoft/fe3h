@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ingrid Brandl Galatea / 英谷莉特 — Build Menu (V2)</title>
+<style>
+:root{--fg:#1c1e26;--muted:#6b7280;--bg:#fbfbfd;--card:#fff;--accent:#3b5bdb;--border:#e5e7eb;--code:#f3f4f6;--good:#067647;--bad:#b42318}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei",sans-serif}
+.wrap{max-width:920px;margin:0 auto;padding:0 20px 80px}
+nav.top{position:sticky;top:0;background:rgba(251,251,253,.92);backdrop-filter:blur(6px);padding:12px 0;border-bottom:1px solid var(--border);margin-bottom:28px;font-size:14px}
+nav.top a{color:var(--accent);text-decoration:none;margin-right:14px}
+article{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:28px 34px}
+h1{font-size:1.7rem;line-height:1.25;margin:.2em 0 .6em;border-bottom:2px solid var(--border);padding-bottom:.3em}
+h2{font-size:1.32rem;margin:1.6em 0 .5em;border-bottom:1px solid var(--border);padding-bottom:.2em}
+h3{font-size:1.1rem;margin:1.3em 0 .4em}
+a{color:var(--accent)}
+table{border-collapse:collapse;width:100%;margin:1em 0;font-size:.94rem;display:block;overflow-x:auto}
+th,td{border:1px solid var(--border);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:var(--code)}
+tr:nth-child(even) td{background:#fafafa}
+code{background:var(--code);padding:.12em .4em;border-radius:5px;font-size:.88em;font-family:"SF Mono",Menlo,Consolas,monospace}
+blockquote{margin:1em 0;padding:.3em 1em;border-left:4px solid var(--accent);background:#f6f8ff;color:#374151}
+.build{border:1px solid var(--border);border-radius:10px;padding:4px 18px 14px;margin:1.1em 0;background:#fff}
+.build h2{border:none;margin-top:.7em}
+.pros li{color:var(--good)} .cons li{color:var(--bad)}
+.pros,.pros *{list-style:none} .tag{display:inline-block;font-size:.74rem;font-weight:600;padding:1px 8px;border-radius:20px;background:var(--code);color:var(--muted);margin-left:6px;vertical-align:middle}
+.boon{color:var(--good);font-weight:600}.bane{color:var(--bad);font-weight:600}.neutral{color:var(--muted)}
+.lead{color:var(--muted)}
+</style></head>
+<body><div class="wrap">
+<nav class="top"><a href="../../../index.html">⌂ Home</a> <a href="../../../suggestions/index.html">suggestions</a> <a href="../../routesV2/index.html">routesV2</a></nav>
+<article>
+<h1 id="ingrid">Ingrid Brandl Galatea / 英谷莉特 — Build Menu <span class="tag">V2</span></h1>
+<blockquote><p><strong>Blue Lions.</strong> Auto-joins on Azure Moon; recruitable elsewhere (Dex 15 + Flying D). Minor Crest of Daphnel (10% Mt+5 on combat art). Personal: <strong>Lady Knight</strong> (gambits Mt+3, Hit+5). Best-in-house <strong>Speed 60%</strong> with high Lck/Res/Cha — a natural flier and dodge tank; modest 35% Str is her one weak stat. Owns relic <strong>Lúin (鲁纳)</strong> (lance).<br>
+<strong>Proficiencies:</strong> <span class="boon">Sword (boon)</span>, <span class="boon">Lance (boon)</span>, <span class="boon">Riding (boon)</span>, <span class="boon">Flying (boon)</span>; <strong>no bane</strong> — low tutoring friction; no budding talent.<br>
+<span class="boon">Gender note:</span> female → can take <strong>Pegasus/Falcon Knight</strong> and harvest <strong>Darting Blow</strong> (Speed+6, female-only). Sources: Game8 / fe3h.com / Reddit (EN), note.com / GameWith JP, GamerSky CN.</p></blockquote>
+<p class="rating-line"><strong>Strength</strong> ⭐⭐⭐⭐☆ (4/5) &nbsp;·&nbsp; <strong>Build difficulty</strong> 🔧🔧🔧🔧○ (4/5)</p>
+
+<h2 id="builds-at-a-glance">Builds at a glance</h2>
+<table>
+<tr><th>Build</th><th>One-line</th><th>Tutoring cost</th><th>Best on</th></tr>
+<tr><td><a href="#falcon-knight">Falcon Knight</a></td><td>Speed/avoid/Lance dodge-flier, her best fit</td><td><span class="boon">Light</span> (Lance + Flying boons)</td><td>Azure Moon (Normal)</td></tr>
+<tr><td><a href="#wyvern-lord">Wyvern Lord</a></td><td>More Str/Def flier, consistent doubling</td><td><span class="neutral">Medium</span> (Axe A neutral + Flying boon)</td><td>Silver Snow (Maddening)</td></tr>
+<tr><td><a href="#magic-flier">Magic Flier</a></td><td>Dark Flier/Valkyrie magic-flier (niche)</td><td><span class="neutral">Heavy</span> (Reason from neutral)</td><td>Novelty pick</td></tr>
+</table>
+
+<div class="build">
+<h2 id="falcon-knight">Build 1 — Falcon Knight (天马骑士/飞马) — female-only, fits</h2>
+<p><strong>Path:</strong> Soldier → Pegasus Knight → <strong>Falcon Knight</strong>. <strong>Cert:</strong> <strong>Lance A</strong> (<span class="boon">boon</span>) + <strong>Flying A</strong> (<span class="boon">boon</span>) — all on-strength, <span class="boon">light</span>. "Unquestionably her best choice" [Game8].</p>
+<p><strong>Mastery detours (boon-harvest):</strong> <code>Darting Blow [⛏ Pegasus Knight, Lance C + Flying D — boon, female-only, on path]</code> "vital" — Speed+6 turns her 60% Spd into guaranteed doubles. <code>Death Blow [⛏ Brigand, Axe C — neutral but cheap]</code> offsets her modest Str so her doubles hit hard. <code>Defense+2 [⛏ Soldier]</code> early.</p>
+<p><strong>5 skills:</strong> Lancefaire · Darting Blow · Death Blow · Alert Stance+ · Hit+20.</p>
+<ul class="pros"><li>✔ <strong>8-move flight + Canto + huge Spd/Res</strong> + Lúin = a doubling, dodging menace; one of the BL's best dodge tanks with Alert Stance+.</li>
+<li>✔ Darting Blow harvested on-path (female-only boon); no banes to fix anywhere.</li></ul>
+<ul class="cons"><li>✘ Modest 35% Str — leans on Death Blow + doubles, not raw hits.</li>
+<li>✘ Lower Def than the wyvern; weak early bases (scales well, stick with her).</li></ul>
+</div>
+
+<div class="build">
+<h2 id="wyvern-lord">Build 2 — Wyvern Lord (飞龙领主)</h2>
+<p><strong>Path:</strong> Brigand → Wyvern Rider → <strong>Wyvern Lord</strong>. <strong>Cert:</strong> Lance C / <strong>Axe A</strong> (neutral — a real dip for her) / <strong>Flying A</strong> (<span class="boon">boon</span>). More Str + Def, still 8-move flight + Canto.</p>
+<p><strong>Mastery detours (boon-harvest):</strong> <code>Darting Blow [⛏ Pegasus Knight, Lance C + Flying D — boon, female-only]</code> harvest before leaving Pegasus; <code>Death Blow [⛏ Brigand, Axe C — neutral, on path]</code> free on this route.</p>
+<p><strong>5 skills:</strong> Axefaire (or Lancefaire) · Darting Blow · Death Blow · Defiant Crit · Alert Stance+.</p>
+<ul class="pros"><li>✔ <strong>More Str/Def</strong> than Falcon → consistent doubling and durability under harder enemy stats.</li>
+<li>✔ Distinct class from her AM Falcon build (R3); Death Blow free on the path.</li></ul>
+<ul class="cons"><li>✘ Needs <strong>Axe A</strong> (neutral, off-boon) — slightly more grind than Falcon.</li>
+<li>✘ Trades some of her signature Speed/avoid identity.</li></ul>
+</div>
+
+<div class="build">
+<h2 id="magic-flier">Build 3 — Magic Flier (Dark Flier / Valkyrie / Gremory) — niche</h2>
+<p><strong>Path:</strong> Mage → Warlock → <strong>Dark Flier</strong> (all female-only). <strong>Cert:</strong> Reason from neutral — a heavy build-around. Uses her decent 35% Mag.</p>
+<p><strong>Mastery detours:</strong> <code>Fiendish Blow [⛏ Mage, Reason C — neutral]</code> for magic damage; <code>Darting Blow</code> still possible via Pegasus dip.</p>
+<p><strong>5 skills:</strong> Tomefaire-adjacent · Fiendish Blow · Darting Blow · Uncanny Blow · Alert Stance+.</p>
+<ul class="pros"><li>✔ Flying + Canto magic damage; novel hybrid.</li></ul>
+<ul class="cons"><li>✘ <strong>Underuses her elite physical/flying kit</strong>; Reason is neutral, heavy to raise.</li>
+<li>✘ Strictly a novelty vs Falcon/Wyvern.</li></ul>
+</div>
+
+<h2 id="route-usage">Route usage this playthrough (team-driven · R3 distinct · R12 difficulty)</h2>
+<table>
+<tr><th>Route (difficulty)</th><th>Build</th><th>Why — for the whole team</th></tr>
+<tr><td><strong>Azure Moon</strong> (Normal)</td><td><a href="#falcon-knight">Falcon Knight</a></td><td>The BL air-superiority + dodge-tank slot — her 60% Spd, Lúin and Alert Stance+ let her bait and whiff enemies while Dimitri/Felix carry on the ground. On Normal the lean kit is enough, and every cert (Lance/Flying boon, Darting Blow) is on-boon. <span class="neutral">(R12: lean kit.)</span></td></tr>
+<tr><td><strong>Silver Snow</strong> (Maddening)</td><td><a href="#wyvern-lord">Wyvern Lord</a></td><td>On full Maddening the team needs a <strong>durable hard-hitting flier</strong>, not just a dodger — the wyvern's extra Str/Def gives consistent doubles and survivability that her thin Falcon frame lacks. Community alt; an Axe-neutral grind. <span class="neutral">(R3: distinct from her AM Falcon Knight.)</span></td></tr>
+<tr><td colspan="2"><strong>Crimson Flower / Verdant Wind</strong></td><td>Not used this playthrough.</td></tr>
+</table>
+<p class="lead">Route file links to the chosen anchor, e.g. <code>…/blue-lions/ingrid-brandl-galatea-英谷莉特.html#falcon-knight</code> (AM) / <code>#wyvern-lord</code> (SS).</p>
+</article>
+</div></body></html>

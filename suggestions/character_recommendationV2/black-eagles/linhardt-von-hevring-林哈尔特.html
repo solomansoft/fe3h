@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Linhardt von Hevring / 林哈尔特 — Build Menu (V2)</title>
+<style>
+:root{--fg:#1c1e26;--muted:#6b7280;--bg:#fbfbfd;--card:#fff;--accent:#3b5bdb;--border:#e5e7eb;--code:#f3f4f6;--good:#067647;--bad:#b42318}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei",sans-serif}
+.wrap{max-width:920px;margin:0 auto;padding:0 20px 80px}
+nav.top{position:sticky;top:0;background:rgba(251,251,253,.92);backdrop-filter:blur(6px);padding:12px 0;border-bottom:1px solid var(--border);margin-bottom:28px;font-size:14px}
+nav.top a{color:var(--accent);text-decoration:none;margin-right:14px}
+article{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:28px 34px}
+h1{font-size:1.7rem;line-height:1.25;margin:.2em 0 .6em;border-bottom:2px solid var(--border);padding-bottom:.3em}
+h2{font-size:1.32rem;margin:1.6em 0 .5em;border-bottom:1px solid var(--border);padding-bottom:.2em}
+h3{font-size:1.1rem;margin:1.3em 0 .4em}
+a{color:var(--accent)}
+table{border-collapse:collapse;width:100%;margin:1em 0;font-size:.94rem;display:block;overflow-x:auto}
+th,td{border:1px solid var(--border);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:var(--code)}
+tr:nth-child(even) td{background:#fafafa}
+code{background:var(--code);padding:.12em .4em;border-radius:5px;font-size:.88em;font-family:"SF Mono",Menlo,Consolas,monospace}
+blockquote{margin:1em 0;padding:.3em 1em;border-left:4px solid var(--accent);background:#f6f8ff;color:#374151}
+.build{border:1px solid var(--border);border-radius:10px;padding:4px 18px 14px;margin:1.1em 0;background:#fff}
+.build h2{border:none;margin-top:.7em}
+.pros li{color:var(--good)} .cons li{color:var(--bad)}
+.pros,.pros *{list-style:none} .tag{display:inline-block;font-size:.74rem;font-weight:600;padding:1px 8px;border-radius:20px;background:var(--code);color:var(--muted);margin-left:6px;vertical-align:middle}
+.boon{color:var(--good);font-weight:600}.bane{color:var(--bad);font-weight:600}.neutral{color:var(--muted)}
+.lead{color:var(--muted)}
+</style></head>
+<body><div class="wrap">
+<nav class="top"><a href="../../../index.html">⌂ Home</a> <a href="../../../suggestions/index.html">suggestions</a> <a href="../../routesV2/index.html">routesV2</a></nav>
+<article>
+<h1 id="linhardt">Linhardt von Hevring / 林哈尔特 — Build Menu <span class="tag">V2</span></h1>
+<blockquote><p><strong>Black Eagles student.</strong> Stays on <strong>Crimson Flower</strong>; auto-joins <strong>Silver Snow</strong>; recruitable elsewhere (Magic 10 + Reason C). Minor Crest of Cethleann (occasional +5 healing Might), Mag 45% / Res 45% growths, personal <strong>Catnap</strong> (heal 10% HP on Wait). One of the game's best <strong>Warp</strong> holders.<br>
+<strong>Proficiencies:</strong> <span class="boon">Reason (boon)</span>, <span class="boon">Faith (boon)</span>; <strong>no bane, no budding talent</strong>. All weapons neutral.<br>
+<span class="bane">Gender lock:</span> <strong>Gremory is female-only</strong> — Linhardt is male, so it is impossible (the old guide caught this). His male caster terminals are <strong>Bishop</strong> (white) and <strong>Warlock</strong> (black).<br>
+Sources: Game8 / GameFAQs / fe3h.com (EN), GameWith (JP), GamerSky (CN).</p></blockquote>
+<p class="rating-line"><strong>Strength</strong> ⭐⭐⭐☆☆ (3/5) &nbsp;·&nbsp; <strong>Build difficulty</strong> 🔧🔧○○○ (2/5)</p>
+
+<h2 id="builds-at-a-glance">Builds at a glance</h2>
+<table>
+<tr><th>Build</th><th>One-line</th><th>Tutoring cost</th><th>Best on</th></tr>
+<tr><td><a href="#bishop">Bishop</a></td><td>Rear-line healer; Heal +10, Warp/Physic engine</td><td><span class="boon">Light</span> (Faith boon)</td><td>Crimson Flower (support)</td></tr>
+<tr><td><a href="#warlock">Warlock</a></td><td>Offensive caster; Black Tomefaire + Fiendish Blow</td><td><span class="boon">Light</span> (Reason boon)</td><td>Silver Snow (chip damage)</td></tr>
+</table>
+
+<div class="build">
+<h2 id="bishop">Build 1 — Bishop (主教)</h2>
+<p><strong>Path:</strong> Noble → Monk → Priest → <strong>Bishop</strong>. <strong>Cert:</strong> Faith — his <span class="boon">boon</span>, so a <span class="boon">light</span> path. Bishop maximizes white-magic uses, has <strong>Heal +10</strong>, and suits his Catnap-rewards-waiting rear-line identity. His Crest boosts healing.</p>
+<p><strong>Mastery detours:</strong> <code>White Magic Heal +5 [⛏ Priest, Faith — on path]</code> stacks +5 healing. <code>Magic +2 [⛏ Monk]</code> cheap early. (Gremory is female-only — not an option; Bishop is his terminal.)</p>
+<p><strong>5 skills:</strong> White Magic Heal +5 · White Tomefaire · Magic +2 · Live to Serve · Renewal.</p>
+<ul class="pros"><li>✔ Premier <strong>Warp + Physic + Fortify</strong> utility — top-class even at "D-tier" combat.</li>
+<li>✔ Heal +10 + Crest + Catnap = a self-sufficient back-line support.</li></ul>
+<ul class="cons"><li>✘ Minimal offense; a support specialist, not a carry (note.com D-tier combat).</li>
+<li>✘ Move 5, no Canto — needs careful positioning.</li></ul>
+</div>
+
+<div class="build">
+<h2 id="warlock">Build 2 — Warlock (黑魔导师)</h2>
+<p><strong>Path:</strong> Noble → Monk → Mage → <strong>Warlock</strong>. <strong>Cert:</strong> Reason — his <span class="boon">boon</span>; a <span class="boon">light</span> offensive-caster line that deals damage between heals (he keeps Faith on the side).</p>
+<p><strong>Mastery detours:</strong> <code>Fiendish Blow [⛏ HARVEST — Mage, Reason C boon]</code> +6 Mag on initiate, on his path. <code>Magic +2 [⛏ Monk]</code>. <code>Poison Strike [⛏ Dark Mage]</code> if dipping for chip.</p>
+<p><strong>5 skills:</strong> Black Tomefaire · Fiendish Blow · Magic +2 · Bowbreaker · Battalion Vantage.</p>
+<ul class="pros"><li>✔ Black Tomefaire + Fiendish Blow gives him real Bolganone/Sagittae output.</li>
+<li>✔ Reason boon means cheap reach; can still throw the occasional Physic.</li></ul>
+<ul class="cons"><li>✘ Trades his best-in-class Warp utility for mediocre raw damage.</li>
+<li>✘ Move 5, no Canto; his offense never rivals a dedicated nuke.</li></ul>
+</div>
+
+<h2 id="route-usage">Route usage this playthrough (team-driven · R3 distinct · R12 difficulty)</h2>
+<table>
+<tr><th>Route (difficulty)</th><th>Build</th><th>Why — for the whole team</th></tr>
+<tr><td><strong>Crimson Flower</strong> (Hard)</td><td><a href="#bishop">Bishop</a></td><td>CF leans on aggressive carries (Edelgard, Petra, Ferdinand); Linhardt fills the <strong>dedicated Warp/heal slot</strong> — Warp lets Edelgard reach objectives a turn early, and Physic keeps the dive-fliers topped up. <span class="neutral">(R12: Hard — utility kit.)</span></td></tr>
+<tr><td><strong>Silver Snow</strong> (Maddening)</td><td><a href="#warlock">Warlock</a></td><td>SS already fields Bishops/healers (Flayn, Linhardt-alt, Byleth-flex); here he flips to <strong>chip-damage caster</strong> to add a magic damage body the team needs, harvesting Fiendish Blow. (R3: distinct from his CF Bishop.)</td></tr>
+<tr><td><strong>AM / VW</strong></td><td>—</td><td>Recruit-only (off-route); featured on his two native routes.</td></tr>
+</table>
+<p class="lead">Route files link straight to the chosen anchor, e.g. <code>…/character_recommendationV2/black-eagles/linhardt-von-hevring-林哈尔特.html#bishop</code>.</p>
+</article>
+</div></body></html>
