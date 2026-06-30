@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Battalions / 营队（兵团）</title>
+<style>
+:root{--fg:#1c1e26;--muted:#6b7280;--bg:#fbfbfd;--card:#fff;--accent:#3b5bdb;--border:#e5e7eb;--code:#f3f4f6}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei",sans-serif}
+.wrap{max-width:920px;margin:0 auto;padding:0 20px 80px}
+nav.top{position:sticky;top:0;background:rgba(251,251,253,.92);backdrop-filter:blur(6px);padding:12px 0;border-bottom:1px solid var(--border);margin-bottom:28px;font-size:14px}
+nav.top a{color:var(--accent);text-decoration:none;margin-right:14px}
+article{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:28px 34px}
+h1{font-size:1.7rem;line-height:1.25;margin:.2em 0 .6em;border-bottom:2px solid var(--border);padding-bottom:.3em}
+h2{font-size:1.32rem;margin:1.6em 0 .5em;border-bottom:1px solid var(--border);padding-bottom:.2em}
+h3{font-size:1.1rem;margin:1.3em 0 .4em}
+a{color:var(--accent)}
+table{border-collapse:collapse;width:100%;margin:1em 0;font-size:.94rem;display:block;overflow-x:auto}
+th,td{border:1px solid var(--border);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:var(--code)}
+tr:nth-child(even) td{background:#fafafa}
+code{background:var(--code);padding:.12em .4em;border-radius:5px;font-size:.88em;font-family:"SF Mono",Menlo,Consolas,monospace}
+pre{background:var(--code);padding:14px 16px;border-radius:10px;overflow-x:auto}
+pre code{background:none;padding:0}
+blockquote{margin:1em 0;padding:.3em 1em;border-left:4px solid var(--accent);background:#f6f8ff;color:#374151}
+ul.index{list-style:none;padding:0}
+ul.index li{margin:0;border-bottom:1px solid var(--border)}
+ul.index li a{display:block;padding:11px 8px;text-decoration:none}
+ul.index li a:hover{background:var(--code)}
+.dir::before{content:"\1F4C1  "}
+.doc::before{content:"\1F4C4  "}
+.lead{color:var(--muted)}
+</style>
+<script src="../nav.js"></script></head>
+<body><div class="wrap">
+<nav class="top"><a href="../index.html">⌂ Home</a> <a href="../facts/index.html">facts</a> <a href="../suggestions/index.html">suggestions</a></nav>
+<article><h1 id="battalions">Battalions / 营队（兵团）</h1>
+<blockquote>
+<p>Objective reference for battalions: the <strong>Authority rank</strong> gate, <strong>movement type</strong>, <strong>stat bonuses</strong>, <strong>Gambit</strong>, and <strong>when/where each unlocks</strong>. / 营队客观资料：权威等级门槛、移动类型、属性加成、立体战技（Gambit）以及<strong>解锁时机与来源</strong>。</p>
+<p>Source / 来源: <a href="https://serenesforest.net/three-houses/miscellaneous/battalions/">serenesforest.net/three-houses/miscellaneous/battalions</a> (cached: <code>sources/serenes-forest/battalions.md</code>); cross-ref fe3h.com, Fire Emblem Wiki. / 已缓存于 <code>sources/serenes-forest/battalions.md</code>。</p>
+</blockquote>
+<h2 id="core-mechanics">Core mechanics / 核心机制</h2>
+<ul>
+<li>A battalion is assigned to <strong>one unit</strong> and grants <strong>stat bonuses + a Gambit</strong>. / 每支营队装备给<strong>一名单位</strong>，提供<strong>属性加成 + 一个立体战技（Gambit）</strong>。</li>
+<li>A battalion's <strong>"Lvl" = the minimum Authority rank</strong> the unit needs to equip it (unit's Authority must be <strong>≥</strong> the battalion's Lvl). <strong>Movement type must also match</strong> — infantry / armored / cavalry / <strong>flying</strong>. / 营队的 <strong>“Lvl” = 装备所需的最低权威等级</strong>（单位权威须 <strong>≥</strong> 营队 Lvl）；<strong>移动类型也必须匹配</strong> —— 步行 / 重装 / 骑兵 / <strong>飞行</strong>。</li>
+<li><strong>Using a Gambit trains the unit's Authority</strong> (like a weapon trains its skill) and <strong>levels the battalion (up to Lv5)</strong>, improving its bonuses. / <strong>使用立体战技会训练该单位的权威</strong>（如同武器训练对应技能），并<strong>提升营队等级（至 Lv5）</strong>，强化加成。</li>
+<li><strong>Endurance</strong> falls as the commanding unit takes damage; at 0 the battalion (and its Gambit) drops for that battle. <strong>Repair with gold at the Battalion Guild</strong> before each fight. / <strong>耐久</strong>随指挥单位受伤下降，归零则该战中营队（及其战技）退场。战前在<strong>营队公会用金币修复</strong>。</li>
+<li><strong>Carries over to New Game+.</strong> All hired battalions transfer to NG+ <strong>at their current level</strong> (with built-up battalion EXP) — unlike <strong>gold and items, which do not carry over</strong>. ⚠️ Units reset to Lv1 and <strong>Authority ranks reset</strong>, so a high-<strong>Lvl</strong> battalion can't be re-equipped until you rebuild that unit's Authority to its gate. <strong>Tip:</strong> before finishing a run, <strong>buy up battalions</strong> — they carry forward (and surplus ones can be <strong>sold for gold</strong> in NG+). (Verified: Game8, GameFAQs.) / <strong>可继承至「新游戏+」</strong>：所有已雇佣营队按<strong>当前等级</strong>（含已积累的营队经验）带入 NG+；而<strong>金币与道具不继承</strong>。⚠️ NG+ 中单位重置为 1 级、<strong>权威等级清零</strong>，高 <strong>Lvl</strong> 营队须重新练满权威才能装备。<strong>建议</strong>：通关前<strong>多买营队</strong>，可带入下一周目（多余的还能<strong>卖钱</strong>）。</li>
+</ul>
+<h2 id="acquisition-unlock-timing">Acquisition &amp; unlock timing / 取得与解锁时机</h2>
+<p>How a battalion becomes available is gated by <strong>three</strong> verifiable anchors (exact per-battalion appearance <em>weeks</em> are <strong>not</strong> cleanly documented — treat as "available by/around"). / 营队是否可用由<strong>三个</strong>可核实的锚点决定（具体每营队的出现<strong>周次</strong>无明确记载，按“大致可用”理解）。</p>
+<ol>
+<li><strong>Battalion Guild unlock / 营队公会解锁</strong> — complete <em>Leading the Charge</em> → <em>Bolstering Forces</em> (early Part 1). <em>Bolstering Forces</em> (Jeralt) grants <strong>3 free battalions</strong>. / 完成《率先出击》→《增援部队》（第一部前期）即解锁公会；《增援部队》（杰拉尔特）赠送 <strong>3 支免费营队</strong>。</li>
+<li><strong>Route-specific stock / 路线限定库存</strong> — the guild stocks battalions tied to the <strong>route's homeland</strong> (Kingdom battalions on Azure Moon, etc.). / 公会库存与<strong>路线本土势力</strong>绑定（苍月之路出王国营队，等等）。</li>
+<li><strong>Restocks / 补货</strong> — the guild restocks <strong>during Chapter 8</strong>, and again near the timeskip: <strong>Chapter 14</strong> (Azure Moon / Silver Snow / Verdant Wind) or <strong>Chapter 12</strong> (Crimson Flower). / 公会在<strong>第 8 章</strong>补货，并在时间跳跃前再次补货：<strong>第 14 章</strong>（苍月 / 苍焰之纪 / 翠风之路）或<strong>第 12 章</strong>（红花之路）。</li>
+</ol>
+<ul>
+<li><strong>Authority rank gates <em>equipping</em>, not stock</strong> — a battalion can sit in the guild before a unit can use it. <strong>Professor Level</strong> raises Funds/Activity Points (how much you can <em>buy/repair</em>), but does <strong>not</strong> itself expand the guild roster. / <strong>权威等级限制的是“能否装备”，而非库存</strong> —— 营队可能先在公会出现、之后单位才够权威装备。<strong>教授等级</strong>提升资金/活动点（决定能买/修多少），但<strong>不</strong>直接扩充公会名录。</li>
+<li><strong>Lord / house battalions are auto-granted</strong> — after the timeskip each route's lord receives a unique Lord battalion automatically (e.g. Dimitri → King of Lions Corps). <strong>Don't buy one for the lord.</strong> / <strong>领主 / 家系营队自动获得</strong> —— 时间跳跃后各路线领主自动获得专属营队（如蒂米特利 → 雄狮之王军团）。<strong>无需为领主购买。</strong></li>
+</ul>
+<p>⚠️ <strong>Verify / 待核实:</strong> exact in-game month/week each <em>specific</em> hireable battalion first appears is not reliably documented. The dependable unlock signals are <strong>route + the Ch.8 / Ch.14(12) restock + the unit's Authority rank</strong>. / 具体营队首次出现的精确月/周无可靠记载；可靠信号为<strong>路线 + 第8/14(12)章补货 + 单位权威等级</strong>。</p>
+<h2 id="battalion-data">Battalion data / 营队数据</h2>
+<blockquote>
+<p><strong>Unlock column / “解锁”列</strong> = the verifiable availability anchor: <strong>source (route/free)</strong> + <strong>earliest restock window</strong>. Authority Lvl is the <em>equip</em> gate. / <strong>“解锁”列</strong> = 可核实的可用锚点：<strong>来源（路线/免费）+ 最早补货窗口</strong>；权威 Lvl 为<em>装备</em>门槛。</p>
+<p>Bonuses use the game's shorthand: <strong>Phys</strong> = physical Atk, <strong>Mag</strong> = magic Atk, <strong>Prot</strong> = physical Def, <strong>Res</strong> = magic Def, <strong>Cha</strong> = Charm. / 加成缩写：<strong>Phys</strong> 物理攻击、<strong>Mag</strong> 魔法攻击、<strong>Prot</strong> 物防、<strong>Res</strong> 魔防、<strong>Cha</strong> 魅力。</p>
+<p>⚠️ The list below is the <strong>verified subset relevant to a Kingdom / Azure Moon (Route 1) roster</strong> (the cached source's scope). Empire / Alliance / Church-route battalions need additional sourcing before being added. / 下表为<strong>经核实、与王国 / 苍月之路（路线1）阵容相关的子集</strong>（缓存来源的范围）。帝国 / 同盟 / 教会路线营队需补充来源后再加入。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Battalion / 营队</th>
+<th>Lvl (Auth)</th>
+<th>Move type / 移动</th>
+<th>Gambit</th>
+<th>Key bonuses / 主要加成</th>
+<th>Unlock / 解锁</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Jeralt's Mercenaries</strong> / 杰拉尔特佣兵团</td>
+<td><strong>E</strong></td>
+<td>any / 任意</td>
+<td>Assault Troop</td>
+<td>+1 Phys, +5 Crit, +5 Avo, <strong>+75 Endurance</strong></td>
+<td><strong>Free</strong> — one of the 3 from <em>Bolstering Forces</em> (early Part 1). 免费，《增援部队》三选一。</td>
+</tr>
+<tr>
+<td><strong>Seiros Holy Monks</strong> / 塞罗司圣修士</td>
+<td><strong>E</strong></td>
+<td>any / 任意</td>
+<td>Stride</td>
+<td>−1 Phys, +5 Hit, +1 Res, +1 Cha</td>
+<td>Church stock, guild (early Part 1). 教会库存，公会前期。</td>
+</tr>
+<tr>
+<td><strong>Kingdom Cavalry</strong> / 王国骑兵团</td>
+<td><strong>D</strong></td>
+<td>cavalry / 骑兵</td>
+<td>Stride</td>
+<td>+2 Phys, +5 Hit, +2 Prot, +3 Cha</td>
+<td>Kingdom stock, guild from ~early Part 1 (need Auth D). 王国库存，约第一部前期（需权威 D）。</td>
+</tr>
+<tr>
+<td><strong>Kingdom Archers</strong> / 王国弓兵团</td>
+<td><strong>D</strong></td>
+<td>any / 任意</td>
+<td>Retribution</td>
+<td>+2 Phys, +5 Hit, +3 Prot, +3 Cha</td>
+<td>Kingdom stock, early Part 1 (Auth D). 王国库存，第一部前期（权威 D）。</td>
+</tr>
+<tr>
+<td><strong>Seiros Pegasus Co.</strong> / 塞罗司飞马团</td>
+<td><strong>D</strong></td>
+<td>flying / 飞行</td>
+<td>Assembly</td>
+<td>+2 Phys, +1 Avo, +2 Prot, +3 Res, +5 Cha</td>
+<td>Church stock, early Part 1 (Auth D, flier). 教会库存（权威 D，飞行）。</td>
+</tr>
+<tr>
+<td><strong>Kingdom Pegasus Co.</strong> / 王国飞马团</td>
+<td><strong>D</strong></td>
+<td>flying / 飞行</td>
+<td>Assembly</td>
+<td>+2 Phys, +5 Avo, +3 Prot, +4 Res, +6 Cha</td>
+<td>Kingdom stock, early Part 1 (Auth D, flier). 王国库存（权威 D，飞行）。</td>
+</tr>
+<tr>
+<td><strong>Kingdom Wyvern Co.</strong> / 王国飞龙团</td>
+<td><strong>C</strong></td>
+<td>flying / 飞行</td>
+<td>Recovery Roar</td>
+<td>+3 Phys, +10 Hit, +2 Prot, +5 Cha</td>
+<td>Kingdom stock; usable at Auth C. 王国库存；权威 C 可用。</td>
+</tr>
+<tr>
+<td><strong>King of Lions Corps</strong> / 雄狮之王军团</td>
+<td><strong>C</strong></td>
+<td>—</td>
+<td><strong>Wave Attack</strong></td>
+<td><strong>+10 Phys</strong>, +5 Hit, +15 Crit, +5 Prot, −5 Avo, +10 Cha</td>
+<td><strong>Auto-granted to Dimitri at the timeskip (Part 2).</strong> Max endurance; best Str bonus. 时间跳跃后<strong>自动授予蒂米特利</strong>；耐久最高、力量加成最强。</td>
+</tr>
+<tr>
+<td><strong>Gautier Knights</strong> / 高迪耶骑士团</td>
+<td><strong>B</strong></td>
+<td>cavalry / 骑兵</td>
+<td>Stride</td>
+<td>+3 Phys, +15 Avo, +5 Prot, +7 Cha</td>
+<td>Sylvain's house (Kingdom); guild by <strong>Ch.8 restock</strong> (Auth B). 希尔凡家系（王国）；约<strong>第8章补货</strong>（权威 B）。</td>
+</tr>
+<tr>
+<td><strong>Galatea Pegasus Co.</strong> / 加拉提亚飞马团</td>
+<td><strong>B</strong></td>
+<td>flying / 飞行</td>
+<td>Lure</td>
+<td>+3 Phys, +5 Avo, +5 Prot, +6 Res, +8 Cha</td>
+<td>Ingrid's house (Kingdom); by <strong>Ch.8 restock</strong> (Auth B, flier). 英谷莉特家系；约<strong>第8章补货</strong>（权威 B，飞行）。</td>
+</tr>
+<tr>
+<td><strong>Goneril Valkyries</strong> / 戈纳里尔女武神团</td>
+<td><strong>B</strong></td>
+<td>—</td>
+<td>Assault Troop</td>
+<td>+4 Phys, +10 Crit, +20 Hit, +6 Prot, +1 Res, +7 Cha</td>
+<td>Guild stock by Ch.8 restock (Auth B). 约第8章补货（权威 B）。</td>
+</tr>
+<tr>
+<td><strong>Secret Transport Force</strong> / 秘密运输队</td>
+<td><strong>B</strong></td>
+<td>—</td>
+<td>Stride</td>
+<td>+1 Phys, <strong>+10 Mag</strong>, +1 Hit, +1 Crit, +8 Prot</td>
+<td>Rare mage-friendly Stride carrier (Auth B). 罕见的适配魔法的“突进”载体（权威 B）。</td>
+</tr>
+<tr>
+<td><strong>Indech Sword Fighters</strong> / 因德赫剑士团</td>
+<td><strong>A</strong></td>
+<td>—</td>
+<td>Retribution</td>
+<td>+4 Phys, +10 Crit, +20 Hit, +4 Prot, +10 Cha</td>
+<td>Guild by <strong>Ch.14 restock</strong> (Auth A). 约<strong>第14章补货</strong>（权威 A）。</td>
+</tr>
+<tr>
+<td><strong>Blue Lion Knights</strong> / 青狮骑士团</td>
+<td><strong>A</strong></td>
+<td>cavalry / 骑兵</td>
+<td>Linked Horses</td>
+<td>+3 Phys, +10 Crit, +15 Hit, +1 Prot, −10 Avo, +10 Cha</td>
+<td>Kingdom; by <strong>Ch.14 restock</strong> (Auth A). 王国；约<strong>第14章补货</strong>（权威 A）。</td>
+</tr>
+<tr>
+<td><strong>Cichol Wyvern Co.</strong> / 奇科尔飞龙团</td>
+<td><strong>A</strong></td>
+<td>flying / 飞行</td>
+<td>Assault Troop</td>
+<td>+3 Phys, +10 Crit, +15 Hit, +6 Prot, +1 Res, +10 Cha</td>
+<td>By <strong>Ch.14 restock</strong> (Auth A, flier). 约<strong>第14章补货</strong>（权威 A，飞行）。</td>
+</tr>
+<tr>
+<td><strong>Black Eagle Pegasus Co.</strong> / 黑鹰飞马团</td>
+<td><strong>A</strong></td>
+<td>flying / 飞行</td>
+<td>Retribution</td>
+<td>+3 Phys, +10 Crit, +10 Hit, +5 Prot, +7 Res, +10 Cha</td>
+<td>By <strong>Ch.14 restock</strong> (Auth A, flier). 约<strong>第14章补货</strong>（权威 A，飞行）。</td>
+</tr>
+<tr>
+<td><strong>Blue Lion Magic Corps</strong> / 青狮魔法团</td>
+<td><strong>A</strong></td>
+<td>—</td>
+<td>Resonant Ice</td>
+<td>−2 Phys, <strong>+3 Mag</strong>, +5 Hit, +1 Prot, +7 Res, +10 Cha</td>
+<td>Best mage/healer battalion; by <strong>Ch.14 restock</strong> (Auth A). 法系/治疗最佳；约<strong>第14章补货</strong>（权威 A）。</td>
+</tr>
+</tbody>
+</table>
+<h2 id="gambit-glossary">Gambit glossary / 立体战技说明</h2>
+<ul>
+<li><strong>Stride / 突进</strong> — target-area allies gain <strong>Movement +5</strong> for the rest of the turn (~2 uses, 1-tile range). The premier repositioning/rush tool. / 范围内友军本回合<strong>移动 +5</strong>（约 2 次，1 格范围）。最强的重新部署/突进手段。</li>
+<li><strong>Retribution / 反击</strong> — allies in area can <strong>counter at any range</strong> for 5 turns. Great on an enemy-phase tank or a defensive carrier. / 范围内友军 5 回合内<strong>可无视距离反击</strong>。适合敌方回合坦克或防御载体。</li>
+<li><strong>Wave Attack / 波动攻击</strong> (King of Lions Corps only) — repeatable lance wave, strong vs armor. / （仅雄狮之王军团）可重复的枪击波，克制重甲。</li>
+<li><strong>Assault Troop / 突击部队</strong> — solid all-purpose offensive gambit. / 全能型进攻战技。</li>
+<li><strong>Assembly / 集结</strong>, <strong>Lure / 诱敌</strong>, <strong>Recovery Roar / 恢复怒吼</strong>, <strong>Linked Horses / 连环骑</strong>, <strong>Resonant Ice / 共鸣冰</strong>: situational utility/AoE gambits. / 情境型辅助 / 范围战技。</li>
+</ul>
+<h2 id="see-also">See also / 另见</h2>
+<ul>
+<li>Recruitment &amp; Authority training context / 招募与权威训练背景: route plans in <code>suggestions/routes/</code>.</li>
+<li>Per-roster battalion picks for Azure Moon (Route 1) / 苍月之路（路线1）逐人营队推荐: <code>suggestions/routes/azure-moon.md</code>.</li>
+</ul></article>
+</div></body></html>

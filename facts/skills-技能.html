@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Skills &amp; Abilities / 技能与能力</title>
+<style>
+:root{--fg:#1c1e26;--muted:#6b7280;--bg:#fbfbfd;--card:#fff;--accent:#3b5bdb;--border:#e5e7eb;--code:#f3f4f6}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei",sans-serif}
+.wrap{max-width:920px;margin:0 auto;padding:0 20px 80px}
+nav.top{position:sticky;top:0;background:rgba(251,251,253,.92);backdrop-filter:blur(6px);padding:12px 0;border-bottom:1px solid var(--border);margin-bottom:28px;font-size:14px}
+nav.top a{color:var(--accent);text-decoration:none;margin-right:14px}
+article{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:28px 34px}
+h1{font-size:1.7rem;line-height:1.25;margin:.2em 0 .6em;border-bottom:2px solid var(--border);padding-bottom:.3em}
+h2{font-size:1.32rem;margin:1.6em 0 .5em;border-bottom:1px solid var(--border);padding-bottom:.2em}
+h3{font-size:1.1rem;margin:1.3em 0 .4em}
+a{color:var(--accent)}
+table{border-collapse:collapse;width:100%;margin:1em 0;font-size:.94rem;display:block;overflow-x:auto}
+th,td{border:1px solid var(--border);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:var(--code)}
+tr:nth-child(even) td{background:#fafafa}
+code{background:var(--code);padding:.12em .4em;border-radius:5px;font-size:.88em;font-family:"SF Mono",Menlo,Consolas,monospace}
+pre{background:var(--code);padding:14px 16px;border-radius:10px;overflow-x:auto}
+pre code{background:none;padding:0}
+blockquote{margin:1em 0;padding:.3em 1em;border-left:4px solid var(--accent);background:#f6f8ff;color:#374151}
+ul.index{list-style:none;padding:0}
+ul.index li{margin:0;border-bottom:1px solid var(--border)}
+ul.index li a{display:block;padding:11px 8px;text-decoration:none}
+ul.index li a:hover{background:var(--code)}
+.dir::before{content:"\1F4C1  "}
+.doc::before{content:"\1F4C4  "}
+.lead{color:var(--muted)}
+</style>
+<script src="../nav.js"></script></head>
+<body><div class="wrap">
+<nav class="top"><a href="../index.html">⌂ Home</a> <a href="../facts/index.html">facts</a> <a href="../suggestions/index.html">suggestions</a></nav>
+<article><h1 id="skills-abilities">Skills &amp; Abilities / 技能与能力</h1>
+<blockquote>
+<p>Reference for the combat <strong>skills</strong> referenced throughout the builds: what each does and <strong>how you get it</strong>. / 培养建议中反复出现的战斗<strong>技能</strong>速查：效果与<strong>获取方式</strong>。</p>
+<p>Acquisition is cross-checked against this repo's own <a href="classes/index.html">class files</a> (the per-class <strong>Mastery Ability / 精通技能</strong> and <strong>Class Abilities / 职业技能</strong> sections) and <code>sources/serenes-forest/classes-abilities.html</code>. Effects/ranks marked <strong>⚠️</strong> are not fully pinned by a cached source — verify before relying on exact numbers. / 获取方式以本仓库 <a href="classes/index.html">兵种资料</a>（各职业“精通技能/职业技能”）与缓存来源核对；带 <strong>⚠️</strong> 者精确数值待核实。</p>
+</blockquote>
+<h2 id="how-skills-are-acquired">How skills are acquired / 技能获取途径</h2>
+<p>A unit's 5 equipped ability slots can be filled from four sources: / 单位的 5 个技能装备格可来自四类来源：</p>
+<ol>
+<li><strong>Class Mastery / 职业精通</strong> — fill a class's mastery bar to permanently learn its <strong>Mastery Ability</strong> (and/or <strong>Mastery Combat Art</strong>). These are the ⛏ "detour" skills in the builds — you must spend time <em>in</em> that class to harvest them. / 填满某职业的精通槽，永久习得其<strong>精通技能/精通战技</strong>（建议中的 ⛏ 绕路技能）。</li>
+<li><strong>Class Ability / 职业技能</strong> — innate while the unit is <em>in</em> that class (e.g. the <strong>Faires</strong>, Alert Stance, Movement +1). Lost if you leave the class, unless it's also masterable. / 处于该职业时自带（如各类 <strong>Faire</strong>、警戒架势、移动+1），离开即失效。</li>
+<li><strong>Skill Rank / 技能等级</strong> — learned at a weapon/Authority proficiency rank (e.g. <strong>Battalion Wrath</strong> at Authority C, the <strong>+Avo</strong> rank skills). Permanent once learned. / 达到武器/权威熟练度后习得（如权威 C 的营队之怒），永久。</li>
+<li><strong>Personal / 个人技能</strong> &amp; <strong>Budding Talent / 天赋觉醒</strong> — unique to a character (e.g. Mercedes' <strong>Live to Serve</strong>, Dimitri's <strong>Seal Movement</strong> via Riding). / 角色专属（如梅尔赛德丝“舍己为人”、蒂米特利经骑术觉醒的“封锁移动”）。</li>
+</ol>
+<hr>
+<h2 id="class-mastery-abilities">Class Mastery Abilities / 职业精通技能</h2>
+<p>Master the listed class to learn these permanently. These are the build ⛏ skills. / 精通对应职业即永久习得（建议中的 ⛏ 技能）。</p>
+<table>
+<thead>
+<tr>
+<th>Skill / 技能</th>
+<th>Effect / 效果</th>
+<th>Master class / 精通职业</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a id="death-blow"></a><strong>Death Blow</strong> / 致命一击</td>
+<td>Str <strong>+6</strong> when the unit <strong>initiates</strong> combat</td>
+<td><strong>Brigand</strong> / 土匪</td>
+</tr>
+<tr>
+<td><a id="hit-20"></a><strong>Hit +20</strong> / 命中 +20</td>
+<td>Hit rate <strong>+20</strong></td>
+<td><strong>Archer</strong> / 弓兵</td>
+</tr>
+<tr>
+<td><a id="fiendish-blow"></a><strong>Fiendish Blow</strong> / 魔神一击</td>
+<td>Mag <strong>+6</strong> when the unit <strong>initiates</strong> combat</td>
+<td><strong>Mage</strong> / 魔法师</td>
+</tr>
+<tr>
+<td><a id="darting-blow"></a><strong>Darting Blow</strong> / 飞燕一击</td>
+<td>Spd <strong>+6</strong> when the unit <strong>initiates</strong> combat</td>
+<td><strong>Pegasus Knight</strong> / 飞马骑士</td>
+</tr>
+<tr>
+<td><a id="warding-blow"></a><strong>Warding Blow</strong> / 守护一击</td>
+<td>Res <strong>+6</strong> (vs magic) when the unit <strong>initiates</strong> ⚠️</td>
+<td><strong>Mortal Savant</strong> / 魔剑士</td>
+</tr>
+<tr>
+<td><a id="pavise"></a><strong>Pavise</strong> / 大盾</td>
+<td>Chance to <strong>halve physical</strong> damage taken ⚠️(proc rate)</td>
+<td><strong>Fortress Knight</strong> / 重装骑士</td>
+</tr>
+<tr>
+<td><a id="aegis"></a><strong>Aegis</strong> / 圣盾</td>
+<td>Chance to <strong>halve ranged/magic</strong> damage taken ⚠️</td>
+<td><strong>Paladin</strong> / 圣骑士</td>
+</tr>
+<tr>
+<td><a id="vantage"></a><strong>Vantage</strong> / 先制</td>
+<td>When HP <strong>&lt; 50%</strong>, the unit attacks first even on the enemy phase</td>
+<td><strong>Mercenary</strong> / 佣兵</td>
+</tr>
+<tr>
+<td><a id="quick-riposte"></a><strong>Quick Riposte</strong> / 速回击</td>
+<td>Reliable counterattack when HP is high ⚠️</td>
+<td><strong>War Master</strong> / 战神</td>
+</tr>
+<tr>
+<td><a id="defiant-str"></a><strong>Defiant Strength / Str</strong> / 危急强袭</td>
+<td>Str <strong>+8</strong> when HP <strong>≤ 25%</strong></td>
+<td><strong>Hero</strong> / 勇者</td>
+</tr>
+<tr>
+<td><a id="defiant-mag"></a><strong>Defiant Magic / Mag</strong> / 危急魔攻</td>
+<td>Mag <strong>+8</strong> when HP <strong>≤ 25%</strong></td>
+<td><strong>Gremory</strong> / 格莫瑞</td>
+</tr>
+<tr>
+<td><a id="defiant-spd"></a><strong>Defiant Speed / Spd</strong> / 危急疾行</td>
+<td>Spd <strong>+8</strong> when HP <strong>≤ 25%</strong></td>
+<td><strong>Bow Knight</strong> / 弓骑士</td>
+</tr>
+<tr>
+<td><a id="defiant-def"></a><strong>Defiant Defense / Def</strong> / 危急守护</td>
+<td>Def <strong>+8</strong> when HP <strong>≤ 25%</strong></td>
+<td><strong>Great Knight</strong> / 大骑士</td>
+</tr>
+<tr>
+<td><a id="defiant-res"></a><strong>Defiant Resistance / Res</strong> / 危急抗性</td>
+<td>Res <strong>+8</strong> when HP <strong>≤ 25%</strong></td>
+<td><strong>Holy Knight</strong> / 圣骑士</td>
+</tr>
+<tr>
+<td><a id="defiant-avo"></a><strong>Defiant Avoid / Avo</strong> / 危急回避</td>
+<td>Avo <strong>+30</strong> when HP <strong>≤ 25%</strong> ⚠️</td>
+<td><strong>Falcon Knight</strong> / 圣天马骑士</td>
+</tr>
+<tr>
+<td><a id="defiant-crit"></a><strong>Defiant Crit</strong> / 危急必杀</td>
+<td>Crit <strong>+25</strong> when HP <strong>≤ 25%</strong> ⚠️</td>
+<td><strong>Wyvern Lord</strong> / 飞龙领主</td>
+</tr>
+<tr>
+<td><a id="defense-2"></a><strong>Defense +2</strong> / 防御 +2</td>
+<td>Def <strong>+2</strong></td>
+<td><strong>Soldier</strong> / 士兵</td>
+</tr>
+<tr>
+<td><a id="strength-2"></a><strong>Strength +2</strong> / 力量 +2</td>
+<td>Str <strong>+2</strong></td>
+<td><strong>Fighter</strong> / 战士</td>
+</tr>
+<tr>
+<td><a id="speed-2"></a><strong>Speed +2</strong> / 速度 +2</td>
+<td>Spd <strong>+2</strong></td>
+<td><strong>Myrmidon</strong> / 剑士</td>
+</tr>
+<tr>
+<td><a id="magic-2"></a><strong>Magic +2</strong> / 魔力 +2</td>
+<td>Mag <strong>+2</strong></td>
+<td><strong>Monk</strong> / 修道士</td>
+</tr>
+<tr>
+<td><a id="special-dance"></a><strong>Special Dance</strong> / 特殊舞蹈</td>
+<td>Dancing also grants the target combat bonuses</td>
+<td><strong>Dancer</strong> / 舞者</td>
+</tr>
+</tbody>
+</table>
+<h2 id="class-mastery-combat-arts">Class Mastery Combat Arts / 职业精通战技</h2>
+<table>
+<thead>
+<tr>
+<th>Combat art / 战技</th>
+<th>Effect / 效果</th>
+<th>Master class / 精通职业</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a id="hunters-volley"></a><strong>Hunter's Volley</strong> / 猎箭齐发</td>
+<td>Bow art — <strong>two hits</strong>, big Hit/Crit bonus (player-phase)</td>
+<td><strong>Sniper</strong> / 狙击手</td>
+</tr>
+<tr>
+<td><a id="astra"></a><strong>Astra</strong> / 流星</td>
+<td>Sword art — multiple reduced-damage hits</td>
+<td><strong>Swordmaster</strong> / 剑圣</td>
+</tr>
+<tr>
+<td><a id="sword-dance"></a><strong>Sword Dance</strong> / 剑舞</td>
+<td>Sword art, high Avo while active</td>
+<td><strong>Dancer</strong> / 舞者</td>
+</tr>
+<tr>
+<td><a id="fierce-iron-fist"></a><strong>Fierce Iron Fist</strong> / 刚拳</td>
+<td>Gauntlet art — multiple hits</td>
+<td><strong>Grappler</strong> / 综合格斗家</td>
+</tr>
+<tr>
+<td><a id="war-masters-strike"></a><strong>War Master's Strike</strong> / 战神强击</td>
+<td>Gauntlet art, high Crit</td>
+<td><strong>War Master</strong> / 战神</td>
+</tr>
+<tr>
+<td><a id="triangle-attack"></a><strong>Triangle Attack</strong> / 三角攻击</td>
+<td>3 fliers in formation → guaranteed crit (costs 10 HP)</td>
+<td><strong>Pegasus Knight</strong> / 飞马骑士</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><a id="swift-strikes"></a><strong>Swift Strikes</strong> / 迅击 — a <strong>Lance</strong> combat art that strikes <strong>twice</strong> (brave effect); a staple of lance carries (Sylvain, Sylvain-type Paladins). Learned at a <strong>Lance</strong> proficiency rank ⚠️ — <strong>not</strong> a class mastery, so no ⛏ detour. / <strong>枪术</strong>战技，连击<strong>两次</strong>；枪系主力核心。达到一定<strong>枪术</strong>等级习得 ⚠️，非职业精通。</p>
+</blockquote>
+<hr>
+<h2 id="faires-class-abilities">Faires (class abilities) / 武器精通技能（职业自带）</h2>
+<p><strong>Might +5</strong> with the matching weapon <strong>while in the class</strong> (innate class ability, not a mastery harvest — so no ⛏ detour). / 处于该职业时，对应武器<strong>威力 +5</strong>（职业自带，非精通绕路）。</p>
+<table>
+<thead>
+<tr>
+<th>Faire / 技能</th>
+<th>Effect / 效果</th>
+<th>Classes that grant it / 提供职业</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a id="swordfaire"></a><strong>Swordfaire</strong> / 剑术强化</td>
+<td>Sword Might <strong>+5</strong></td>
+<td>Hero, Swordmaster, Mortal Savant, Enlightened One</td>
+</tr>
+<tr>
+<td><a id="lancefaire"></a><strong>Lancefaire</strong> / 枪术强化</td>
+<td>Lance Might <strong>+5</strong></td>
+<td>Paladin, Falcon Knight, Great Lord, High Lord</td>
+</tr>
+<tr>
+<td><a id="axefaire"></a><strong>Axefaire</strong> / 斧术强化</td>
+<td>Axe Might <strong>+5</strong></td>
+<td>Fortress Knight, War Master, Wyvern Lord</td>
+</tr>
+<tr>
+<td><a id="bowfaire"></a><strong>Bowfaire</strong> / 弓术强化</td>
+<td>Bow Might <strong>+5</strong></td>
+<td>Sniper, Bow Knight</td>
+</tr>
+<tr>
+<td><a id="fistfaire"></a><strong>Fistfaire / Gauntletfaire</strong> / 拳术强化</td>
+<td>Gauntlet Might <strong>+5</strong></td>
+<td>Grappler, War Master</td>
+</tr>
+<tr>
+<td><a id="black-tomefaire"></a><strong>Black Tomefaire</strong> / 黑魔法强化</td>
+<td>Black (Reason) magic Might <strong>+5</strong></td>
+<td>Warlock, Dark Knight, Dark Bishop, Mortal Savant</td>
+</tr>
+<tr>
+<td><a id="white-tomefaire"></a><strong>White Tomefaire / Faithfaire</strong> / 白魔法强化</td>
+<td>White (Faith) magic Might <strong>+5</strong> ⚠️</td>
+<td>Bishop, Gremory</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="skill-rank-abilities">Skill-Rank abilities / 技能等级习得</h2>
+<p>Learned on reaching a weapon/Authority proficiency rank; permanent. / 达到武器或权威熟练度后习得，永久。</p>
+<table>
+<thead>
+<tr>
+<th>Skill / 技能</th>
+<th>Effect / 效果</th>
+<th>Learned at / 习得等级</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a id="battalion-wrath"></a><strong>Battalion Wrath</strong> / 营队之怒</td>
+<td>Crit <strong>+50</strong> the turn after the unit's battalion endurance is depleted ⚠️</td>
+<td><strong>Authority C</strong> / 权威 C</td>
+</tr>
+<tr>
+<td><a id="battalion-vantage"></a><strong>Battalion Vantage</strong> / 营队先制</td>
+<td>Attack first when battalion endurance is depleted ⚠️</td>
+<td><strong>Authority B+</strong> / 权威 B+ ⚠️</td>
+</tr>
+<tr>
+<td><a id="white-magic-avo-20"></a><strong>White Magic Avoid +20</strong> / 白魔法回避 +20</td>
+<td>Avo <strong>+20</strong> when white (Faith) magic is equipped</td>
+<td><strong>Faith</strong> rank ⚠️</td>
+</tr>
+<tr>
+<td><a id="sword-avo-20"></a><strong>Sword Avoid +20</strong> / 剑术回避 +20</td>
+<td>Avo <strong>+20</strong> when a sword is equipped</td>
+<td><strong>Sword</strong> rank ⚠️</td>
+</tr>
+<tr>
+<td><a id="brawl-avo-20"></a><strong>Brawl Avoid +20</strong> / 拳术回避 +20</td>
+<td>Avo <strong>+20</strong> when a gauntlet is equipped</td>
+<td><strong>Brawl</strong> rank ⚠️</td>
+</tr>
+<tr>
+<td><a id="crit-avo-10"></a><strong>Crit Avoid +10</strong> / 必杀回避 +10</td>
+<td>Enemy Crit against the unit <strong>−10</strong></td>
+<td>weapon rank ⚠️</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="other-class-abilities">Other class abilities / 其他职业技能</h2>
+<p>Innate while in the class. / 处于该职业时自带。</p>
+<table>
+<thead>
+<tr>
+<th>Skill / 技能</th>
+<th>Effect / 效果</th>
+<th>Source / 来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a id="alert-stance"></a><strong>Alert Stance</strong> / 警戒架势</td>
+<td>Avo <strong>+15</strong> if the unit <strong>waits</strong> (doesn't act) ⚠️</td>
+<td>flying-line class ability</td>
+</tr>
+<tr>
+<td><a id="alert-stance-plus"></a><strong>Alert Stance+</strong> / 警戒架势+</td>
+<td>Avo <strong>+30</strong> if the unit <strong>waits</strong> ⚠️</td>
+<td>Falcon Knight, Wyvern Lord ⚠️</td>
+</tr>
+<tr>
+<td><a id="movement-1"></a><strong>Movement +1</strong> / 移动 +1</td>
+<td>Movement range <strong>+1</strong></td>
+<td>several Master mounted/flying classes ⚠️</td>
+</tr>
+<tr>
+<td><a id="avoid-10"></a><strong>Avoid +10</strong> / 回避 +10</td>
+<td>Avo <strong>+10</strong></td>
+<td><strong>Pegasus Knight</strong> class ability</td>
+</tr>
+<tr>
+<td><a id="weight-3"></a><strong>Weight −3</strong> / 减重 −3</td>
+<td>Equipment weight <strong>−3</strong> ⚠️</td>
+<td>armor-line class ability</td>
+</tr>
+<tr>
+<td><a id="weight-5"></a><strong>Weight −5</strong> / 减重 −5</td>
+<td>Equipment weight <strong>−5</strong></td>
+<td><strong>Fortress Knight</strong> class ability</td>
+</tr>
+<tr>
+<td><a id="canto"></a><strong>Move Again / Canto</strong> / 再移动</td>
+<td>Move with leftover movement after acting</td>
+<td>Cavalier, Pegasus Knight, Paladin</td>
+</tr>
+<tr>
+<td><a id="seal-movement"></a><strong>Seal Movement</strong> / 封锁移动</td>
+<td>Hitting a foe sets its Movement to <strong>0</strong> next turn</td>
+<td><strong>Dimitri</strong> budding talent (Riding) / 蒂米特利天赋</td>
+</tr>
+</tbody>
+</table>
+<h2 id="personal-skills">Personal skills / 个人技能</h2>
+<table>
+<thead>
+<tr>
+<th>Skill / 技能</th>
+<th>Effect / 效果</th>
+<th>Character / 角色</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a id="live-to-serve"></a><strong>Live to Serve</strong> / 舍己为人</td>
+<td>When healing an ally with white magic, restore the <strong>same amount</strong> of own HP</td>
+<td><strong>Mercedes</strong> / 梅尔赛德丝</td>
+</tr>
+<tr>
+<td><a id="songstress"></a><strong>Songstress</strong> / 歌姬</td>
+<td>Restores adjacent allies' HP by <strong>10%</strong> at the start of each turn</td>
+<td><strong>Dorothea</strong> / 多洛缇雅</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="see-also">See also / 另见</h2>
+<ul>
+<li><a href="classes/index.html">Class data / 兵种资料</a> — per-class mastery, certification, stats.</li>
+<li><a href="battalions-营队.html">Battalions / 营队</a> — gambits &amp; Authority-gated battalions.</li>
+</ul></article>
+</div></body></html>
